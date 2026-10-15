@@ -1,0 +1,833 @@
+{
+  "schema": "route4-reproduction-tool-tests-v1",
+  "scope": "Explicit field-selected host-tool test evidence. Not the new QEMU experiment verdict.",
+  "firmware_executed_by_these_tests": false,
+  "qemu_started_by_these_tests": false,
+  "selection_policy": "Explicit per-group field allowlists; no command lines, private paths, raw stdout/stderr, memory/body dumps, key bytes or complete source objects copied.",
+  "source_hash_note": "Source report SHA-256 refers to preserved private originals, not this selected JSON.",
+  "exit_code_note": "null means no subprocess exit code was recorded; it is not an inferred zero.",
+  "negative_case_note": "A rejected deliberately invalid input is a passed test when rejection was expected. PASS_MATCH and partial NEF states retain their original scope.",
+  "total_test_cases": 76,
+  "all_expected_outcomes_recorded": true,
+  "groups": [
+    {
+      "id": "static",
+      "label": "Portable static CLI regression",
+      "source_report_sha256": "5feb8b0f175e1e854d5cb6ab5fd4554992cbf14981655d6be02cba333258b2d2",
+      "scope": "Host CLI tests, including exact reconstruction and rejected input mutations; not firmware execution.",
+      "firmware_executed": false,
+      "qemu_started": false,
+      "test_count": 13,
+      "all_expected_outcomes_recorded": true,
+      "recorded_tool_sha256": {
+        "build_candidate.py": "9514d96d1e2696455e2d6015e55a0d814e66285d3a7d512c52ccb15993ad1ad1",
+        "verify_candidate.py": "987074040f1ccec4f256f1d5497bfada9072666c668fa05c4a7cc2dc2ce9c4b5",
+        "test_static_tools.py": "f0fac2f358ff68e08b57cbd19dd0098128c6c27606db873a7669184b7f0674a5"
+      },
+      "input_identities": {
+        "candidate_sha256": "2f8207645aeaf8b704613f71d88abc8b27dc5141130219a0176e3ef2ecb1954e"
+      },
+      "tests": [
+        {
+          "name": "build-positive",
+          "exit_code": 0,
+          "test_passed": true,
+          "expected_success": true,
+          "stdout_sha256": "37678ed0deb93a147065f9e75eb1cb3ab5352b8b5dc65c0a4a1f430c4085b447",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "python_flags": []
+        },
+        {
+          "name": "verify-positive",
+          "exit_code": 0,
+          "test_passed": true,
+          "expected_success": true,
+          "stdout_sha256": "8602dfedd10bb0769a9de160cc702ad63574553d9ea7cbbd4dfadfc5997022d2",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "python_flags": []
+        },
+        {
+          "name": "verify-positive-optimized",
+          "exit_code": 0,
+          "test_passed": true,
+          "expected_success": true,
+          "stdout_sha256": "8602dfedd10bb0769a9de160cc702ad63574553d9ea7cbbd4dfadfc5997022d2",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "python_flags": [
+            "-O"
+          ]
+        },
+        {
+          "name": "verify-isolated",
+          "exit_code": 0,
+          "test_passed": true,
+          "expected_success": true,
+          "stdout_sha256": "8602dfedd10bb0769a9de160cc702ad63574553d9ea7cbbd4dfadfc5997022d2",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "python_flags": [
+            "-I",
+            "-S"
+          ]
+        },
+        {
+          "name": "existing-output",
+          "exit_code": 1,
+          "test_passed": true,
+          "expected_success": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e1e0b7072da8e9332a6d143e78c74eadd1030ba78bae54574a3d1af8ea340c9e",
+          "python_flags": []
+        },
+        {
+          "name": "existing-output-optimized",
+          "exit_code": 1,
+          "test_passed": true,
+          "expected_success": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e1e0b7072da8e9332a6d143e78c74eadd1030ba78bae54574a3d1af8ea340c9e",
+          "python_flags": [
+            "-O"
+          ]
+        },
+        {
+          "name": "missing-input",
+          "exit_code": 1,
+          "test_passed": true,
+          "expected_success": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "c0183bcd1305aac28487c2abcf0e368b59e4d2218e4ee5da21cea724d58212c2",
+          "python_flags": []
+        },
+        {
+          "name": "wrong-package-optimized",
+          "exit_code": 1,
+          "test_passed": true,
+          "expected_success": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "947ac7d6ae67a5936e9e70f50121cd2fadc05e4c6901ef0f8fa28c21f4ba54f8",
+          "python_flags": [
+            "-O"
+          ]
+        },
+        {
+          "name": "extra-byte",
+          "exit_code": 1,
+          "test_passed": true,
+          "expected_success": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "f24251db529a9612e6a7ec31510b3e1fdc637d19d8ce19fd8a027e6130661357",
+          "python_flags": []
+        },
+        {
+          "name": "extra-byte-optimized",
+          "exit_code": 1,
+          "test_passed": true,
+          "expected_success": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "f24251db529a9612e6a7ec31510b3e1fdc637d19d8ce19fd8a027e6130661357",
+          "python_flags": [
+            "-O"
+          ]
+        },
+        {
+          "name": "wrong-stock-optimized",
+          "exit_code": 1,
+          "test_passed": true,
+          "expected_success": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "000891aaa87aae059324344bf43ed3bb2f4a9da6b169acafb922aee05f808f89",
+          "python_flags": [
+            "-O"
+          ]
+        },
+        {
+          "name": "wrong-branch",
+          "exit_code": 1,
+          "test_passed": true,
+          "expected_success": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "dfd890c63daf0b37681274c151e10e7a4c03f32bbc1a12c3360314de2f801fea",
+          "python_flags": []
+        },
+        {
+          "name": "store-writeback-optimized",
+          "exit_code": 1,
+          "test_passed": true,
+          "expected_success": false,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "ceba32fd03b8b8118999876c9a3964258edf82703514aaabaebe23752ed1eeb0",
+          "python_flags": [
+            "-O"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nef",
+      "label": "NEF content and synthetic fixture checks",
+      "source_report_sha256": "fe9d57d8a87f8afe5c00bf3e3f25eab2105eaf43f6c354e967c8d8606ff871de",
+      "scope": "Host decode of retained files and source/producer numerical comparisons; no new firmware run. PASS_MATCH does not independently establish same-run provenance.",
+      "firmware_executed": false,
+      "qemu_started": false,
+      "test_count": 18,
+      "all_expected_outcomes_recorded": true,
+      "recorded_tool_sha256": {
+        "audit_nef.py": "62ea17797b1d9d764a9e8cb5d091bce7e401bc4b4d4d4e762a475b164f536b9b",
+        "generate_raw_fixture.py": "af4df8be8568ab5ecc21a81693d5a6499b00f4f6001be9f92aee33e0f52641da",
+        "requirements-audit.txt": "945e342e5af66af43e6d695a72abd05233aa5c23ee17fc321755b803a175d6a8"
+      },
+      "input_identities": {
+        "synthetic_fixture": {
+          "generated_bytes": 90882080,
+          "generated_sha256": "85878e2e56ee0f6bc10cc0d5dd474375e2ee67bc310d24acf955b0fa5efba293",
+          "original_sha256": "85878e2e56ee0f6bc10cc0d5dd474375e2ee67bc310d24acf955b0fa5efba293",
+          "byte_identity_by_sha256": true
+        },
+        "retained_files": [
+          {
+            "case": "historical-stock-first",
+            "status": "PASS_MATCH",
+            "nef": {
+              "bytes": 35110512,
+              "sha256": "4790abbb3b9e46ca5a7607e5e1d98140d6bf23c53a869359e7a611d4da96d03f"
+            },
+            "source": {
+              "bytes": 90882080,
+              "sha256": "85878e2e56ee0f6bc10cc0d5dd474375e2ee67bc310d24acf955b0fa5efba293",
+              "compared": true,
+              "samples_compared": 45705600,
+              "mismatches": 0
+            },
+            "producer": {
+              "bytes": 80017920,
+              "sha256": "2c2c5651e70153855714ef4337cf33a278c92285af40518feefdc0f4f8327960",
+              "compared": true,
+              "same_run_provenance_verified": false,
+              "samples_compared": 45705600,
+              "mismatches": 0
+            },
+            "decoded": {
+              "samples": 45705600,
+              "bytes": 91411200,
+              "sha256_u16le": "e3b0bf6dd2fc4c85f88f0f50e30f690c59202297b4f3a90a02d687b3259b6a3a",
+              "sha512_u16le": "4ce242acb9ef962f371fd114de4193b60007691e9e00a24861517a478816b1d969fa629ac3a6e8890ca821e02a07b096559230f511480caef67009b242cd5673"
+            },
+            "dependency_versions": {
+              "numpy": "2.4.6",
+              "rawpy": "0.26.1",
+              "libraw": [
+                0,
+                22,
+                0
+              ],
+              "Pillow": "12.3.0"
+            }
+          },
+          {
+            "case": "historical-candidate-first",
+            "status": "PASS_MATCH",
+            "nef": {
+              "bytes": 35110512,
+              "sha256": "f1991f61a364c573732bc9b164ed49bed232285f881b4bb735a03277953129d8"
+            },
+            "source": {
+              "bytes": 90882080,
+              "sha256": "85878e2e56ee0f6bc10cc0d5dd474375e2ee67bc310d24acf955b0fa5efba293",
+              "compared": true,
+              "samples_compared": 45705600,
+              "mismatches": 0
+            },
+            "producer": {
+              "bytes": 80017920,
+              "sha256": "2c2c5651e70153855714ef4337cf33a278c92285af40518feefdc0f4f8327960",
+              "compared": true,
+              "same_run_provenance_verified": false,
+              "samples_compared": 45705600,
+              "mismatches": 0
+            },
+            "decoded": {
+              "samples": 45705600,
+              "bytes": 91411200,
+              "sha256_u16le": "e3b0bf6dd2fc4c85f88f0f50e30f690c59202297b4f3a90a02d687b3259b6a3a",
+              "sha512_u16le": "4ce242acb9ef962f371fd114de4193b60007691e9e00a24861517a478816b1d969fa629ac3a6e8890ca821e02a07b096559230f511480caef67009b242cd5673"
+            },
+            "dependency_versions": {
+              "numpy": "2.4.6",
+              "rawpy": "0.26.1",
+              "libraw": [
+                0,
+                22,
+                0
+              ],
+              "Pillow": "12.3.0"
+            }
+          },
+          {
+            "case": "historical-stock-lifecycle-first",
+            "status": "PARTIAL_SOURCE_MATCH",
+            "nef": {
+              "bytes": 35110512,
+              "sha256": "b978e05996a7e7fdfaab7b8911fba20fe26b5d1318d34ac4299248b3c1ece2e9"
+            },
+            "source": {
+              "bytes": 90882080,
+              "sha256": "85878e2e56ee0f6bc10cc0d5dd474375e2ee67bc310d24acf955b0fa5efba293",
+              "compared": true,
+              "samples_compared": 45705600,
+              "mismatches": 0
+            },
+            "producer": {
+              "compared": false,
+              "same_run_provenance_verified": false
+            },
+            "decoded": {
+              "samples": 45705600,
+              "bytes": 91411200,
+              "sha256_u16le": "e3b0bf6dd2fc4c85f88f0f50e30f690c59202297b4f3a90a02d687b3259b6a3a",
+              "sha512_u16le": "4ce242acb9ef962f371fd114de4193b60007691e9e00a24861517a478816b1d969fa629ac3a6e8890ca821e02a07b096559230f511480caef67009b242cd5673"
+            },
+            "dependency_versions": {
+              "numpy": "2.4.6",
+              "rawpy": "0.26.1",
+              "libraw": [
+                0,
+                22,
+                0
+              ],
+              "Pillow": "12.3.0"
+            }
+          },
+          {
+            "case": "historical-candidate-lifecycle-first",
+            "status": "PARTIAL_SOURCE_MATCH",
+            "nef": {
+              "bytes": 35110512,
+              "sha256": "5b092c13b5af81a84dcfc0b5a899714e7b7a06b2f4ccc09ca386845bf2efaba9"
+            },
+            "source": {
+              "bytes": 90882080,
+              "sha256": "85878e2e56ee0f6bc10cc0d5dd474375e2ee67bc310d24acf955b0fa5efba293",
+              "compared": true,
+              "samples_compared": 45705600,
+              "mismatches": 0
+            },
+            "producer": {
+              "compared": false,
+              "same_run_provenance_verified": false
+            },
+            "decoded": {
+              "samples": 45705600,
+              "bytes": 91411200,
+              "sha256_u16le": "e3b0bf6dd2fc4c85f88f0f50e30f690c59202297b4f3a90a02d687b3259b6a3a",
+              "sha512_u16le": "4ce242acb9ef962f371fd114de4193b60007691e9e00a24861517a478816b1d969fa629ac3a6e8890ca821e02a07b096559230f511480caef67009b242cd5673"
+            },
+            "dependency_versions": {
+              "numpy": "2.4.6",
+              "rawpy": "0.26.1",
+              "libraw": [
+                0,
+                22,
+                0
+              ],
+              "Pillow": "12.3.0"
+            }
+          }
+        ]
+      },
+      "tests": [
+        {
+          "name": "valid-stock",
+          "exit_code": 0,
+          "test_passed": true,
+          "status": "PASS_MATCH",
+          "expected_exit_code": 0,
+          "report_sha256": "42fa091ec6ed88f2151d4501a1307ceda968768ee9b0eb7c2d846996a04e5db1",
+          "python_optimized": false
+        },
+        {
+          "name": "valid-candidate",
+          "exit_code": 0,
+          "test_passed": true,
+          "status": "PASS_MATCH",
+          "expected_exit_code": 0,
+          "report_sha256": "f6e74c12a300eb414fbdbb3848f43a5da72f793fb7e23485f783eb8835e4ccf8",
+          "python_optimized": false
+        },
+        {
+          "name": "valid-life-stock",
+          "exit_code": 0,
+          "test_passed": true,
+          "status": "PARTIAL_SOURCE_MATCH",
+          "expected_exit_code": 0,
+          "report_sha256": "774da02e48ce1e1a4b162cfa7eebcf45ebe17199d9124915fd7e7cb3d53da02c",
+          "python_optimized": false
+        },
+        {
+          "name": "valid-life-candidate",
+          "exit_code": 0,
+          "test_passed": true,
+          "status": "PARTIAL_SOURCE_MATCH",
+          "expected_exit_code": 0,
+          "report_sha256": "59bc8d2a6fbc02c7f29624bb0f1eacdab6d5cbdd13d7f7a7530026af2b5f6bac",
+          "python_optimized": false
+        },
+        {
+          "name": "decode-only",
+          "exit_code": 0,
+          "test_passed": true,
+          "status": "PASS_DECODE_ONLY",
+          "expected_exit_code": 0,
+          "report_sha256": "bea8baae0bc49aa9ac4ab51f0045939b3f9678d5938c87405c677310560064f5",
+          "python_optimized": false
+        },
+        {
+          "name": "missing-both-required",
+          "exit_code": 2,
+          "test_passed": true,
+          "status": "PASS_DECODE_ONLY",
+          "expected_exit_code": 2,
+          "report_sha256": "53ca865c92afe0712bcd0802b6ac8390228a8e55cc57ce6133c5d53ace247ede",
+          "python_optimized": false
+        },
+        {
+          "name": "missing-producer-required",
+          "exit_code": 2,
+          "test_passed": true,
+          "status": "PARTIAL_SOURCE_MATCH",
+          "expected_exit_code": 2,
+          "report_sha256": "cf73f08dbaeeda207a1b141b401733cdd6958205a0c8669ecf4a099a992f577a",
+          "python_optimized": false
+        },
+        {
+          "name": "missing-source-required",
+          "exit_code": 2,
+          "test_passed": true,
+          "status": "PARTIAL_PRODUCER_MATCH",
+          "expected_exit_code": 2,
+          "report_sha256": "d5e4c9ac3c909e35cb85e9925c718506395eaac1ae29d51438980f6c8ccccf48",
+          "python_optimized": false
+        },
+        {
+          "name": "valid-optimized",
+          "exit_code": 0,
+          "test_passed": true,
+          "status": "PASS_MATCH",
+          "expected_exit_code": 0,
+          "report_sha256": "f6e74c12a300eb414fbdbb3848f43a5da72f793fb7e23485f783eb8835e4ccf8",
+          "python_optimized": true
+        },
+        {
+          "name": "reject-truncated",
+          "exit_code": 2,
+          "test_passed": true,
+          "status": "FAIL",
+          "expected_exit_code": 2,
+          "report_sha256": "6ddc27717d9d42cbb9743ada28996515a7bce464173d587dbd89355a430165cd",
+          "python_optimized": false
+        },
+        {
+          "name": "reject-header-optimized",
+          "exit_code": 2,
+          "test_passed": true,
+          "status": "FAIL",
+          "expected_exit_code": 2,
+          "report_sha256": "bacdaec59708996a8b3afdb7b626c468182e2d82a123a0bf978924524843e8aa",
+          "python_optimized": true
+        },
+        {
+          "name": "reject-packed-fallback",
+          "exit_code": 2,
+          "test_passed": true,
+          "status": "FAIL",
+          "expected_exit_code": 2,
+          "report_sha256": "7e9e4e5574090f4fad268b6705a488e90475ba0c7dc2d053ea91f52b1f4f3304",
+          "python_optimized": false
+        },
+        {
+          "name": "reject-preview",
+          "exit_code": 2,
+          "test_passed": true,
+          "status": "FAIL",
+          "expected_exit_code": 2,
+          "report_sha256": "383d13c762fca7328fd4e2f6de29d754da71260b370543f9711aa6b7cb25b7a7",
+          "python_optimized": false
+        },
+        {
+          "name": "reject-source-sample-optimized",
+          "exit_code": 2,
+          "test_passed": true,
+          "status": "FAIL",
+          "expected_exit_code": 2,
+          "report_sha256": "8f413acba4bdaa00e7f080062345374e08d3494e866acd8144f6bb35f612b504",
+          "python_optimized": true
+        },
+        {
+          "name": "reject-producer-sample",
+          "exit_code": 2,
+          "test_passed": true,
+          "status": "FAIL",
+          "expected_exit_code": 2,
+          "report_sha256": "d1693466df285642bfff007a8f1dd35791830a2ed418ce88f781b1dfa644041a",
+          "python_optimized": false
+        },
+        {
+          "name": "reject-short-producer",
+          "exit_code": 2,
+          "test_passed": true,
+          "status": "FAIL",
+          "expected_exit_code": 2,
+          "report_sha256": "1510d02bf234ea08fdbf8c10092265c8139fd5a8802a1175546d77e818265e30",
+          "python_optimized": false
+        },
+        {
+          "name": "generator-refuses-existing",
+          "exit_code": 2,
+          "test_passed": true
+        },
+        {
+          "name": "audit-refuses-existing",
+          "exit_code": 2,
+          "test_passed": true
+        }
+      ]
+    },
+    {
+      "id": "extraction",
+      "label": "Exact original-package MAIN extraction",
+      "source_report_sha256": "8768cca9ddd696072b68207a2a4501c171e5c70075a875986a55ad47bc3f7904",
+      "scope": "Host-only extraction with user-supplied tables; no key material, package installation or target execution.",
+      "firmware_executed": false,
+      "qemu_started": false,
+      "test_count": 8,
+      "all_expected_outcomes_recorded": true,
+      "recorded_tool_sha256": {
+        "extract_main.py": "751c4cbd6f1737bfa07281372e5ec88892fbb4a15f8790a460c971941cce00a7"
+      },
+      "input_identities": {
+        "main_bytes": 81807709,
+        "main_sha256": "2b43a31c9de838f84b12416de4348a7004e65be07f853ec56ec2b10f3a8e3853"
+      },
+      "tests": [
+        {
+          "name": "valid",
+          "exit_code": 0,
+          "test_passed": true,
+          "python_optimized": false
+        },
+        {
+          "name": "refuse-existing",
+          "exit_code": 2,
+          "test_passed": true,
+          "python_optimized": false
+        },
+        {
+          "name": "wrong-key-optimized",
+          "exit_code": 2,
+          "test_passed": true,
+          "python_optimized": true
+        },
+        {
+          "name": "short-table",
+          "exit_code": 2,
+          "test_passed": true,
+          "python_optimized": false
+        },
+        {
+          "name": "duplicate-json-key",
+          "exit_code": 2,
+          "test_passed": true,
+          "python_optimized": false
+        },
+        {
+          "name": "wrong-package-sha-optimized",
+          "exit_code": 2,
+          "test_passed": true,
+          "python_optimized": true
+        },
+        {
+          "name": "missing-package",
+          "exit_code": 2,
+          "test_passed": true,
+          "python_optimized": false
+        },
+        {
+          "name": "missing-key",
+          "exit_code": 2,
+          "test_passed": true,
+          "python_optimized": false
+        }
+      ],
+      "private_baseline_byte_identical": true,
+      "extraction_receipt_sha256": "eb3715480cd66787c04f8583475ee7ee81c9d2f932eac14c8e4a728a57af28b3",
+      "external_format_reference_commit": "33426e892afd329a3b366b73776bcf53b9ac4ee8"
+    },
+    {
+      "id": "runner",
+      "label": "Runtime harness host acceptance checks",
+      "source_report_sha256": "caf4eea974e067ef9cc30b4c397c17c79aebc0cf36b813868a543c0adfd3364f",
+      "scope": "Host-only parser, input, receipt, delivery, timing, and rejection checks with test records; not a successful camera/model run.",
+      "firmware_executed": false,
+      "qemu_started": false,
+      "test_count": 30,
+      "all_expected_outcomes_recorded": true,
+      "recorded_tool_sha256": {
+        "run_experiments.py": "e19062fe8b826208e385f40223c4b1498f233eb40e9cc04060e40ea8341c86ab",
+        "route4_stream.py": "3f5c90a547afe47e0972644fbf344d2abfc65621e62a3b4c6b34b4d0da92d8d3"
+      },
+      "input_identities": {},
+      "tests": [
+        {
+          "name": "parse_no_assert_run_experiments.py",
+          "exit_code": null,
+          "test_passed": true,
+          "exit_code_note": "In-process host check; no separate exit code recorded."
+        },
+        {
+          "name": "parse_no_assert_route4_stream.py",
+          "exit_code": null,
+          "test_passed": true,
+          "exit_code_note": "In-process host check; no separate exit code recorded."
+        },
+        {
+          "name": "reject_missing_before_guest",
+          "exit_code": 1,
+          "test_passed": true,
+          "output_not_created": true
+        },
+        {
+          "name": "reject_optimized_before_guest",
+          "exit_code": 1,
+          "test_passed": true,
+          "output_not_created": true
+        },
+        {
+          "name": "identity_size_and_digest_rejections",
+          "exit_code": null,
+          "test_passed": true,
+          "exit_code_note": "In-process host check; no separate exit code recorded."
+        },
+        {
+          "name": "delivery_and_full_settle_positive",
+          "exit_code": null,
+          "test_passed": true,
+          "exit_code_note": "In-process host check; no separate exit code recorded."
+        },
+        {
+          "name": "reject_queued_not_delivered",
+          "exit_code": null,
+          "test_passed": true,
+          "exit_code_note": "In-process host check; no separate exit code recorded."
+        },
+        {
+          "name": "reject_wrong_encoded_frame",
+          "exit_code": null,
+          "test_passed": true,
+          "exit_code_note": "In-process host check; no separate exit code recorded."
+        },
+        {
+          "name": "reject_wrong_rx_pointer",
+          "exit_code": null,
+          "test_passed": true,
+          "exit_code_note": "In-process host check; no separate exit code recorded."
+        },
+        {
+          "name": "reject_wrong_dump_hash",
+          "exit_code": null,
+          "test_passed": true,
+          "exit_code_note": "In-process host check; no separate exit code recorded."
+        },
+        {
+          "name": "reject_missing_settle_mark",
+          "exit_code": null,
+          "test_passed": true,
+          "exit_code_note": "In-process host check; no separate exit code recorded."
+        },
+        {
+          "name": "reject_short_settle",
+          "exit_code": null,
+          "test_passed": true,
+          "exit_code_note": "In-process host check; no separate exit code recorded."
+        },
+        {
+          "name": "reject_wrong_final_clock",
+          "exit_code": null,
+          "test_passed": true,
+          "exit_code_note": "In-process host check; no separate exit code recorded."
+        },
+        {
+          "name": "reject_different_receipt_indices",
+          "exit_code": null,
+          "test_passed": true,
+          "exit_code_note": "In-process host check; no separate exit code recorded."
+        },
+        {
+          "name": "reject_old_pending_input",
+          "exit_code": null,
+          "test_passed": true,
+          "exit_code_note": "In-process host check; no separate exit code recorded."
+        },
+        {
+          "name": "reject_changed_actual_rx_dump",
+          "exit_code": null,
+          "test_passed": true,
+          "exit_code_note": "In-process host check; no separate exit code recorded."
+        },
+        {
+          "name": "reject_producer_snapshot_address",
+          "exit_code": null,
+          "test_passed": true,
+          "exit_code_note": "In-process host check; no separate exit code recorded."
+        },
+        {
+          "name": "reject_producer_snapshot_file",
+          "exit_code": null,
+          "test_passed": true,
+          "exit_code_note": "In-process host check; no separate exit code recorded."
+        },
+        {
+          "name": "reject_nonidle_busy_mask",
+          "exit_code": null,
+          "test_passed": true,
+          "exit_code_note": "In-process host check; no separate exit code recorded."
+        },
+        {
+          "name": "reject_nonidle_pending_contact",
+          "exit_code": null,
+          "test_passed": true,
+          "exit_code_note": "In-process host check; no separate exit code recorded."
+        },
+        {
+          "name": "actual_stream_deadline_fails_without_guest",
+          "exit_code": null,
+          "test_passed": true,
+          "exit_code_note": "In-process host check; no separate exit code recorded."
+        },
+        {
+          "name": "all_driver_dependencies_match",
+          "exit_code": null,
+          "test_passed": true,
+          "files": 25,
+          "exit_code_note": "In-process host check; no separate exit code recorded."
+        },
+        {
+          "name": "reject_build_receipt_schema",
+          "exit_code": null,
+          "test_passed": true,
+          "exit_code_note": "In-process host check; no separate exit code recorded."
+        },
+        {
+          "name": "reject_build_receipt_binary_sha256",
+          "exit_code": null,
+          "test_passed": true,
+          "exit_code_note": "In-process host check; no separate exit code recorded."
+        },
+        {
+          "name": "reject_build_receipt_binary_bytes",
+          "exit_code": null,
+          "test_passed": true,
+          "exit_code_note": "In-process host check; no separate exit code recorded."
+        },
+        {
+          "name": "reject_build_receipt_source_lock_sha256",
+          "exit_code": null,
+          "test_passed": true,
+          "exit_code_note": "In-process host check; no separate exit code recorded."
+        },
+        {
+          "name": "reject_build_receipt_overlay",
+          "exit_code": null,
+          "test_passed": true,
+          "exit_code_note": "In-process host check; no separate exit code recorded."
+        },
+        {
+          "name": "reject_build_receipt_qemu_version",
+          "exit_code": null,
+          "test_passed": true,
+          "exit_code_note": "In-process host check; no separate exit code recorded."
+        },
+        {
+          "name": "reject_build_receipt_configure_args",
+          "exit_code": null,
+          "test_passed": true,
+          "exit_code_note": "In-process host check; no separate exit code recorded."
+        },
+        {
+          "name": "reject_build_receipt_target",
+          "exit_code": null,
+          "test_passed": true,
+          "exit_code_note": "In-process host check; no separate exit code recorded."
+        }
+      ]
+    },
+    {
+      "id": "archive",
+      "label": "Archive link policy checks",
+      "source_report_sha256": "9694d54a4a1869b29db5d4093ba6de3e90449e2975de6a76eb93fce3d289de2d",
+      "scope": "Authentic link-policy acceptance and six rejection cases; this test does not extract the complete source tree or compile/run QEMU.",
+      "firmware_executed": false,
+      "qemu_started": false,
+      "test_count": 7,
+      "all_expected_outcomes_recorded": true,
+      "recorded_tool_sha256": {
+        "prepare_model.py": "a123230bb3f87c8f14c19d665434941f12b8a235cb0bc253024dec771dddceae"
+      },
+      "input_identities": {
+        "model_source_lock_sha256": "7bc39e911119c6491865f3d122e7dead1cb105baf5c3e7de3de46f2778a8823b"
+      },
+      "tests": [
+        {
+          "name": "all_72_authentic_links",
+          "exit_code": null,
+          "test_passed": true,
+          "accepted": true,
+          "create": 71,
+          "omit": 1,
+          "exit_code_note": "In-process archive-policy check; no separate exit code recorded."
+        },
+        {
+          "name": "absolute_target",
+          "exit_code": null,
+          "test_passed": true,
+          "rejected": true,
+          "exit_code_note": "In-process archive-policy check; no separate exit code recorded."
+        },
+        {
+          "name": "relative_escape",
+          "exit_code": null,
+          "test_passed": true,
+          "rejected": true,
+          "exit_code_note": "In-process archive-policy check; no separate exit code recorded."
+        },
+        {
+          "name": "indirect_escape",
+          "exit_code": null,
+          "test_passed": true,
+          "rejected": true,
+          "exit_code_note": "In-process archive-policy check; no separate exit code recorded."
+        },
+        {
+          "name": "cycle",
+          "exit_code": null,
+          "test_passed": true,
+          "rejected": true,
+          "exit_code_note": "In-process archive-policy check; no separate exit code recorded."
+        },
+        {
+          "name": "unreviewed_omission",
+          "exit_code": null,
+          "test_passed": true,
+          "rejected": true,
+          "exit_code_note": "In-process archive-policy check; no separate exit code recorded."
+        },
+        {
+          "name": "authenticated_link_target_changed",
+          "exit_code": null,
+          "test_passed": true,
+          "rejected": true,
+          "exit_code_note": "In-process archive-policy check; no separate exit code recorded."
+        }
+      ],
+      "full_source_extraction_performed_by_this_test": false
+    }
+  ]
+}

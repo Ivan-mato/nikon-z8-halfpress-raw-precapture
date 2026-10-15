@@ -1,0 +1,5 @@
+# Tested Windows host versions. Audit/fixture tools require Python >= 3.11.
+# The static patch tools retain their separate Python >= 3.10 requirement.
+numpy==2.4.6
+rawpy==0.26.1
+Pillow==12.3.0

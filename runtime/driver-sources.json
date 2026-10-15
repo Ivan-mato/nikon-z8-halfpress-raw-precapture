@@ -1,0 +1,30 @@
+{
+  "scope": "Host driver dependency lock. Model C source and build provenance are checked separately by the model build workflow.",
+  "files": {
+    "tools/boot_z8.py": "de78c910c59f37a99f762d893003ff284ded5d1d2d6e8724fc1096c2de876459",
+    "tools/capture-model-options.json": "248a65a74420062e17d43774eea3a94cc29b2e7816e77271b4683e3102eebfbf",
+    "tools/capture_peer.py": "2dccb4f3f7cd5143a87da95aad26f16fe20b4858981afa60a9a5c5e9e18cb03a",
+    "tools/ccomp_command_peer.py": "d3ade503b202299c3be1f21d48979e9598690bc25c3fa5ad4b2ac9c922a8d05c",
+    "tools/deliver_mcu_frame.py": "b0d7e0dae1eb9dd1944e6a9f295ea7920f0bc72f51c2f16e2b47660828e5a3eb",
+    "tools/extract_card_file.py": "e04e554bb2f16509a9321c03f31c2e9791ab1377c978202f36a153f34109ea3f",
+    "tools/full_guest.py": "24f3c01555dd624b0d83949f3958cb221f062b03d43bfd73aac741434579d673",
+    "tools/gpio_bindings.py": "1b6cf03114f47211a82870d58e529eb34377ee584f3e6f60d332869a1fbae134",
+    "tools/guest_transport.py": "aaa191ba60fc04fb70610d106f635b1853cc368b598426678bde883a6b2d27e6",
+    "tools/inspect_card_volume.py": "220f41e402bea3f1d10e215652e370439537a17cf571164b48d591b0dbd3b7b4",
+    "tools/mcu_frames.py": "381336dc40e7f6589f46b57529ad1c61655061e6925b165e6bcf5b035a3e84be",
+    "tools/model-properties.json": "76fad6ead8045be2fe75eebc96de320fad1e663f4e31a982675b7a08a4912ebe",
+    "tools/observe_serial_channel.py": "7a3654a788d1320ba3e49df3ee86a1808b6ba59d9be35481d709f107cff3a1c8",
+    "tools/peer-bindings.json": "ec68cf42b84e9e13cb0d802b5922fb562704f26e70aaf8931f0b4472fc2080da",
+    "tools/probe.py": "cf1a5d93de412d4b1eb20f445f279b35c525c3136e0cda450c72a90f421426c9",
+    "tools/probe_adc_capture.py": "140bdb8c18c28912f8d866b1c20baaf91b3325a2bf985f9cb93986f06a839bd9",
+    "tools/probe_graphics_image.py": "0d1934d43b8a1518b32901071ff251e3600442c88e0125146d1b07f1c6bdb23d",
+    "tools/probe_tasks.py": "0252c25729de6b2429c7667b1ce12289dfee319c666edf21433c28edafbdf73b",
+    "tools/receive_mcu_tx.py": "df255d413fe787a82966df68014207e4274cea63aa5d56191cdac14dd7474868",
+    "tools/rom_inputs.py": "5e14de68f3d8725a379d4e148d3204a8ac5e7fcb8764dc28bae63ba792e82a1b",
+    "tools/service_serial8.py": "2680b66091d6bc85d239e88176a382f109c757e7ecd58eac1296869ebba6ee74",
+    "tools/service_z8_mcu.py": "8a748a10bb665a9b5eb7115656ead1058f972146a22c926f1be9f1418512fb3f",
+    "tools/virtual_recording_card.py": "3ec682c9379f77e87ad40bd46e59f5776203ff6d1cedee1ac48181066dc93a48",
+    "tools/z8_global1_boundary_input.py": "3af2592a5746f5956664b6f26721605c548b1bfc0fd0ab11759199aadf19f3f5",
+    "tools/z8_navigation_input.py": "3c8cd2cee8a167a82e57b6323a0b12c7ac78cb12d5684be1be0a2042a622726a"
+  }
+}

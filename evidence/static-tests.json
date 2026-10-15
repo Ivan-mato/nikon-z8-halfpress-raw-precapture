@@ -1,0 +1,308 @@
+{
+  "schema": 1,
+  "scope": "New public static tools: positive and deliberately invalid inputs. One case reproduces a historical verifier defect; test_pass is not approval of that verifier.",
+  "source_test_receipt_sha256": "eb206bcb84ba5ab7df46ea7baea604831412af6073f579e1c6486ef89b9f907a",
+  "source_isolation_receipt_sha256": "e591d8d40033bffef32655e29d4554c5cb5a79755fa72d9e559fcc5d36eb057c",
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "static_only": true,
+  "firmware_executed": false,
+  "all_expected_results_observed": true,
+  "invalid_build_created_no_output": true,
+  "files": {
+    "builder": {
+      "bytes": 5553,
+      "sha256": "9514d96d1e2696455e2d6015e55a0d814e66285d3a7d512c52ccb15993ad1ad1"
+    },
+    "verifier": {
+      "bytes": 9175,
+      "sha256": "987074040f1ccec4f256f1d5497bfada9072666c668fa05c4a7cc2dc2ce9c4b5"
+    },
+    "package": {
+      "bytes": 99051117,
+      "sha256": "d67413c2ede6b9ce8887175f20700bd9fbad2a973a4820968c45503d15d80d96"
+    },
+    "stock": {
+      "bytes": 81807709,
+      "sha256": "2b43a31c9de838f84b12416de4348a7004e65be07f853ec56ec2b10f3a8e3853"
+    },
+    "candidate": {
+      "bytes": 81807709,
+      "sha256": "2f8207645aeaf8b704613f71d88abc8b27dc5141130219a0176e3ef2ecb1954e"
+    },
+    "extra_byte": {
+      "bytes": 81807709,
+      "sha256": "c4a59af73799abf360745e2d17bcdf9e66848de84459f3278ad41000a768c296"
+    },
+    "wrong_branch": {
+      "bytes": 81807709,
+      "sha256": "afaa5015e7acb1191d91bbac846ea6b3776a7339c2eb7b944cf7e3614eba7728"
+    },
+    "writeback_store": {
+      "bytes": 81807709,
+      "sha256": "c67c1de9d00474bef68dbdf7313892fd193946a5e4990f1c236e7f55bfd2ab45"
+    },
+    "historical_verifier": {
+      "bytes": 9292,
+      "sha256": "e186ba8b664b65b9aedfe63d0c0554646e1fca1b5401f5a38c899458e5d1e464"
+    },
+    "test_harness": {
+      "bytes": 6941,
+      "sha256": "69a54949c93164c2330d69b6c687fa524cf42b22ea99a9b30c5480f3404b70b0"
+    }
+  },
+  "command_templates": [
+    "python tools/build_candidate.py --package PACKAGE --stock MAIN --output-dir NEW_OUTPUT_DIR",
+    "python [ -O | -I -S ] tools/verify_candidate.py --package PACKAGE --stock MAIN --candidate CANDIDATE"
+  ],
+  "cases": [
+    {
+      "case": "build-positive",
+      "expected_success": true,
+      "returncode": 0,
+      "test_pass": true,
+      "stdout_sha256": "0f5f57be8ed3bb37144c1fc40470f6841001ca6e0d58ce6b66392ef116cdfef1",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "case": "verify-positive",
+      "expected_success": true,
+      "returncode": 0,
+      "test_pass": true,
+      "stdout_sha256": "51678a3b9c748e1dc788b65e238e5829a154de6d999ce85d039e9dbd3dd849da",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "case": "verify-positive-optimized",
+      "expected_success": true,
+      "returncode": 0,
+      "test_pass": true,
+      "stdout_sha256": "51678a3b9c748e1dc788b65e238e5829a154de6d999ce85d039e9dbd3dd849da",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "case": "build-existing-output-rejected",
+      "expected_success": false,
+      "returncode": 1,
+      "test_pass": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "22db83f49817c7a9a716106cf7b24a5c18a9dfcb397372a16347951066568937"
+    },
+    {
+      "case": "build-existing-output-rejected-optimized",
+      "expected_success": false,
+      "returncode": 1,
+      "test_pass": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "22db83f49817c7a9a716106cf7b24a5c18a9dfcb397372a16347951066568937"
+    },
+    {
+      "case": "missing-input-rejected",
+      "expected_success": false,
+      "returncode": 1,
+      "test_pass": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "373d790e4e965ef9e9f56c4d5b5d05464cf3e299ee4042185474d8fee961a608"
+    },
+    {
+      "case": "extra-byte-rejected",
+      "expected_success": false,
+      "returncode": 1,
+      "test_pass": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "d8d2adea31b360c9a3918d5a3586673efdaee89e60f897376c60d4f81e455abf"
+    },
+    {
+      "case": "extra-byte-rejected-optimized",
+      "expected_success": false,
+      "returncode": 1,
+      "test_pass": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "d8d2adea31b360c9a3918d5a3586673efdaee89e60f897376c60d4f81e455abf"
+    },
+    {
+      "case": "wrong-stock-rejected-optimized",
+      "expected_success": false,
+      "returncode": 1,
+      "test_pass": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "ace0570bf4809c583bd751d3c15daadf7d5a56cd80292a7ce838f5b8dada0a65"
+    },
+    {
+      "case": "branch-target-rejected",
+      "expected_success": false,
+      "returncode": 1,
+      "test_pass": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "d405b2afd335b5a2fa9ec25c14cd55427e075e58490b3cd25738ead4c7ed29b8"
+    },
+    {
+      "case": "store-mode-rejected-optimized",
+      "expected_success": false,
+      "returncode": 1,
+      "test_pass": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "c6ad9051757ce05ce2c07b79b9d5852b5bae3ad6d11e93d750bc3d8283520a88"
+    },
+    {
+      "case": "wrong-package-rejected-optimized",
+      "expected_success": false,
+      "returncode": 1,
+      "test_pass": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "2ab8aa94034bfe0c71a259ee149f460fba23edc640b1abfd527190593a4fb806"
+    },
+    {
+      "case": "historical-verifier-optimized-invalid-accepted",
+      "expected_success": true,
+      "returncode": 0,
+      "test_pass": true,
+      "stdout_sha256": "accb2aa8db2db8abd9f6eb90ec74cdcd0df40b30e1640a29bcdeed889e8941b9",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "historical_issue": "python -O disables historical verifier assertions; it accepted a 22-byte diff including an extra edit outside the seven allowed sites. New verifier rejects this both normally and with -O.",
+  "isolated_interpreter": {
+    "returncode": 0,
+    "scope": "one correct candidate verified with isolated interpreter and no site initialization",
+    "test_pass": true,
+    "stdout_sha256": "51678a3b9c748e1dc788b65e238e5829a154de6d999ce85d039e9dbd3dd849da",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "candidate_sha256": "2f8207645aeaf8b704613f71d88abc8b27dc5141130219a0176e3ef2ecb1954e",
+    "arguments": [
+      "-I",
+      "-S"
+    ]
+  },
+  "independent_verification": {
+    "schema": "route4-independent-static-verification-v1",
+    "decision": "PASS: exact candidate reconstruction and static instruction checks only",
+    "stock_sha256": "2b43a31c9de838f84b12416de4348a7004e65be07f853ec56ec2b10f3a8e3853",
+    "candidate_sha256": "2f8207645aeaf8b704613f71d88abc8b27dc5141130219a0176e3ef2ecb1954e",
+    "payload_bytes": 81807709,
+    "changed_bytes": 21,
+    "changed_instruction_count": 7,
+    "changed_sites": [
+      "0x40fd93bc",
+      "0x40fd940c",
+      "0x40fd94bc",
+      "0x40fd94c0",
+      "0x40fd94c4",
+      "0x40fdc858",
+      "0x40fdf6c0"
+    ],
+    "independent_decodes": [
+      {
+        "pc": "0x40fd93bc",
+        "instruction": "B",
+        "target": "0x40fd9420",
+        "signed_imm26": 25,
+        "link_register_written": false
+      },
+      {
+        "pc": "0x40fd940c",
+        "instruction": "B",
+        "target": "0x40fd95c0",
+        "signed_imm26": 109,
+        "link_register_written": false
+      },
+      {
+        "pc": "0x40fd94c4",
+        "instruction": "B",
+        "target": "0x40fd9420",
+        "signed_imm26": -41,
+        "link_register_written": false
+      },
+      {
+        "pc": "0x40fd94bc",
+        "instruction": "MOVZ W9,#1,LSL#0"
+      },
+      {
+        "pc": "0x40fd94c0",
+        "instruction": "STURB W9,[X8,#-4]",
+        "imm9_unsigned": 508,
+        "signed_displacement": -4,
+        "bytes_written": 1,
+        "writeback": false,
+        "live_x8": "0xa03bd055c",
+        "effective_address": "0xa03bd0558"
+      },
+      {
+        "pc": "0x40fdc858",
+        "instruction": "MOVZ W0,#0x23,LSL#0",
+        "original_logical": "0x24"
+      },
+      {
+        "pc": "0x40fdf6c0",
+        "instruction": "MOVZ W0,#0x23,LSL#0",
+        "original_logical": "0x24"
+      }
+    ],
+    "unchanged_branch_targets": {
+      "0x40fd9374": "0x40fd93f0",
+      "0x40fd93a0": "0x40fd94bc",
+      "0x40fd93b8": "0x40fd57ec",
+      "0x40fd9408": "0x40fd946c",
+      "0x40fd9434": "0x40fd9538",
+      "0x40fd944c": "0x40fd95a8",
+      "0x40fd9468": "0x40fd57ec",
+      "0x40fd954c": "0x40fd57ec",
+      "0x40fd9568": "0x40fd95c0",
+      "0x40fd9588": "0x40fd57ec",
+      "0x40fdc85c": "0x40fdc9a8",
+      "0x40fdf6c4": "0x40fdc9a8"
+    },
+    "original_callback_slots": {
+      "0": "0x40fdfc44",
+      "1": "0x40fdc9c8",
+      "2": "0x40fdc8ec",
+      "3": "0x40fdca40"
+    },
+    "windows": [
+      {
+        "begin": "0x40fd9350",
+        "end_exclusive": "0x40fd9600",
+        "bytes": 688,
+        "stock_sha256": "d6aef26683122c2276c1e44509c4291bb1638ac30b4b675e5b66428ab70529d3",
+        "candidate_sha256": "5e6735b0fdeb8b36c8221fb94aaf21144fd829a0e41b9569f71a4fbda5c5dd42"
+      },
+      {
+        "begin": "0x40fdc80c",
+        "end_exclusive": "0x40fdc8ec",
+        "bytes": 224,
+        "stock_sha256": "294d886f32ff71d40abbb693dfbb200589739dc793fb456447967749f61f7498",
+        "candidate_sha256": "bf34363b0f1156f16ad2527d4eaca9fd8c1943b8cff6f18bf5f6beb003a5387d"
+      },
+      {
+        "begin": "0x40fdf6bc",
+        "end_exclusive": "0x40fdf6e8",
+        "bytes": 44,
+        "stock_sha256": "a875867ef34434e362c33cf61ce2d06609ffcc29933de4fe283f9464b2799f2f",
+        "candidate_sha256": "034843b740ea35bd735d527e9707132df6c4daf12c3357f448122644971e4392"
+      },
+      {
+        "begin": "0x40fd54c8",
+        "end_exclusive": "0x40fd55cc",
+        "bytes": 260,
+        "stock_sha256": "26191b85b8c7f7cc8d7a4e22421b86510bb19acdb8c952b499b1bcc03a0582f0",
+        "candidate_sha256": "26191b85b8c7f7cc8d7a4e22421b86510bb19acdb8c952b499b1bcc03a0582f0"
+      },
+      {
+        "begin": "0x40fd57ec",
+        "end_exclusive": "0x40fd5844",
+        "bytes": 88,
+        "stock_sha256": "487abf7727a212ed249b4c41e05cdb9ff64893465c6f1a65ad9d4b03b1291f6f",
+        "candidate_sha256": "487abf7727a212ed249b4c41e05cdb9ff64893465c6f1a65ad9d4b03b1291f6f"
+      }
+    ],
+    "execution_performed": false,
+    "physical_camera_verified": false,
+    "limitations": [
+      "Not an installation artifact; module/container checksums are not rebuilt.",
+      "Static checks do not prove receiver acceptance, image writing, or camera safety.",
+      "No universal indirect-consumer or all-camera-mode coverage is claimed."
+    ],
+    "verifier_sha256": "987074040f1ccec4f256f1d5497bfada9072666c668fa05c4a7cc2dc2ce9c4b5",
+    "package_sha256": "d67413c2ede6b9ce8887175f20700bd9fbad2a973a4820968c45503d15d80d96",
+    "package_extraction_performed": false
+  }
+}

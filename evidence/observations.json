@@ -1,0 +1,2367 @@
+{
+  "schema": 2,
+  "scope": "Selected numerical observations from historical local runs, not new execution or a portable runtime reproduction package.",
+  "fresh_host_recheck": "publication-recheck.json",
+  "source_receipts": {
+    "runtime-summary.json": "a362ca1b9a43d30b721129b274995a80007921a08224764b1a0e4c1dbb96fce1",
+    "lifecycle-runtime-summary.json": "25f4bdf37a7b023035817f7026e475ee80a7d74b76f27bd6d17fb886f0bea93e",
+    "lifecycle-nef-region-comparison.json": "26b7ad7c05851c4add203ee7b6deac7b8720182e06dbb634b59d7189fc592893"
+  },
+  "original_package": {
+    "bytes": 99051117,
+    "actual_sha256": "d67413c2ede6b9ce8887175f20700bd9fbad2a973a4820968c45503d15d80d96"
+  },
+  "model_assumptions": [
+    "Synthetic NZ9RAW1 Bayer input and functional ISP/codec/storage models.",
+    "External preparation byte 45A403E7=01 and selector byte 47F5AF45=01.",
+    "z8-timed-single-model and assisted startup/controller/ROM resources.",
+    "Direct MAIN mapping; factory loader and updater not executed.",
+    "The two external bytes are not part of the seven-instruction MAIN patch."
+  ],
+  "first_frame_runs": [
+    {
+      "run_id": "route4-stock-full-002",
+      "source_result_sha256": "147915bb34a688ca7b55676b8a53a719b69be9f6475bf100c0d13b2803683283",
+      "owned_qemu_stopped": true,
+      "recorded_runtime_error": null,
+      "identities": {
+        "firmware": {
+          "bytes": 81807709,
+          "actual_sha256": "2b43a31c9de838f84b12416de4348a7004e65be07f853ec56ec2b10f3a8e3853"
+        },
+        "qemu": {
+          "bytes": 122381592,
+          "actual_sha256": "e9177cf4dca57872e7d1e4fb27af82a8d1f3ff65be027b22d36075f98af3a618"
+        },
+        "raw": {
+          "bytes": 90882080,
+          "actual_sha256": "85878e2e56ee0f6bc10cc0d5dd474375e2ee67bc310d24acf955b0fa5efba293"
+        }
+      },
+      "historical_driver_identities": [
+        {
+          "filename": "run_one_frame.py",
+          "bytes": 9270,
+          "actual_sha256": "9a684143beee153e9cd7c63a45f5c2183ded36254a6132b9c2e579f82e5ba11f"
+        },
+        {
+          "filename": "route4_stream.py",
+          "bytes": 11951,
+          "actual_sha256": "84471a2e5a8eda28af06f0d385b0f3d1ac7f31d7db53a6e18ae4af4ded3be9a8"
+        },
+        {
+          "filename": "boot_z8.py",
+          "bytes": 2886,
+          "actual_sha256": "de78c910c59f37a99f762d893003ff284ded5d1d2d6e8724fc1096c2de876459"
+        },
+        {
+          "filename": "full_guest.py",
+          "bytes": 4192,
+          "actual_sha256": "24f3c01555dd624b0d83949f3958cb221f062b03d43bfd73aac741434579d673"
+        },
+        {
+          "filename": "capture_peer.py",
+          "bytes": 4100,
+          "actual_sha256": "2dccb4f3f7cd5143a87da95aad26f16fe20b4858981afa60a9a5c5e9e18cb03a"
+        }
+      ],
+      "capture_gesture": [
+        {
+          "phase": 18,
+          "half": 0,
+          "full": 0,
+          "virtual_seconds": 42.041696278
+        },
+        {
+          "phase": 19,
+          "half": 1,
+          "full": 0,
+          "virtual_seconds": 44.124830455
+        },
+        {
+          "phase": 20,
+          "half": 1,
+          "full": 1,
+          "virtual_seconds": 46.166570829
+        },
+        {
+          "phase": 21,
+          "half": 1,
+          "full": 0,
+          "virtual_seconds": 48.457337757
+        },
+        {
+          "phase": 22,
+          "half": 0,
+          "full": 0,
+          "virtual_seconds": 50.516833589
+        }
+      ],
+      "mcu_input_observations": [
+        {
+          "index": 0,
+          "source": "boot",
+          "half_decoded": 1,
+          "full_decoded": 0,
+          "body_sha256": "107b8df63f32d8266cc89927f76864feab20657c1271ebd11858bbbbed497bd6"
+        },
+        {
+          "index": 1,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 2,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "4cca733e906e9d3e1b4621c7217f571da45ea24cab4bd8323908bd7e868d09d5"
+        },
+        {
+          "index": 3,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "d5c2406891871ed7f60e8a1ea35a1f2f8f131d80a568c0649230456d46e876eb"
+        },
+        {
+          "index": 4,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "d5c2406891871ed7f60e8a1ea35a1f2f8f131d80a568c0649230456d46e876eb"
+        },
+        {
+          "index": 5,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "d5c2406891871ed7f60e8a1ea35a1f2f8f131d80a568c0649230456d46e876eb"
+        },
+        {
+          "index": 6,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "d5c2406891871ed7f60e8a1ea35a1f2f8f131d80a568c0649230456d46e876eb"
+        },
+        {
+          "index": 7,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "4cca733e906e9d3e1b4621c7217f571da45ea24cab4bd8323908bd7e868d09d5"
+        },
+        {
+          "index": 8,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 9,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 10,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 11,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "458fc55509ee29f8ffa69fefb8c71b114a0eaba9720d8ff2a3ec974e08e939c9"
+        },
+        {
+          "index": 12,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 13,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "431a400e327b92d4030dc11467fe2ca1b90b4907c4aca7a8a702458f467d5910"
+        },
+        {
+          "index": 14,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 15,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "431a400e327b92d4030dc11467fe2ca1b90b4907c4aca7a8a702458f467d5910"
+        },
+        {
+          "index": 16,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 17,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "431a400e327b92d4030dc11467fe2ca1b90b4907c4aca7a8a702458f467d5910"
+        },
+        {
+          "index": 18,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 19,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "431a400e327b92d4030dc11467fe2ca1b90b4907c4aca7a8a702458f467d5910"
+        },
+        {
+          "index": 20,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 21,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "431a400e327b92d4030dc11467fe2ca1b90b4907c4aca7a8a702458f467d5910"
+        },
+        {
+          "index": 22,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 23,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "431a400e327b92d4030dc11467fe2ca1b90b4907c4aca7a8a702458f467d5910"
+        },
+        {
+          "index": 24,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 25,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "431a400e327b92d4030dc11467fe2ca1b90b4907c4aca7a8a702458f467d5910"
+        },
+        {
+          "index": 26,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 27,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "431a400e327b92d4030dc11467fe2ca1b90b4907c4aca7a8a702458f467d5910"
+        },
+        {
+          "index": 28,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 29,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "431a400e327b92d4030dc11467fe2ca1b90b4907c4aca7a8a702458f467d5910"
+        },
+        {
+          "index": 30,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 31,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "431a400e327b92d4030dc11467fe2ca1b90b4907c4aca7a8a702458f467d5910"
+        },
+        {
+          "index": 32,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 33,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "6f61486569e86c6507cc2ee050aa08ef4715e524d22d182186aab382a9ecf011"
+        },
+        {
+          "index": 34,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 35,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "35915e6f7b3da4bcd3f3f1d1bfe134a49c4c141dea48fd945515d5bcf1b7d095"
+        },
+        {
+          "index": 36,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 37,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "6f61486569e86c6507cc2ee050aa08ef4715e524d22d182186aab382a9ecf011"
+        },
+        {
+          "index": 38,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 39,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "458fc55509ee29f8ffa69fefb8c71b114a0eaba9720d8ff2a3ec974e08e939c9"
+        },
+        {
+          "index": 40,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 41,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "458fc55509ee29f8ffa69fefb8c71b114a0eaba9720d8ff2a3ec974e08e939c9"
+        },
+        {
+          "index": 42,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 43,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 44,
+          "source": "external queue",
+          "half_decoded": 1,
+          "full_decoded": 0,
+          "body_sha256": "107b8df63f32d8266cc89927f76864feab20657c1271ebd11858bbbbed497bd6"
+        },
+        {
+          "index": 45,
+          "source": "external queue",
+          "half_decoded": 1,
+          "full_decoded": 1,
+          "body_sha256": "2ecc861e0588b0fe69994f529325762d4e941477e8b6a089d2e66974ec058ab8"
+        },
+        {
+          "index": 46,
+          "source": "external queue",
+          "half_decoded": 1,
+          "full_decoded": 0,
+          "body_sha256": "107b8df63f32d8266cc89927f76864feab20657c1271ebd11858bbbbed497bd6"
+        },
+        {
+          "index": 47,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        }
+      ],
+      "gpio_input_observations": [
+        {
+          "index": 0,
+          "value": 0,
+          "half_decoded": 0,
+          "full_decoded": 0
+        },
+        {
+          "index": 1,
+          "value": 1,
+          "half_decoded": 1,
+          "full_decoded": 0
+        },
+        {
+          "index": 2,
+          "value": 3,
+          "half_decoded": 1,
+          "full_decoded": 1
+        },
+        {
+          "index": 3,
+          "value": 1,
+          "half_decoded": 1,
+          "full_decoded": 0
+        },
+        {
+          "index": 4,
+          "value": 0,
+          "half_decoded": 0,
+          "full_decoded": 0
+        }
+      ],
+      "all_mcu_full_values": [
+        0,
+        1
+      ],
+      "all_gpio_full_values": [
+        0,
+        1
+      ],
+      "recorded_stderr_marker_counts": {
+        "unmodeled": 6
+      },
+      "source_stderr_sha256": "10dd26011696f331ed4498363765a7e8baff86624caa5f68b73571b2f39ae837",
+      "final_nef_count": 1,
+      "nef_content_audits": [
+        {
+          "status": "PASS_FIRST_FILE",
+          "single_file_decode_passed": true,
+          "nef_bytes": 35110512,
+          "nef_sha256": "4790abbb3b9e46ca5a7607e5e1d98140d6bf23c53a869359e7a611d4da96d03f",
+          "nikon_lossless14_profile": true,
+          "packed_size_fallback_excluded": true,
+          "same_run_producer_match_proven": true,
+          "adobe_cross_decode_performed": false,
+          "rawpy": "0.27.1",
+          "libraw": [
+            0,
+            22,
+            1
+          ],
+          "numpy": "2.5.4",
+          "tool_sha256": "e683800fc40b1b278c178921aae3c8c5a258154f3c73acafae8321914afab98a",
+          "source_content_audit_sha256": "f7b4ff62a15f14e542b1177aca0370e4127c752f31951b79dd7afb32a0de4f21",
+          "nef_file_identity_rechecked_during_publication_review": true,
+          "decoder_rerun_during_publication_review": true,
+          "fresh_decode_evidence": "publication-recheck.json",
+          "decoded": {
+            "shape": [
+              5520,
+              8280
+            ],
+            "samples": 45705600,
+            "bytes": 91411200,
+            "samples_compared": 45705600,
+            "input_mismatches": 0,
+            "sha256_u16le": "e3b0bf6dd2fc4c85f88f0f50e30f690c59202297b4f3a90a02d687b3259b6a3a",
+            "sha512_u16le": "4ce242acb9ef962f371fd114de4193b60007691e9e00a24861517a478816b1d969fa629ac3a6e8890ca821e02a07b096559230f511480caef67009b242cd5673",
+            "sha256_equals_empty_digest": false
+          },
+          "producer": {
+            "bytes": 80017920,
+            "sha256": "2c2c5651e70153855714ef4337cf33a278c92285af40518feefdc0f4f8327960",
+            "compared": true,
+            "provenance_verified": true,
+            "samples_compared": 45705600,
+            "sample_mismatches": 0
+          },
+          "previews": [
+            {
+              "bytes": 6580,
+              "size": [
+                160,
+                120
+              ],
+              "sha256": "31353d4020118c88d09531c3a7d26bcabb9ab4fbb8c9da53ee248a6769897af2"
+            },
+            {
+              "bytes": 434781,
+              "size": [
+                8256,
+                5504
+              ],
+              "sha256": "9fb5f08383f216ea9f58417dc4f2b950321b4669c8a7e7ee853363d962759ada"
+            },
+            {
+              "bytes": 113419,
+              "size": [
+                1620,
+                1080
+              ],
+              "sha256": "51ce270bfb192f36bad04bc1246874c1695b3a35e1fd3e917bf0a9e03d04f4cc"
+            }
+          ],
+          "raw_strip": {
+            "bytes": 34338928,
+            "sha256": "f0c96e25d160459bfcb185ad648f904bd62d9028a1a5dd605947733045d22564"
+          },
+          "linearization": {
+            "bytes": 46,
+            "sha256": "097157ad8c916ab3a5b5d00cffc6a0893ccb8d24d02082de92924a8b08ed1372"
+          }
+        }
+      ]
+    },
+    {
+      "run_id": "route4-stock-half-002",
+      "source_result_sha256": "63681bf02b2780b6fa80e7667ad42aa243acbdc2c992d5203e90ed1a6679e94d",
+      "owned_qemu_stopped": true,
+      "recorded_runtime_error": null,
+      "identities": {
+        "firmware": {
+          "bytes": 81807709,
+          "actual_sha256": "2b43a31c9de838f84b12416de4348a7004e65be07f853ec56ec2b10f3a8e3853"
+        },
+        "qemu": {
+          "bytes": 122381592,
+          "actual_sha256": "e9177cf4dca57872e7d1e4fb27af82a8d1f3ff65be027b22d36075f98af3a618"
+        },
+        "raw": {
+          "bytes": 90882080,
+          "actual_sha256": "85878e2e56ee0f6bc10cc0d5dd474375e2ee67bc310d24acf955b0fa5efba293"
+        }
+      },
+      "historical_driver_identities": [
+        {
+          "filename": "run_one_frame.py",
+          "bytes": 9270,
+          "actual_sha256": "9a684143beee153e9cd7c63a45f5c2183ded36254a6132b9c2e579f82e5ba11f"
+        },
+        {
+          "filename": "route4_stream.py",
+          "bytes": 11951,
+          "actual_sha256": "84471a2e5a8eda28af06f0d385b0f3d1ac7f31d7db53a6e18ae4af4ded3be9a8"
+        },
+        {
+          "filename": "boot_z8.py",
+          "bytes": 2886,
+          "actual_sha256": "de78c910c59f37a99f762d893003ff284ded5d1d2d6e8724fc1096c2de876459"
+        },
+        {
+          "filename": "full_guest.py",
+          "bytes": 4192,
+          "actual_sha256": "24f3c01555dd624b0d83949f3958cb221f062b03d43bfd73aac741434579d673"
+        },
+        {
+          "filename": "capture_peer.py",
+          "bytes": 4100,
+          "actual_sha256": "2dccb4f3f7cd5143a87da95aad26f16fe20b4858981afa60a9a5c5e9e18cb03a"
+        }
+      ],
+      "capture_gesture": [
+        {
+          "phase": 18,
+          "half": 0,
+          "full": 0,
+          "virtual_seconds": 41.735629947
+        },
+        {
+          "phase": 19,
+          "half": 1,
+          "full": 0,
+          "virtual_seconds": 43.81683019
+        },
+        {
+          "phase": 20,
+          "half": 1,
+          "full": 0,
+          "virtual_seconds": 45.917633562
+        },
+        {
+          "phase": 21,
+          "half": 1,
+          "full": 0,
+          "virtual_seconds": 47.94565306
+        },
+        {
+          "phase": 22,
+          "half": 0,
+          "full": 0,
+          "virtual_seconds": 49.977612838
+        }
+      ],
+      "mcu_input_observations": [
+        {
+          "index": 0,
+          "source": "boot",
+          "half_decoded": 1,
+          "full_decoded": 0,
+          "body_sha256": "107b8df63f32d8266cc89927f76864feab20657c1271ebd11858bbbbed497bd6"
+        },
+        {
+          "index": 1,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 2,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "4cca733e906e9d3e1b4621c7217f571da45ea24cab4bd8323908bd7e868d09d5"
+        },
+        {
+          "index": 3,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "d5c2406891871ed7f60e8a1ea35a1f2f8f131d80a568c0649230456d46e876eb"
+        },
+        {
+          "index": 4,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "d5c2406891871ed7f60e8a1ea35a1f2f8f131d80a568c0649230456d46e876eb"
+        },
+        {
+          "index": 5,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "d5c2406891871ed7f60e8a1ea35a1f2f8f131d80a568c0649230456d46e876eb"
+        },
+        {
+          "index": 6,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "d5c2406891871ed7f60e8a1ea35a1f2f8f131d80a568c0649230456d46e876eb"
+        },
+        {
+          "index": 7,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "4cca733e906e9d3e1b4621c7217f571da45ea24cab4bd8323908bd7e868d09d5"
+        },
+        {
+          "index": 8,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 9,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 10,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 11,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "458fc55509ee29f8ffa69fefb8c71b114a0eaba9720d8ff2a3ec974e08e939c9"
+        },
+        {
+          "index": 12,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 13,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "431a400e327b92d4030dc11467fe2ca1b90b4907c4aca7a8a702458f467d5910"
+        },
+        {
+          "index": 14,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 15,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "431a400e327b92d4030dc11467fe2ca1b90b4907c4aca7a8a702458f467d5910"
+        },
+        {
+          "index": 16,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 17,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "431a400e327b92d4030dc11467fe2ca1b90b4907c4aca7a8a702458f467d5910"
+        },
+        {
+          "index": 18,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 19,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "431a400e327b92d4030dc11467fe2ca1b90b4907c4aca7a8a702458f467d5910"
+        },
+        {
+          "index": 20,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 21,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "431a400e327b92d4030dc11467fe2ca1b90b4907c4aca7a8a702458f467d5910"
+        },
+        {
+          "index": 22,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 23,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "431a400e327b92d4030dc11467fe2ca1b90b4907c4aca7a8a702458f467d5910"
+        },
+        {
+          "index": 24,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 25,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "431a400e327b92d4030dc11467fe2ca1b90b4907c4aca7a8a702458f467d5910"
+        },
+        {
+          "index": 26,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 27,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "431a400e327b92d4030dc11467fe2ca1b90b4907c4aca7a8a702458f467d5910"
+        },
+        {
+          "index": 28,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 29,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "431a400e327b92d4030dc11467fe2ca1b90b4907c4aca7a8a702458f467d5910"
+        },
+        {
+          "index": 30,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 31,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "431a400e327b92d4030dc11467fe2ca1b90b4907c4aca7a8a702458f467d5910"
+        },
+        {
+          "index": 32,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 33,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "6f61486569e86c6507cc2ee050aa08ef4715e524d22d182186aab382a9ecf011"
+        },
+        {
+          "index": 34,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 35,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "35915e6f7b3da4bcd3f3f1d1bfe134a49c4c141dea48fd945515d5bcf1b7d095"
+        },
+        {
+          "index": 36,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 37,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "6f61486569e86c6507cc2ee050aa08ef4715e524d22d182186aab382a9ecf011"
+        },
+        {
+          "index": 38,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 39,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "458fc55509ee29f8ffa69fefb8c71b114a0eaba9720d8ff2a3ec974e08e939c9"
+        },
+        {
+          "index": 40,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 41,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "458fc55509ee29f8ffa69fefb8c71b114a0eaba9720d8ff2a3ec974e08e939c9"
+        },
+        {
+          "index": 42,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 43,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 44,
+          "source": "external queue",
+          "half_decoded": 1,
+          "full_decoded": 0,
+          "body_sha256": "107b8df63f32d8266cc89927f76864feab20657c1271ebd11858bbbbed497bd6"
+        },
+        {
+          "index": 45,
+          "source": "external queue",
+          "half_decoded": 1,
+          "full_decoded": 0,
+          "body_sha256": "107b8df63f32d8266cc89927f76864feab20657c1271ebd11858bbbbed497bd6"
+        },
+        {
+          "index": 46,
+          "source": "external queue",
+          "half_decoded": 1,
+          "full_decoded": 0,
+          "body_sha256": "107b8df63f32d8266cc89927f76864feab20657c1271ebd11858bbbbed497bd6"
+        },
+        {
+          "index": 47,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        }
+      ],
+      "gpio_input_observations": [
+        {
+          "index": 0,
+          "value": 0,
+          "half_decoded": 0,
+          "full_decoded": 0
+        },
+        {
+          "index": 1,
+          "value": 1,
+          "half_decoded": 1,
+          "full_decoded": 0
+        },
+        {
+          "index": 2,
+          "value": 1,
+          "half_decoded": 1,
+          "full_decoded": 0
+        },
+        {
+          "index": 3,
+          "value": 1,
+          "half_decoded": 1,
+          "full_decoded": 0
+        },
+        {
+          "index": 4,
+          "value": 0,
+          "half_decoded": 0,
+          "full_decoded": 0
+        }
+      ],
+      "all_mcu_full_values": [
+        0
+      ],
+      "all_gpio_full_values": [
+        0
+      ],
+      "recorded_stderr_marker_counts": {
+        "unmodeled": 1
+      },
+      "source_stderr_sha256": "9cd1d8b46d55dad064e1d8fb45e723f3a733192745df2e610a52aff05af740db",
+      "final_nef_count": 0,
+      "nef_content_audits": []
+    },
+    {
+      "run_id": "route4-candidate-half-002",
+      "source_result_sha256": "c181768b11718eb36dcabc7acc8a4c5202d901d3333c431804c00d1148601ba9",
+      "owned_qemu_stopped": true,
+      "recorded_runtime_error": null,
+      "identities": {
+        "firmware": {
+          "bytes": 81807709,
+          "actual_sha256": "2f8207645aeaf8b704613f71d88abc8b27dc5141130219a0176e3ef2ecb1954e"
+        },
+        "qemu": {
+          "bytes": 122381592,
+          "actual_sha256": "e9177cf4dca57872e7d1e4fb27af82a8d1f3ff65be027b22d36075f98af3a618"
+        },
+        "raw": {
+          "bytes": 90882080,
+          "actual_sha256": "85878e2e56ee0f6bc10cc0d5dd474375e2ee67bc310d24acf955b0fa5efba293"
+        }
+      },
+      "historical_driver_identities": [
+        {
+          "filename": "run_one_frame.py",
+          "bytes": 9270,
+          "actual_sha256": "9a684143beee153e9cd7c63a45f5c2183ded36254a6132b9c2e579f82e5ba11f"
+        },
+        {
+          "filename": "route4_stream.py",
+          "bytes": 11951,
+          "actual_sha256": "84471a2e5a8eda28af06f0d385b0f3d1ac7f31d7db53a6e18ae4af4ded3be9a8"
+        },
+        {
+          "filename": "boot_z8.py",
+          "bytes": 2886,
+          "actual_sha256": "de78c910c59f37a99f762d893003ff284ded5d1d2d6e8724fc1096c2de876459"
+        },
+        {
+          "filename": "full_guest.py",
+          "bytes": 4192,
+          "actual_sha256": "24f3c01555dd624b0d83949f3958cb221f062b03d43bfd73aac741434579d673"
+        },
+        {
+          "filename": "capture_peer.py",
+          "bytes": 4100,
+          "actual_sha256": "2dccb4f3f7cd5143a87da95aad26f16fe20b4858981afa60a9a5c5e9e18cb03a"
+        }
+      ],
+      "capture_gesture": [
+        {
+          "phase": 18,
+          "half": 0,
+          "full": 0,
+          "virtual_seconds": 41.616603241
+        },
+        {
+          "phase": 19,
+          "half": 1,
+          "full": 0,
+          "virtual_seconds": 43.912227854
+        },
+        {
+          "phase": 20,
+          "half": 1,
+          "full": 0,
+          "virtual_seconds": 45.944193555
+        },
+        {
+          "phase": 21,
+          "half": 1,
+          "full": 0,
+          "virtual_seconds": 48.106499225
+        },
+        {
+          "phase": 22,
+          "half": 0,
+          "full": 0,
+          "virtual_seconds": 50.218695588
+        }
+      ],
+      "mcu_input_observations": [
+        {
+          "index": 0,
+          "source": "boot",
+          "half_decoded": 1,
+          "full_decoded": 0,
+          "body_sha256": "107b8df63f32d8266cc89927f76864feab20657c1271ebd11858bbbbed497bd6"
+        },
+        {
+          "index": 1,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 2,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "4cca733e906e9d3e1b4621c7217f571da45ea24cab4bd8323908bd7e868d09d5"
+        },
+        {
+          "index": 3,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "d5c2406891871ed7f60e8a1ea35a1f2f8f131d80a568c0649230456d46e876eb"
+        },
+        {
+          "index": 4,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "d5c2406891871ed7f60e8a1ea35a1f2f8f131d80a568c0649230456d46e876eb"
+        },
+        {
+          "index": 5,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "d5c2406891871ed7f60e8a1ea35a1f2f8f131d80a568c0649230456d46e876eb"
+        },
+        {
+          "index": 6,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "d5c2406891871ed7f60e8a1ea35a1f2f8f131d80a568c0649230456d46e876eb"
+        },
+        {
+          "index": 7,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "4cca733e906e9d3e1b4621c7217f571da45ea24cab4bd8323908bd7e868d09d5"
+        },
+        {
+          "index": 8,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 9,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 10,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 11,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "458fc55509ee29f8ffa69fefb8c71b114a0eaba9720d8ff2a3ec974e08e939c9"
+        },
+        {
+          "index": 12,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 13,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "431a400e327b92d4030dc11467fe2ca1b90b4907c4aca7a8a702458f467d5910"
+        },
+        {
+          "index": 14,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 15,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "431a400e327b92d4030dc11467fe2ca1b90b4907c4aca7a8a702458f467d5910"
+        },
+        {
+          "index": 16,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 17,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "431a400e327b92d4030dc11467fe2ca1b90b4907c4aca7a8a702458f467d5910"
+        },
+        {
+          "index": 18,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 19,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "431a400e327b92d4030dc11467fe2ca1b90b4907c4aca7a8a702458f467d5910"
+        },
+        {
+          "index": 20,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 21,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "431a400e327b92d4030dc11467fe2ca1b90b4907c4aca7a8a702458f467d5910"
+        },
+        {
+          "index": 22,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 23,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "431a400e327b92d4030dc11467fe2ca1b90b4907c4aca7a8a702458f467d5910"
+        },
+        {
+          "index": 24,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 25,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "431a400e327b92d4030dc11467fe2ca1b90b4907c4aca7a8a702458f467d5910"
+        },
+        {
+          "index": 26,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 27,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "431a400e327b92d4030dc11467fe2ca1b90b4907c4aca7a8a702458f467d5910"
+        },
+        {
+          "index": 28,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 29,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "431a400e327b92d4030dc11467fe2ca1b90b4907c4aca7a8a702458f467d5910"
+        },
+        {
+          "index": 30,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 31,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "431a400e327b92d4030dc11467fe2ca1b90b4907c4aca7a8a702458f467d5910"
+        },
+        {
+          "index": 32,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 33,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "6f61486569e86c6507cc2ee050aa08ef4715e524d22d182186aab382a9ecf011"
+        },
+        {
+          "index": 34,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 35,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "35915e6f7b3da4bcd3f3f1d1bfe134a49c4c141dea48fd945515d5bcf1b7d095"
+        },
+        {
+          "index": 36,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 37,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "6f61486569e86c6507cc2ee050aa08ef4715e524d22d182186aab382a9ecf011"
+        },
+        {
+          "index": 38,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 39,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "458fc55509ee29f8ffa69fefb8c71b114a0eaba9720d8ff2a3ec974e08e939c9"
+        },
+        {
+          "index": 40,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 41,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "458fc55509ee29f8ffa69fefb8c71b114a0eaba9720d8ff2a3ec974e08e939c9"
+        },
+        {
+          "index": 42,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 43,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        },
+        {
+          "index": 44,
+          "source": "external queue",
+          "half_decoded": 1,
+          "full_decoded": 0,
+          "body_sha256": "107b8df63f32d8266cc89927f76864feab20657c1271ebd11858bbbbed497bd6"
+        },
+        {
+          "index": 45,
+          "source": "external queue",
+          "half_decoded": 1,
+          "full_decoded": 0,
+          "body_sha256": "107b8df63f32d8266cc89927f76864feab20657c1271ebd11858bbbbed497bd6"
+        },
+        {
+          "index": 46,
+          "source": "external queue",
+          "half_decoded": 1,
+          "full_decoded": 0,
+          "body_sha256": "107b8df63f32d8266cc89927f76864feab20657c1271ebd11858bbbbed497bd6"
+        },
+        {
+          "index": 47,
+          "source": "external queue",
+          "half_decoded": 0,
+          "full_decoded": 0,
+          "body_sha256": "3c422d16b3e2f4aecd72ca19664650943af060f48eb5b5dee07248399d3532cb"
+        }
+      ],
+      "gpio_input_observations": [
+        {
+          "index": 0,
+          "value": 0,
+          "half_decoded": 0,
+          "full_decoded": 0
+        },
+        {
+          "index": 1,
+          "value": 1,
+          "half_decoded": 1,
+          "full_decoded": 0
+        },
+        {
+          "index": 2,
+          "value": 1,
+          "half_decoded": 1,
+          "full_decoded": 0
+        },
+        {
+          "index": 3,
+          "value": 1,
+          "half_decoded": 1,
+          "full_decoded": 0
+        },
+        {
+          "index": 4,
+          "value": 0,
+          "half_decoded": 0,
+          "full_decoded": 0
+        }
+      ],
+      "all_mcu_full_values": [
+        0
+      ],
+      "all_gpio_full_values": [
+        0
+      ],
+      "recorded_stderr_marker_counts": {
+        "unmodeled": 6
+      },
+      "source_stderr_sha256": "9bf8c997183ae811848ba4fbeeb91a60fe2cf857db37dcdf91809e91b1da5711",
+      "final_nef_count": 1,
+      "nef_content_audits": [
+        {
+          "status": "PASS_FIRST_FILE",
+          "single_file_decode_passed": true,
+          "nef_bytes": 35110512,
+          "nef_sha256": "f1991f61a364c573732bc9b164ed49bed232285f881b4bb735a03277953129d8",
+          "nikon_lossless14_profile": true,
+          "packed_size_fallback_excluded": true,
+          "same_run_producer_match_proven": true,
+          "adobe_cross_decode_performed": false,
+          "rawpy": "0.27.1",
+          "libraw": [
+            0,
+            22,
+            1
+          ],
+          "numpy": "2.5.4",
+          "tool_sha256": "e683800fc40b1b278c178921aae3c8c5a258154f3c73acafae8321914afab98a",
+          "source_content_audit_sha256": "e055ec8500650dd93ed5c3240323e2b7a045fad5f8f232d4f1740a1c598a55f2",
+          "nef_file_identity_rechecked_during_publication_review": true,
+          "decoder_rerun_during_publication_review": true,
+          "fresh_decode_evidence": "publication-recheck.json",
+          "decoded": {
+            "shape": [
+              5520,
+              8280
+            ],
+            "samples": 45705600,
+            "bytes": 91411200,
+            "samples_compared": 45705600,
+            "input_mismatches": 0,
+            "sha256_u16le": "e3b0bf6dd2fc4c85f88f0f50e30f690c59202297b4f3a90a02d687b3259b6a3a",
+            "sha512_u16le": "4ce242acb9ef962f371fd114de4193b60007691e9e00a24861517a478816b1d969fa629ac3a6e8890ca821e02a07b096559230f511480caef67009b242cd5673",
+            "sha256_equals_empty_digest": false
+          },
+          "producer": {
+            "bytes": 80017920,
+            "sha256": "2c2c5651e70153855714ef4337cf33a278c92285af40518feefdc0f4f8327960",
+            "compared": true,
+            "provenance_verified": true,
+            "samples_compared": 45705600,
+            "sample_mismatches": 0
+          },
+          "previews": [
+            {
+              "bytes": 6580,
+              "size": [
+                160,
+                120
+              ],
+              "sha256": "31353d4020118c88d09531c3a7d26bcabb9ab4fbb8c9da53ee248a6769897af2"
+            },
+            {
+              "bytes": 434781,
+              "size": [
+                8256,
+                5504
+              ],
+              "sha256": "9fb5f08383f216ea9f58417dc4f2b950321b4669c8a7e7ee853363d962759ada"
+            },
+            {
+              "bytes": 113419,
+              "size": [
+                1620,
+                1080
+              ],
+              "sha256": "51ce270bfb192f36bad04bc1246874c1695b3a35e1fd3e917bf0a9e03d04f4cc"
+            }
+          ],
+          "raw_strip": {
+            "bytes": 34338928,
+            "sha256": "f0c96e25d160459bfcb185ad648f904bd62d9028a1a5dd605947733045d22564"
+          },
+          "linearization": {
+            "bytes": 46,
+            "sha256": "097157ad8c916ab3a5b5d00cffc6a0893ccb8d24d02082de92924a8b08ed1372"
+          }
+        }
+      ]
+    }
+  ],
+  "lifecycle_runs": [
+    {
+      "run_id": "route4-life-stock-full-001",
+      "source_result_sha256": "ac8dbabf16e1dbd42be05510ec2f3a9c5534b5c18722d9249c3848a4762d730c",
+      "recorded_runtime_error": "RuntimeError('Unmodeled hardware; inspect stderr.log')",
+      "owned_qemu_stopped": true,
+      "unknown_accesses": [
+        {
+          "line": 87356,
+          "cpu": 0,
+          "pc": "0x40c26848",
+          "direction": "write",
+          "addr": "0x15432004",
+          "size": 4,
+          "value": "0x103"
+        }
+      ],
+      "final_nef_count": 1,
+      "final_nefs": [
+        {
+          "bytes": 35110512,
+          "sha256": "b978e05996a7e7fdfaab7b8911fba20fe26b5d1318d34ac4299248b3c1ece2e9"
+        }
+      ],
+      "cycles": {
+        "1": {
+          "actual_inputs": [
+            {
+              "phase": 18,
+              "cycle": 1,
+              "half": 0,
+              "full": 0,
+              "virtual_seconds": 41.899181991
+            },
+            {
+              "phase": 19,
+              "cycle": 1,
+              "half": 1,
+              "full": 0,
+              "virtual_seconds": 44.187073945
+            },
+            {
+              "phase": 20,
+              "cycle": 1,
+              "half": 1,
+              "full": 1,
+              "virtual_seconds": 46.469653714
+            },
+            {
+              "phase": 21,
+              "cycle": 1,
+              "half": 1,
+              "full": 0,
+              "virtual_seconds": 48.545884258
+            },
+            {
+              "phase": 22,
+              "cycle": 1,
+              "half": 0,
+              "full": 0,
+              "virtual_seconds": 50.643769012
+            }
+          ],
+          "observed_emission_callsites": [
+            {
+              "label": "capture_full_route4_emit_1a",
+              "cpu": 1,
+              "virtual_ns": 44187380199,
+              "event_index": 19,
+              "actual_pc": "0x40fdfcb8",
+              "actual_w0": "0x1a"
+            },
+            {
+              "label": "capture_full_route4_emit_1b",
+              "cpu": 1,
+              "virtual_ns": 46469704200,
+              "event_index": 39,
+              "actual_pc": "0x40fdca34",
+              "actual_w0": "0x1b"
+            },
+            {
+              "label": "capture_full_route4_emit_d0",
+              "cpu": 1,
+              "virtual_ns": 48546159968,
+              "event_index": 78,
+              "actual_pc": "0x40fdc930",
+              "actual_w0": "0xd0"
+            },
+            {
+              "label": "capture_full_route4_emit_1d",
+              "cpu": 1,
+              "virtual_ns": 48546169840,
+              "event_index": 83,
+              "actual_pc": "0x40fdc99c",
+              "actual_w0": "0x1d"
+            },
+            {
+              "label": "capture_full_route4_emit_1c",
+              "cpu": 1,
+              "virtual_ns": 50644209770,
+              "event_index": 93,
+              "actual_pc": "0x40fdcaf4",
+              "actual_w0": "0x1c"
+            }
+          ],
+          "recorded_positive_label_counts": {
+            "capture_full_state_input": 5,
+            "capture_full_key_ready": 5,
+            "capture_full_key_inhibit": 5,
+            "capture_full_key_dispatch": 5,
+            "capture_full_ui_controller": 5,
+            "capture_full_ui_controller_target": 5,
+            "capture_full_route4_half_worker": 1,
+            "capture_full_route4_emit_1a": 1,
+            "capture_full_notify": 1,
+            "capture_full_state_key": 1,
+            "capture_full_ui_key_code": 4,
+            "capture_full_ui_screen": 4,
+            "capture_full_ui_screen_indirect": 4,
+            "capture_full_screen_mode": 4,
+            "capture_full_screen_busy": 4,
+            "capture_full_screen_filters": 4,
+            "capture_full_screen_action": 2,
+            "capture_full_gpio_store": 1,
+            "capture_full_route4_full_worker": 1,
+            "capture_full_contact_gate": 1,
+            "capture_full_contact_notify": 1,
+            "capture_full_route4_emit_1b": 1,
+            "capture_full_dispatch_guard": 1,
+            "capture_full_dispatch_state": 1,
+            "capture_full_dispatch_alternate": 1,
+            "capture_full_policy": 1,
+            "capture_full_tail": 1,
+            "capture_full_forward": 1,
+            "capture_full_app_case": 1,
+            "capture_full_app_guard": 1,
+            "capture_full_app_mode": 1,
+            "capture_full_app_indirect": 1,
+            "capture_full_app_selected_handler": 1,
+            "capture_full_method_mode": 1,
+            "capture_full_base_mode": 1,
+            "capture_full_consume": 1,
+            "capture_full_admission_flag": 1,
+            "capture_full_admission_pass": 1,
+            "capture_full_commit": 1,
+            "capture_full_latch_gate": 1,
+            "capture_full_sequence_dispatch": 1,
+            "capture_full_sequence_initial": 1,
+            "capture_full_sequence_next": 1,
+            "capture_full_raw_side_config": 1,
+            "capture_full_busy_write": 1,
+            "capture_full_raw_descriptor_source": 1,
+            "capture_full_route4_full_release_worker": 1,
+            "capture_full_route4_emit_d0": 1,
+            "capture_full_route4_emit_1d": 1,
+            "capture_full_route4_half_release_worker": 1,
+            "capture_full_route4_emit_1c": 1
+          },
+          "before_after_field_comparison": [
+            {
+              "field": "delayed_full_press",
+              "before": 0,
+              "after": 0,
+              "equal": true
+            },
+            {
+              "field": "delayed_half_release",
+              "before": 0,
+              "after": 0,
+              "equal": true
+            },
+            {
+              "field": "half_release_waiting_full",
+              "before": 0,
+              "after": 0,
+              "equal": true
+            },
+            {
+              "field": "full_before_half_pending",
+              "before": 0,
+              "after": 0,
+              "equal": true
+            },
+            {
+              "field": "remembered_half_level",
+              "before": 0,
+              "after": 0,
+              "equal": true
+            },
+            {
+              "field": "remembered_full_level",
+              "before": 0,
+              "after": 0,
+              "equal": true
+            },
+            {
+              "field": "delayed_half_press",
+              "before": 0,
+              "after": 0,
+              "equal": true
+            },
+            {
+              "field": "half_active_mask",
+              "before": 0,
+              "after": 0,
+              "equal": true
+            },
+            {
+              "field": "half_release_marker_not_zero_invariant",
+              "before": 0,
+              "after": 1,
+              "equal": false
+            },
+            {
+              "field": "full_active_mask",
+              "before": 0,
+              "after": 0,
+              "equal": true
+            },
+            {
+              "field": "half_busy_hold_mask",
+              "before": 0,
+              "after": 0,
+              "equal": true
+            },
+            {
+              "field": "full_busy_hold_mask",
+              "before": 0,
+              "after": 0,
+              "equal": true
+            },
+            {
+              "field": "additional_request_state",
+              "before": 0,
+              "after": 0,
+              "equal": true
+            },
+            {
+              "field": "application_half_started",
+              "before": 0,
+              "after": 0,
+              "equal": true
+            },
+            {
+              "field": "application_full_started",
+              "before": 0,
+              "after": 0,
+              "equal": true
+            },
+            {
+              "field": "application_half_requested",
+              "before": 0,
+              "after": 0,
+              "equal": true
+            },
+            {
+              "field": "application_half_request_mask",
+              "before": 0,
+              "after": 0,
+              "equal": true
+            },
+            {
+              "field": "application_full_requested",
+              "before": 0,
+              "after": 0,
+              "equal": true
+            },
+            {
+              "field": "application_full_request_mask",
+              "before": 0,
+              "after": 0,
+              "equal": true
+            },
+            {
+              "field": "held_input_replay_gate",
+              "before": 0,
+              "after": 0,
+              "equal": true
+            }
+          ]
+        },
+        "2": {
+          "actual_inputs": [
+            {
+              "phase": 23,
+              "cycle": 2,
+              "half": 0,
+              "full": 0,
+              "virtual_seconds": 76.11755522
+            },
+            {
+              "phase": 24,
+              "cycle": 2,
+              "half": 1,
+              "full": 0,
+              "virtual_seconds": 78.234262866
+            },
+            {
+              "phase": 25,
+              "cycle": 2,
+              "half": 1,
+              "full": 1,
+              "virtual_seconds": 80.489484536
+            },
+            {
+              "phase": 26,
+              "cycle": 2,
+              "half": 1,
+              "full": 0,
+              "virtual_seconds": 82.591351398
+            }
+          ],
+          "observed_emission_callsites": [
+            {
+              "label": "capture_full_route4_emit_1a",
+              "cpu": 1,
+              "virtual_ns": 78234716689,
+              "event_index": 113,
+              "actual_pc": "0x40fdfcb8",
+              "actual_w0": "0x1a"
+            },
+            {
+              "label": "capture_full_route4_emit_1b",
+              "cpu": 1,
+              "virtual_ns": 80489857288,
+              "event_index": 133,
+              "actual_pc": "0x40fdca34",
+              "actual_w0": "0x1b"
+            },
+            {
+              "label": "capture_full_route4_emit_d0",
+              "cpu": 1,
+              "virtual_ns": 82591956110,
+              "event_index": 171,
+              "actual_pc": "0x40fdc930",
+              "actual_w0": "0xd0"
+            },
+            {
+              "label": "capture_full_route4_emit_1d",
+              "cpu": 1,
+              "virtual_ns": 82591956280,
+              "event_index": 172,
+              "actual_pc": "0x40fdc99c",
+              "actual_w0": "0x1d"
+            }
+          ],
+          "recorded_positive_label_counts": {
+            "capture_full_state_input": 4,
+            "capture_full_key_ready": 4,
+            "capture_full_key_inhibit": 4,
+            "capture_full_key_dispatch": 4,
+            "capture_full_ui_controller": 4,
+            "capture_full_ui_controller_target": 4,
+            "capture_full_route4_half_worker": 1,
+            "capture_full_route4_emit_1a": 1,
+            "capture_full_notify": 1,
+            "capture_full_state_key": 1,
+            "capture_full_ui_key_code": 3,
+            "capture_full_ui_screen": 3,
+            "capture_full_ui_screen_indirect": 3,
+            "capture_full_screen_mode": 3,
+            "capture_full_screen_busy": 3,
+            "capture_full_screen_filters": 3,
+            "capture_full_screen_action": 2,
+            "capture_full_gpio_store": 1,
+            "capture_full_route4_full_worker": 1,
+            "capture_full_contact_gate": 1,
+            "capture_full_contact_notify": 1,
+            "capture_full_route4_emit_1b": 1,
+            "capture_full_dispatch_guard": 1,
+            "capture_full_dispatch_state": 1,
+            "capture_full_dispatch_alternate": 1,
+            "capture_full_policy": 1,
+            "capture_full_tail": 1,
+            "capture_full_forward": 1,
+            "capture_full_app_case": 1,
+            "capture_full_app_guard": 1,
+            "capture_full_app_mode": 1,
+            "capture_full_app_indirect": 1,
+            "capture_full_app_selected_handler": 1,
+            "capture_full_method_mode": 1,
+            "capture_full_base_mode": 1,
+            "capture_full_consume": 1,
+            "capture_full_admission_flag": 1,
+            "capture_full_admission_pass": 1,
+            "capture_full_commit": 1,
+            "capture_full_latch_gate": 1,
+            "capture_full_sequence_dispatch": 1,
+            "capture_full_sequence_initial": 1,
+            "capture_full_sequence_next": 1,
+            "capture_full_raw_side_config": 1,
+            "capture_full_busy_write": 1,
+            "capture_full_route4_full_release_worker": 1,
+            "capture_full_route4_emit_d0": 1,
+            "capture_full_route4_emit_1d": 1,
+            "capture_full_raw_descriptor_source": 1
+          },
+          "before_after_field_comparison": []
+        }
+      },
+      "final_raw_producer_counts": {
+        "jobs": 2,
+        "acks": 2,
+        "pending": false
+      }
+    },
+    {
+      "run_id": "route4-life-candidate-half-001",
+      "source_result_sha256": "f4fd79cb6e5ea2ac783192db23a120253c60489003ccb18a06115d29c92266d2",
+      "recorded_runtime_error": "RuntimeError('Unmodeled hardware; inspect stderr.log')",
+      "owned_qemu_stopped": true,
+      "unknown_accesses": [
+        {
+          "line": 86278,
+          "cpu": 0,
+          "pc": "0x40c26848",
+          "direction": "write",
+          "addr": "0x15432004",
+          "size": 4,
+          "value": "0x103"
+        }
+      ],
+      "final_nef_count": 1,
+      "final_nefs": [
+        {
+          "bytes": 35110512,
+          "sha256": "5b092c13b5af81a84dcfc0b5a899714e7b7a06b2f4ccc09ca386845bf2efaba9"
+        }
+      ],
+      "cycles": {
+        "1": {
+          "actual_inputs": [
+            {
+              "phase": 18,
+              "cycle": 1,
+              "half": 0,
+              "full": 0,
+              "virtual_seconds": 41.501869142
+            },
+            {
+              "phase": 19,
+              "cycle": 1,
+              "half": 1,
+              "full": 0,
+              "virtual_seconds": 43.59240643
+            },
+            {
+              "phase": 20,
+              "cycle": 1,
+              "half": 1,
+              "full": 0,
+              "virtual_seconds": 45.603734273
+            },
+            {
+              "phase": 21,
+              "cycle": 1,
+              "half": 1,
+              "full": 0,
+              "virtual_seconds": 47.828558676
+            },
+            {
+              "phase": 22,
+              "cycle": 1,
+              "half": 0,
+              "full": 0,
+              "virtual_seconds": 49.843792561
+            }
+          ],
+          "observed_emission_callsites": [
+            {
+              "label": "capture_full_route4_emit_1a",
+              "cpu": 1,
+              "virtual_ns": 43592512294,
+              "event_index": 26,
+              "actual_pc": "0x40fdfcb8",
+              "actual_w0": "0x1a"
+            },
+            {
+              "label": "capture_full_route4_emit_1b",
+              "cpu": 1,
+              "virtual_ns": 43592694750,
+              "event_index": 32,
+              "actual_pc": "0x40fdca34",
+              "actual_w0": "0x1b"
+            },
+            {
+              "label": "capture_full_route4_emit_d0",
+              "cpu": 1,
+              "virtual_ns": 49844226064,
+              "event_index": 77,
+              "actual_pc": "0x40fdc930",
+              "actual_w0": "0xd0"
+            },
+            {
+              "label": "capture_full_route4_emit_1d",
+              "cpu": 1,
+              "virtual_ns": 49844229057,
+              "event_index": 78,
+              "actual_pc": "0x40fdc99c",
+              "actual_w0": "0x1d"
+            },
+            {
+              "label": "capture_full_route4_emit_1c",
+              "cpu": 1,
+              "virtual_ns": 49844481239,
+              "event_index": 92,
+              "actual_pc": "0x40fdcaf4",
+              "actual_w0": "0x1c"
+            }
+          ],
+          "recorded_positive_label_counts": {
+            "capture_full_state_input": 5,
+            "capture_full_key_ready": 5,
+            "capture_full_key_inhibit": 5,
+            "capture_full_key_dispatch": 5,
+            "capture_full_ui_controller": 5,
+            "capture_full_ui_controller_target": 5,
+            "capture_full_gpio_store": 1,
+            "capture_full_route4_half_worker": 1,
+            "capture_full_route4_emit_1a": 1,
+            "capture_full_notify": 1,
+            "capture_full_state_key": 1,
+            "capture_full_route4_full_worker": 1,
+            "capture_full_contact_gate": 1,
+            "capture_full_contact_notify": 1,
+            "capture_full_route4_emit_1b": 1,
+            "capture_full_dispatch_guard": 1,
+            "capture_full_dispatch_state": 1,
+            "capture_full_dispatch_alternate": 1,
+            "capture_full_policy": 1,
+            "capture_full_tail": 1,
+            "capture_full_forward": 1,
+            "capture_full_app_case": 1,
+            "capture_full_app_guard": 1,
+            "capture_full_app_mode": 1,
+            "capture_full_app_indirect": 1,
+            "capture_full_app_selected_handler": 1,
+            "capture_full_method_mode": 1,
+            "capture_full_base_mode": 1,
+            "capture_full_consume": 1,
+            "capture_full_admission_flag": 1,
+            "capture_full_admission_pass": 1,
+            "capture_full_commit": 1,
+            "capture_full_ui_key_code": 2,
+            "capture_full_ui_screen": 2,
+            "capture_full_ui_screen_indirect": 2,
+            "capture_full_screen_mode": 2,
+            "capture_full_screen_busy": 2,
+            "capture_full_screen_filters": 2,
+            "capture_full_screen_action": 1,
+            "capture_full_latch_gate": 1,
+            "capture_full_sequence_dispatch": 1,
+            "capture_full_sequence_initial": 1,
+            "capture_full_sequence_next": 1,
+            "capture_full_raw_side_config": 1,
+            "capture_full_busy_write": 1,
+            "capture_full_raw_descriptor_source": 1,
+            "capture_full_route4_full_release_worker": 1,
+            "capture_full_route4_emit_d0": 1,
+            "capture_full_route4_emit_1d": 1,
+            "capture_full_route4_half_release_worker": 1,
+            "capture_full_route4_emit_1c": 1
+          },
+          "before_after_field_comparison": [
+            {
+              "field": "delayed_full_press",
+              "before": 0,
+              "after": 0,
+              "equal": true
+            },
+            {
+              "field": "delayed_half_release",
+              "before": 0,
+              "after": 0,
+              "equal": true
+            },
+            {
+              "field": "half_release_waiting_full",
+              "before": 0,
+              "after": 0,
+              "equal": true
+            },
+            {
+              "field": "full_before_half_pending",
+              "before": 0,
+              "after": 0,
+              "equal": true
+            },
+            {
+              "field": "remembered_half_level",
+              "before": 0,
+              "after": 0,
+              "equal": true
+            },
+            {
+              "field": "remembered_full_level",
+              "before": 0,
+              "after": 0,
+              "equal": true
+            },
+            {
+              "field": "delayed_half_press",
+              "before": 0,
+              "after": 0,
+              "equal": true
+            },
+            {
+              "field": "half_active_mask",
+              "before": 0,
+              "after": 0,
+              "equal": true
+            },
+            {
+              "field": "half_release_marker_not_zero_invariant",
+              "before": 0,
+              "after": 1,
+              "equal": false
+            },
+            {
+              "field": "full_active_mask",
+              "before": 0,
+              "after": 0,
+              "equal": true
+            },
+            {
+              "field": "half_busy_hold_mask",
+              "before": 0,
+              "after": 0,
+              "equal": true
+            },
+            {
+              "field": "full_busy_hold_mask",
+              "before": 0,
+              "after": 0,
+              "equal": true
+            },
+            {
+              "field": "additional_request_state",
+              "before": 0,
+              "after": 0,
+              "equal": true
+            },
+            {
+              "field": "application_half_started",
+              "before": 0,
+              "after": 0,
+              "equal": true
+            },
+            {
+              "field": "application_full_started",
+              "before": 0,
+              "after": 0,
+              "equal": true
+            },
+            {
+              "field": "application_half_requested",
+              "before": 0,
+              "after": 0,
+              "equal": true
+            },
+            {
+              "field": "application_half_request_mask",
+              "before": 0,
+              "after": 0,
+              "equal": true
+            },
+            {
+              "field": "application_full_requested",
+              "before": 0,
+              "after": 0,
+              "equal": true
+            },
+            {
+              "field": "application_full_request_mask",
+              "before": 0,
+              "after": 0,
+              "equal": true
+            },
+            {
+              "field": "held_input_replay_gate",
+              "before": 0,
+              "after": 0,
+              "equal": true
+            }
+          ]
+        },
+        "2": {
+          "actual_inputs": [
+            {
+              "phase": 23,
+              "cycle": 2,
+              "half": 0,
+              "full": 0,
+              "virtual_seconds": 74.958411663
+            },
+            {
+              "phase": 24,
+              "cycle": 2,
+              "half": 1,
+              "full": 0,
+              "virtual_seconds": 77.215589068
+            },
+            {
+              "phase": 25,
+              "cycle": 2,
+              "half": 1,
+              "full": 0,
+              "virtual_seconds": 79.325450034
+            }
+          ],
+          "observed_emission_callsites": [
+            {
+              "label": "capture_full_route4_emit_1a",
+              "cpu": 1,
+              "virtual_ns": 77215862535,
+              "event_index": 101,
+              "actual_pc": "0x40fdfcb8",
+              "actual_w0": "0x1a"
+            },
+            {
+              "label": "capture_full_route4_emit_1b",
+              "cpu": 1,
+              "virtual_ns": 77216035534,
+              "event_index": 107,
+              "actual_pc": "0x40fdca34",
+              "actual_w0": "0x1b"
+            }
+          ],
+          "recorded_positive_label_counts": {
+            "capture_full_state_input": 3,
+            "capture_full_key_ready": 3,
+            "capture_full_key_inhibit": 3,
+            "capture_full_key_dispatch": 3,
+            "capture_full_ui_controller": 3,
+            "capture_full_ui_controller_target": 3,
+            "capture_full_gpio_store": 1,
+            "capture_full_route4_half_worker": 1,
+            "capture_full_route4_emit_1a": 1,
+            "capture_full_notify": 1,
+            "capture_full_state_key": 1,
+            "capture_full_route4_full_worker": 1,
+            "capture_full_contact_gate": 1,
+            "capture_full_contact_notify": 1,
+            "capture_full_route4_emit_1b": 1,
+            "capture_full_dispatch_guard": 1,
+            "capture_full_dispatch_state": 1,
+            "capture_full_dispatch_alternate": 1,
+            "capture_full_policy": 1,
+            "capture_full_tail": 1,
+            "capture_full_forward": 1,
+            "capture_full_app_case": 1,
+            "capture_full_app_guard": 1,
+            "capture_full_app_mode": 1,
+            "capture_full_app_indirect": 1,
+            "capture_full_app_selected_handler": 1,
+            "capture_full_method_mode": 1,
+            "capture_full_base_mode": 1,
+            "capture_full_consume": 1,
+            "capture_full_admission_flag": 1,
+            "capture_full_admission_pass": 1,
+            "capture_full_commit": 1,
+            "capture_full_latch_gate": 1,
+            "capture_full_sequence_dispatch": 1,
+            "capture_full_sequence_initial": 1,
+            "capture_full_sequence_next": 1,
+            "capture_full_ui_key_code": 1,
+            "capture_full_ui_screen": 1,
+            "capture_full_ui_screen_indirect": 1,
+            "capture_full_screen_mode": 1,
+            "capture_full_screen_busy": 1,
+            "capture_full_screen_filters": 1,
+            "capture_full_screen_action": 1,
+            "capture_full_raw_side_config": 1,
+            "capture_full_busy_write": 1,
+            "capture_full_raw_descriptor_source": 1
+          },
+          "before_after_field_comparison": []
+        }
+      },
+      "final_raw_producer_counts": {
+        "jobs": 2,
+        "acks": 2,
+        "pending": false
+      }
+    }
+  ],
+  "limitations": [
+    "Raw run logs, memory windows, virtual cards, NEFs, model binaries and firmware are not bundled.",
+    "Receipt hashes identify retained source records; hashes alone do not prove their claims.",
+    "Single LibRaw decoder in the recorded route4 audit, not two independent decoder implementations.",
+    "Boot MCU input includes HALF=1/FULL=0; capture-stage initial released state was a separate observation.",
+    "No physical camera, sustained burst or retained pre-trigger-frame acceptance."
+  ],
+  "overlap_test": {
+    "qemu_started": false,
+    "outcome": "Not executed: WSL read-only filesystem prevented Guest output-directory creation.",
+    "source_execution_receipt_sha256": "0378cfd617e93e178d0441b89f2e822c0d778af1be26ea82c4d9a3c58028b02d"
+  },
+  "errata": [
+    "Older content-audit policy prose incorrectly called the nonempty pixel SHA256 anomalous. The actual hash differs from SHA256(empty); numeric results were not changed.",
+    "Older producer expected_matches compared the observed file hash with itself; it is not independent validation and is not exported here.",
+    "The source overlap summary says pending because the directory does not exist; the execution receipt establishes environment failure before QEMU startup."
+  ]
+}

@@ -1,0 +1,175 @@
+# SPDX-License-Identifier: GPL-2.0-or-later
+# Preserve original upstream source copyright and license notices.
+# Exact local experimental changes used by the historical model.
+
+--- a/system/physmem.c
++++ b/system/physmem.c
+@@ -2897,6 +2897,63 @@
+ 
+ static MemTxResult flatview_read(FlatView *fv, hwaddr addr,
+                                  MemTxAttrs attrs, void *buf, hwaddr len);
++/* ==== 本项目插入：物理内存写观察点 ====
++ * 目的：定位固件对某个 RAM 地址的写入者（RAM 写入不经过设备模型，故打在公共写路径上）。
++ * 用法：环境变量 Z8_WATCH=lo-hi（十六进制，半开区间），例如 Z8_WATCH=a03bc1ea4-a03bc1ea8
++ * 默认关闭；未设置时只有一次 getenv 的开销。
++ */
++static uint64_t z8_watch_lo, z8_watch_hi;
++static uint64_t z8_watch_off;
++static bool z8_watch_off_valid;
++static bool z8_watch_inited;
++
++static void z8_watch_init(void)
++{
++    const char *e = getenv("Z8_WATCH");
++    unsigned long long lo = 0, hi = 0;
++    z8_watch_inited = true;
++    if (e && *e && sscanf(e, "%llx-%llx", &lo, &hi) == 2 && hi > lo) {
++        z8_watch_lo = lo;
++        z8_watch_hi = hi;
++        fprintf(stderr, "Z8WATCH armed 0x%llx-0x%llx\n", lo, hi);
++        fflush(stderr);
++    }
++    const char *o = getenv("Z8_WATCH_OFF");
++    if (o && *o) {
++        unsigned long long off = 0;
++        if (sscanf(o, "%llx", &off) == 1) {
++            z8_watch_off = off & 0xfff;
++            z8_watch_off_valid = true;
++            fprintf(stderr, "Z8WATCH page-offset mode 0x%llx\n", z8_watch_off);
++            fflush(stderr);
++        }
++    }
++}
++
++static void z8_watch_check(hwaddr addr, const void *buf, hwaddr len)
++{
++    if (!z8_watch_inited) {
++        z8_watch_init();
++    }
++    if (z8_watch_off_valid) {
++        if ((addr & 0xfff) != z8_watch_off) {
++            return;
++        }
++    } else if (!z8_watch_hi || addr >= z8_watch_hi || addr + len <= z8_watch_lo) {
++        return;
++    }
++    CPUState *cs = current_cpu;
++    uint64_t pc = (cs && cs->cc && cs->cc->get_pc) ? (uint64_t)cs->cc->get_pc(cs) : 0;
++    uint64_t val = 0;
++    if (len <= 8) {
++        memcpy(&val, buf, len);
++    }
++    fprintf(stderr, "Z8WATCH cpu=%d pc=0x%" PRIx64 " addr=0x%" HWADDR_PRIx
++            " len=%" HWADDR_PRIu " value=0x%" PRIx64 "\n",
++            cs ? cs->cpu_index : -1, pc, addr, len, val);
++    fflush(stderr);
++}
++
+ static MemTxResult flatview_write(FlatView *fv, hwaddr addr, MemTxAttrs attrs,
+                                   const void *buf, hwaddr len);
+ static bool flatview_access_valid(FlatView *fv, hwaddr addr, hwaddr len,
+@@ -3319,6 +3376,8 @@
+     if (!flatview_access_allowed(mr, attrs, mr_addr, l)) {
+         return MEMTX_ACCESS_ERROR;
+     }
++    /* ==== 本项目插入：写观察点 ==== */
++    z8_watch_check(addr, buf, len);
+     return flatview_write_continue(fv, addr, attrs, buf, len,
+                                    mr_addr, l, mr);
+ }
+--- a/accel/tcg/cputlb.c
++++ b/accel/tcg/cputlb.c
+@@ -2620,9 +2620,63 @@
+     }
+ }
+ 
++/* ==== 本项目插入：存储观察点（RAM/MMIO 都经过 do_st_N）====
++ * 用途：定位固件对指定【虚拟】地址的写入指令。环境变量 Z8_WATCH=lo-hi（十六进制，半开区间）。
++ * ra 在 AArch64 上就是触发该存储的 guest 指令地址，比取当前 PC 更准。默认关闭。
++ */
++static uint64_t z8_st_lo, z8_st_hi;
++static bool z8_st_inited;
++static uint64_t z8_st_hits;
++static uint64_t z8_st_off;
++static bool z8_st_off_valid;
++
++static inline void z8_st_watch2(CPUState *cpu, uint64_t vaddr, uint64_t phys,
++                                uint64_t val, unsigned size, uintptr_t ra);
++
++static inline void z8_st_watch(CPUState *cpu, uint64_t addr, uint64_t val,
++                               unsigned size, uintptr_t ra)
++{
++    if (!z8_st_inited) {
++        const char *e = getenv("Z8_WATCH");
++        unsigned long long lo = 0, hi = 0;
++        z8_st_inited = true;
++        if (e && *e && sscanf(e, "%llx-%llx", &lo, &hi) == 2 && hi > lo) {
++            z8_st_lo = lo; z8_st_hi = hi;
++            fprintf(stderr, "Z8STWATCH armed 0x%llx-0x%llx\n", lo, hi);
++            fflush(stderr);
++        }
++        const char *o = getenv("Z8_WATCH_OFF");
++        if (o && *o) {
++            unsigned long long off = 0;
++            if (sscanf(o, "%llx", &off) == 1) {
++                z8_st_off = off & 0xfff;
++                z8_st_off_valid = true;
++                fprintf(stderr, "Z8STWATCH page-offset mode 0x%llx\n", z8_st_off);
++                fflush(stderr);
++            }
++        }
++    }
++    if (z8_st_off_valid) {
++        if ((addr & 0xfff) != z8_st_off) {
++            return;
++        }
++    } else if (!z8_st_hi || addr >= z8_st_hi || addr + size <= z8_st_lo) {
++        return;
++    }
++    (void)0;
++    z8_st_hits++;
++    fprintf(stderr, "Z8STWATCH n=%" PRIu64 " cpu=%d ra=0x%" PRIx64 " addr=0x%" PRIx64
++            " size=%u value=0x%" PRIx64 "\n",
++            z8_st_hits, cpu ? cpu->cpu_index : -1, (uint64_t)ra, addr, size, val);
++    fflush(stderr);
++}
++
+ static void do_st_1(CPUState *cpu, MMULookupPageData *p, uint8_t val,
+                     int mmu_idx, uintptr_t ra)
+ {
++    z8_st_watch(cpu, p->addr, val, sizeof(uint8_t), ra);
++    z8_st_watch(cpu, p->full->phys_addr + (p->addr & ~TARGET_PAGE_MASK),
++                 val, sizeof(uint8_t), ra);
+     if (unlikely(p->flags & TLB_MMIO)) {
+         do_st_mmio_leN(cpu, p->full, val, p->addr, 1, mmu_idx, ra);
+     } else if (unlikely(p->flags & TLB_DISCARD_WRITE)) {
+@@ -2635,6 +2689,9 @@
+ static void do_st_2(CPUState *cpu, MMULookupPageData *p, uint16_t val,
+                     int mmu_idx, MemOp memop, uintptr_t ra)
+ {
++    z8_st_watch(cpu, p->addr, val, sizeof(uint16_t), ra);
++    z8_st_watch(cpu, p->full->phys_addr + (p->addr & ~TARGET_PAGE_MASK),
++                 val, sizeof(uint16_t), ra);
+     if (unlikely(p->flags & TLB_MMIO)) {
+         if ((memop & MO_BSWAP) != MO_LE) {
+             val = bswap16(val);
+@@ -2654,6 +2711,9 @@
+ static void do_st_4(CPUState *cpu, MMULookupPageData *p, uint32_t val,
+                     int mmu_idx, MemOp memop, uintptr_t ra)
+ {
++    z8_st_watch(cpu, p->addr, val, sizeof(uint32_t), ra);
++    z8_st_watch(cpu, p->full->phys_addr + (p->addr & ~TARGET_PAGE_MASK),
++                 val, sizeof(uint32_t), ra);
+     if (unlikely(p->flags & TLB_MMIO)) {
+         if ((memop & MO_BSWAP) != MO_LE) {
+             val = bswap32(val);
+@@ -2673,6 +2733,9 @@
+ static void do_st_8(CPUState *cpu, MMULookupPageData *p, uint64_t val,
+                     int mmu_idx, MemOp memop, uintptr_t ra)
+ {
++    z8_st_watch(cpu, p->addr, val, sizeof(uint64_t), ra);
++    z8_st_watch(cpu, p->full->phys_addr + (p->addr & ~TARGET_PAGE_MASK),
++                 val, sizeof(uint64_t), ra);
+     if (unlikely(p->flags & TLB_MMIO)) {
+         if ((memop & MO_BSWAP) != MO_LE) {
+             val = bswap64(val);

@@ -1,0 +1,3 @@
+# The controller itself uses Python's standard library. Python >= 3.11 required.
+# These pinned packages generate the RAW fixture and audit actual output NEFs.
+-r ../tools/requirements-audit.txt

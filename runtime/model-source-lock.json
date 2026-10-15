@@ -1,0 +1,658 @@
+{
+  "schema": "route4-model-source-lock-v1",
+  "source_scope": "Pinned upstream source plus exact local experimental overlay and QEMU-core observation diffs.",
+  "rdwing": {
+    "repository": "https://github.com/RdWing/z8-qemu",
+    "commit": "c24e33460ab311b8b120b19ba25f532ccef1b391",
+    "tree": "846ed3de2cd851d9be7d3cd0e77359288a8640a6",
+    "archive": {
+      "name": "rdwing.zip",
+      "url": "https://codeload.github.com/RdWing/z8-qemu/zip/c24e33460ab311b8b120b19ba25f532ccef1b391",
+      "bytes": 304389,
+      "sha256": "55b2e03490a1117c84d1476a6e4a1c879aeac0dba1bdddd16ccaa7b4fb8c5d74"
+    },
+    "archive_root": "z8-qemu-c24e33460ab311b8b120b19ba25f532ccef1b391",
+    "files_before": {
+      "qemu/nikon-z8-capture-nv16.h": "229bddf853893255a7442d11c875ea3cc27b769a93309e297147695c01c5aee8",
+      "qemu/nikon-z8-d980.h": "dd88d7d8dd81ebe0982b341897bf2c5bb73523eccc8fb19412fd95e4d2e87b8b",
+      "qemu/nikon-z8-jpeg.h": "4607f839fd4e03027a7b154e771c1e6c46822a04e0f635b43830e9920e8716e3",
+      "qemu/nikon-z8-lab.c": "5885024faf86f55a343d9c1ca7042d40cc81f24b6f66f99e178fecbf77e11653",
+      "qemu/nikon-z8-lossless.h": "6f6ef0da9d01571dcf3470ccf1b160fb1c50c5859b6b70ef78d63b4bc97e9100",
+      "qemu/nikon-z8-pcie.h": "39e8b766444f9bd32da732f8b9473aa4c3b9f71315e63af58b1507973b35429d",
+      "qemu/nikon-z8-pixels.h": "1464e23e12d8a9b48450e603f0dfc3b8619a336b3845da2424fa29146f8bffca",
+      "qemu/nikon-z8-raw-pixels.h": "9929fc857f17a56db0bfe11e8444ba8e340df9b54325a4fb9bd2f7861ebd21e1",
+      "qemu/nikon-z8-thumbnail-nv16.h": "62c65f77566fc30fc428431e737f57d3bf1fe62439de5ed22cc22ff6cd1c402b",
+      "qemu/prepare_source.py": "dbd0e8d142b20e5738b8a046f1f30c4dcf1e71641e9810e0b8bf5b9556986999",
+      "tools/audit_nef.py": "30b2f6263bd34f620a2d9f209417022805bd2d59b560921a8d9718d2717797c4",
+      "tools/audit_source.py": "3708e3dfb5bcdf7f118964e8c62cca262e1921a1724f9fc3a4429bcf94c2cd59",
+      "tools/boot_z8.py": "de78c910c59f37a99f762d893003ff284ded5d1d2d6e8724fc1096c2de876459",
+      "tools/build.py": "f2bbebdeb21552c2c446c3c722c41d9d34b7ca83c8d9f6e1ec1c8fcb2a09191b",
+      "tools/capture-model-options.json": "248a65a74420062e17d43774eea3a94cc29b2e7816e77271b4683e3102eebfbf",
+      "tools/capture.py": "eb84cf3879e6927f547d686c746f54fb796317cbcd30f722d9c816cdbe4ae9f8",
+      "tools/capture_peer.py": "2dccb4f3f7cd5143a87da95aad26f16fe20b4858981afa60a9a5c5e9e18cb03a",
+      "tools/capture_stream.py": "ba3361113aa2174c876cbbc55b4f34f02a41c2aca0ded86c63f4923f08163ea7",
+      "tools/ccomp_command_peer.py": "d3ade503b202299c3be1f21d48979e9598690bc25c3fa5ad4b2ac9c922a8d05c",
+      "tools/control.html": "ac7d32f071f359abfa3a86eea8abda8fd9d228342dbaa5827641945b760e70f3",
+      "tools/control.py": "73d32d7fcaa514a95be5cae464a601576f11bfec181bee3a780c703f4d1a3d4f",
+      "tools/copy_card.py": "74110149b2eb66ac24e8fb715a69fdca31ca1609ba1e44e205e58cbae90379ec",
+      "tools/deliver_mcu_frame.py": "b0d7e0dae1eb9dd1944e6a9f295ea7920f0bc72f51c2f16e2b47660828e5a3eb",
+      "tools/extract_card_file.py": "e04e554bb2f16509a9321c03f31c2e9791ab1377c978202f36a153f34109ea3f",
+      "tools/full_guest.py": "1380438716cf0876b57cbf0bec9af406301c4a011e7f7dd53037caa39432508f",
+      "tools/gpio_bindings.py": "1b6cf03114f47211a82870d58e529eb34377ee584f3e6f60d332869a1fbae134",
+      "tools/guest_transport.py": "aaa191ba60fc04fb70610d106f635b1853cc368b598426678bde883a6b2d27e6",
+      "tools/inspect_card_volume.py": "220f41e402bea3f1d10e215652e370439537a17cf571164b48d591b0dbd3b7b4",
+      "tools/lossless-capture-profile.json": "5e1b44c4e981140441755d6f80c745109651e4545b931eb841855e1c5c86c202",
+      "tools/make_card.py": "1ae33ad9b689f6fb3b75408b7bafe343dd7c8f5426e136d57e8f9077cc5a4612",
+      "tools/make_cmos.py": "ea0c7c3965a2dfe1f01f3b1cd9a55026403731fae8dbfe2c96b08d5f1351c5d7",
+      "tools/mcu_frames.py": "381336dc40e7f6589f46b57529ad1c61655061e6925b165e6bcf5b035a3e84be",
+      "tools/model-properties.json": "76fad6ead8045be2fe75eebc96de320fad1e663f4e31a982675b7a08a4912ebe",
+      "tools/nef_ifds.py": "aaaaa8c6dea58d5e3690d3cf70d1c795f66677998adae5b16e2223259d208342",
+      "tools/observe_serial_channel.py": "7a3654a788d1320ba3e49df3ee86a1808b6ba59d9be35481d709f107cff3a1c8",
+      "tools/observer-address-map.json": "1aa0f79ac966500a657a0a47205fa562406b98a52945d2f6d815e72b0816dea9",
+      "tools/peer-bindings.json": "ec68cf42b84e9e13cb0d802b5922fb562704f26e70aaf8931f0b4472fc2080da",
+      "tools/probe.py": "cf1a5d93de412d4b1eb20f445f279b35c525c3136e0cda450c72a90f421426c9",
+      "tools/probe_adc_capture.py": "140bdb8c18c28912f8d866b1c20baaf91b3325a2bf985f9cb93986f06a839bd9",
+      "tools/probe_graphics_image.py": "0d1934d43b8a1518b32901071ff251e3600442c88e0125146d1b07f1c6bdb23d",
+      "tools/probe_tasks.py": "0252c25729de6b2429c7667b1ce12289dfee319c666edf21433c28edafbdf73b",
+      "tools/receive_mcu_tx.py": "df255d413fe787a82966df68014207e4274cea63aa5d56191cdac14dd7474868",
+      "tools/rom_inputs.py": "5e14de68f3d8725a379d4e148d3204a8ac5e7fcb8764dc28bae63ba792e82a1b",
+      "tools/run.py": "8066b94951be32f42bd5f9ed8a59e26c97e296081e94a83e2fb146925c509d2e",
+      "tools/runtime.py": "b02e64be06be4bbfa781ee50e2e5c899fd13898e86f8015652b8c3e5eb18eaf8",
+      "tools/service_serial8.py": "2680b66091d6bc85d239e88176a382f109c757e7ecd58eac1296869ebba6ee74",
+      "tools/service_z8_mcu.py": "8a748a10bb665a9b5eb7115656ead1058f972146a22c926f1be9f1418512fb3f",
+      "tools/stream.py": "b200a9ae9d87e16167bcdabb40980289d8592c99cb0822eda8a1c96f9aee5697",
+      "tools/virtual_recording_card.py": "3ec682c9379f77e87ad40bd46e59f5776203ff6d1cedee1ac48181066dc93a48",
+      "tools/z8_global1_boundary_input.py": "3af2592a5746f5956664b6f26721605c548b1bfc0fd0ab11759199aadf19f3f5",
+      "tools/z8_navigation_input.py": "3c8cd2cee8a167a82e57b6323a0b12c7ac78cb12d5684be1be0a2042a622726a",
+      "LICENSES/QEMU-LICENSE.txt": "139c64b7a9ae62858ff969aae622ecfcf4f1519655bd92d2e70a1a2fb615690e",
+      "NOTICE.md": "fc21f39c79cf642a995b1087d798a08004cf25f6d1ca71d79dc9167ebade38ae",
+      "COPYING": "dd3ce02338c3a48abb6ba59b48809f7108a8bd242cb0cc8be90daafa30707c28"
+    },
+    "files_after": {
+      "qemu/nikon-z8-capture-nv16.h": "229bddf853893255a7442d11c875ea3cc27b769a93309e297147695c01c5aee8",
+      "qemu/nikon-z8-d980.h": "d80ca2fb3588d6ba3f3db6c4ae765d5b1e53ee25e12816e82c8596f9a9a1adf6",
+      "qemu/nikon-z8-jpeg.h": "4607f839fd4e03027a7b154e771c1e6c46822a04e0f635b43830e9920e8716e3",
+      "qemu/nikon-z8-lab.c": "e3d440e016511988fd26bf66cf426d660dc20a137d9b2a423992c0c9d9b88e28",
+      "qemu/nikon-z8-lossless.h": "6f6ef0da9d01571dcf3470ccf1b160fb1c50c5859b6b70ef78d63b4bc97e9100",
+      "qemu/nikon-z8-pcie.h": "39e8b766444f9bd32da732f8b9473aa4c3b9f71315e63af58b1507973b35429d",
+      "qemu/nikon-z8-pixels.h": "1464e23e12d8a9b48450e603f0dfc3b8619a336b3845da2424fa29146f8bffca",
+      "qemu/nikon-z8-raw-pixels.h": "9929fc857f17a56db0bfe11e8444ba8e340df9b54325a4fb9bd2f7861ebd21e1",
+      "qemu/nikon-z8-thumbnail-nv16.h": "62c65f77566fc30fc428431e737f57d3bf1fe62439de5ed22cc22ff6cd1c402b",
+      "qemu/prepare_source.py": "dbd0e8d142b20e5738b8a046f1f30c4dcf1e71641e9810e0b8bf5b9556986999",
+      "tools/audit_nef.py": "30b2f6263bd34f620a2d9f209417022805bd2d59b560921a8d9718d2717797c4",
+      "tools/audit_source.py": "3708e3dfb5bcdf7f118964e8c62cca262e1921a1724f9fc3a4429bcf94c2cd59",
+      "tools/boot_z8.py": "de78c910c59f37a99f762d893003ff284ded5d1d2d6e8724fc1096c2de876459",
+      "tools/build.py": "f2bbebdeb21552c2c446c3c722c41d9d34b7ca83c8d9f6e1ec1c8fcb2a09191b",
+      "tools/capture-model-options.json": "248a65a74420062e17d43774eea3a94cc29b2e7816e77271b4683e3102eebfbf",
+      "tools/capture.py": "eb84cf3879e6927f547d686c746f54fb796317cbcd30f722d9c816cdbe4ae9f8",
+      "tools/capture_peer.py": "2dccb4f3f7cd5143a87da95aad26f16fe20b4858981afa60a9a5c5e9e18cb03a",
+      "tools/capture_stream.py": "ba3361113aa2174c876cbbc55b4f34f02a41c2aca0ded86c63f4923f08163ea7",
+      "tools/ccomp_command_peer.py": "d3ade503b202299c3be1f21d48979e9598690bc25c3fa5ad4b2ac9c922a8d05c",
+      "tools/control.html": "ac7d32f071f359abfa3a86eea8abda8fd9d228342dbaa5827641945b760e70f3",
+      "tools/control.py": "73d32d7fcaa514a95be5cae464a601576f11bfec181bee3a780c703f4d1a3d4f",
+      "tools/copy_card.py": "74110149b2eb66ac24e8fb715a69fdca31ca1609ba1e44e205e58cbae90379ec",
+      "tools/deliver_mcu_frame.py": "b0d7e0dae1eb9dd1944e6a9f295ea7920f0bc72f51c2f16e2b47660828e5a3eb",
+      "tools/extract_card_file.py": "e04e554bb2f16509a9321c03f31c2e9791ab1377c978202f36a153f34109ea3f",
+      "tools/full_guest.py": "24f3c01555dd624b0d83949f3958cb221f062b03d43bfd73aac741434579d673",
+      "tools/gpio_bindings.py": "1b6cf03114f47211a82870d58e529eb34377ee584f3e6f60d332869a1fbae134",
+      "tools/guest_transport.py": "aaa191ba60fc04fb70610d106f635b1853cc368b598426678bde883a6b2d27e6",
+      "tools/inspect_card_volume.py": "220f41e402bea3f1d10e215652e370439537a17cf571164b48d591b0dbd3b7b4",
+      "tools/lossless-capture-profile.json": "5e1b44c4e981140441755d6f80c745109651e4545b931eb841855e1c5c86c202",
+      "tools/make_card.py": "1ae33ad9b689f6fb3b75408b7bafe343dd7c8f5426e136d57e8f9077cc5a4612",
+      "tools/make_cmos.py": "ea0c7c3965a2dfe1f01f3b1cd9a55026403731fae8dbfe2c96b08d5f1351c5d7",
+      "tools/mcu_frames.py": "381336dc40e7f6589f46b57529ad1c61655061e6925b165e6bcf5b035a3e84be",
+      "tools/model-properties.json": "76fad6ead8045be2fe75eebc96de320fad1e663f4e31a982675b7a08a4912ebe",
+      "tools/nef_ifds.py": "aaaaa8c6dea58d5e3690d3cf70d1c795f66677998adae5b16e2223259d208342",
+      "tools/observe_serial_channel.py": "7a3654a788d1320ba3e49df3ee86a1808b6ba59d9be35481d709f107cff3a1c8",
+      "tools/observer-address-map.json": "1aa0f79ac966500a657a0a47205fa562406b98a52945d2f6d815e72b0816dea9",
+      "tools/peer-bindings.json": "ec68cf42b84e9e13cb0d802b5922fb562704f26e70aaf8931f0b4472fc2080da",
+      "tools/probe.py": "cf1a5d93de412d4b1eb20f445f279b35c525c3136e0cda450c72a90f421426c9",
+      "tools/probe_adc_capture.py": "140bdb8c18c28912f8d866b1c20baaf91b3325a2bf985f9cb93986f06a839bd9",
+      "tools/probe_graphics_image.py": "0d1934d43b8a1518b32901071ff251e3600442c88e0125146d1b07f1c6bdb23d",
+      "tools/probe_tasks.py": "0252c25729de6b2429c7667b1ce12289dfee319c666edf21433c28edafbdf73b",
+      "tools/receive_mcu_tx.py": "df255d413fe787a82966df68014207e4274cea63aa5d56191cdac14dd7474868",
+      "tools/rom_inputs.py": "5e14de68f3d8725a379d4e148d3204a8ac5e7fcb8764dc28bae63ba792e82a1b",
+      "tools/run.py": "8066b94951be32f42bd5f9ed8a59e26c97e296081e94a83e2fb146925c509d2e",
+      "tools/runtime.py": "b02e64be06be4bbfa781ee50e2e5c899fd13898e86f8015652b8c3e5eb18eaf8",
+      "tools/service_serial8.py": "2680b66091d6bc85d239e88176a382f109c757e7ecd58eac1296869ebba6ee74",
+      "tools/service_z8_mcu.py": "8a748a10bb665a9b5eb7115656ead1058f972146a22c926f1be9f1418512fb3f",
+      "tools/stream.py": "b200a9ae9d87e16167bcdabb40980289d8592c99cb0822eda8a1c96f9aee5697",
+      "tools/virtual_recording_card.py": "3ec682c9379f77e87ad40bd46e59f5776203ff6d1cedee1ac48181066dc93a48",
+      "tools/z8_global1_boundary_input.py": "3af2592a5746f5956664b6f26721605c548b1bfc0fd0ab11759199aadf19f3f5",
+      "tools/z8_navigation_input.py": "3c8cd2cee8a167a82e57b6323a0b12c7ac78cb12d5684be1be0a2042a622726a",
+      "LICENSES/QEMU-LICENSE.txt": "139c64b7a9ae62858ff969aae622ecfcf4f1519655bd92d2e70a1a2fb615690e",
+      "NOTICE.md": "fc21f39c79cf642a995b1087d798a08004cf25f6d1ca71d79dc9167ebade38ae",
+      "COPYING": "dd3ce02338c3a48abb6ba59b48809f7108a8bd242cb0cc8be90daafa30707c28"
+    },
+    "license": "GPL-2.0-or-later; retain upstream NOTICE.md and COPYING"
+  },
+  "qemu": {
+    "version": "11.1.1",
+    "archive": {
+      "name": "qemu-11.1.1.tar.xz",
+      "url": "https://download.qemu.org/qemu-11.1.1.tar.xz",
+      "bytes": 141888716,
+      "sha256": "079ffbff8a7111bbc89022107cbabf3bbfd614d5fc9d7cc675991196aca12482"
+    },
+    "archive_root": "qemu-11.1.1",
+    "archive_links": [
+      {
+        "path": "roms/u-boot-sam460ex/tools/sha1.h",
+        "type": "symlink",
+        "target": "../include/sha1.h",
+        "action": "create"
+      },
+      {
+        "path": "roms/u-boot-sam460ex/tools/updater-sst/stubs.c",
+        "type": "symlink",
+        "target": "../../examples/standalone/stubs.c",
+        "action": "create"
+      },
+      {
+        "path": "roms/u-boot-sam460ex/tools/updater/stubs.c",
+        "type": "symlink",
+        "target": "../../examples/standalone/stubs.c",
+        "action": "create"
+      },
+      {
+        "path": "roms/u-boot-sam460ex/COPYING",
+        "type": "symlink",
+        "target": "Licenses/gpl-2.0.txt",
+        "action": "create"
+      },
+      {
+        "path": "roms/u-boot/doc/develop/package/binman.rst",
+        "type": "symlink",
+        "target": "../../../tools/binman/binman.rst",
+        "action": "create"
+      },
+      {
+        "path": "roms/u-boot/doc/develop/package/entries.rst",
+        "type": "symlink",
+        "target": "../../../tools/binman/entries.rst",
+        "action": "create"
+      },
+      {
+        "path": "roms/u-boot/tools/binman/binman",
+        "type": "symlink",
+        "target": "main.py",
+        "action": "create"
+      },
+      {
+        "path": "roms/u-boot/tools/binman/test/u_boot_binman_syms_x86.c",
+        "type": "symlink",
+        "target": "u_boot_binman_syms.c",
+        "action": "create"
+      },
+      {
+        "path": "roms/u-boot/tools/binman/test/u_boot_binman_syms_bad.c",
+        "type": "symlink",
+        "target": "u_boot_binman_syms.c",
+        "action": "create"
+      },
+      {
+        "path": "roms/u-boot/tools/binman/README.rst",
+        "type": "symlink",
+        "target": "binman.rst",
+        "action": "create"
+      },
+      {
+        "path": "roms/u-boot/tools/patman/patman",
+        "type": "symlink",
+        "target": "main.py",
+        "action": "create"
+      },
+      {
+        "path": "roms/u-boot/tools/dtoc/dtoc",
+        "type": "symlink",
+        "target": "main.py",
+        "action": "create"
+      },
+      {
+        "path": "roms/u-boot/tools/dtoc/test_fdt",
+        "type": "symlink",
+        "target": "test_fdt.py",
+        "action": "create"
+      },
+      {
+        "path": "roms/u-boot/tools/microcode-tool",
+        "type": "symlink",
+        "target": "microcode-tool.py",
+        "action": "create"
+      },
+      {
+        "path": "roms/u-boot/tools/buildman/buildman",
+        "type": "symlink",
+        "target": "main.py",
+        "action": "create"
+      },
+      {
+        "path": "roms/u-boot/include/ctype.h",
+        "type": "symlink",
+        "target": "linux/ctype.h",
+        "action": "create"
+      },
+      {
+        "path": "roms/u-boot/arch/xtensa/dts/include/dt-bindings",
+        "type": "symlink",
+        "target": "../../../../include/dt-bindings",
+        "action": "create"
+      },
+      {
+        "path": "roms/u-boot/arch/mips/dts/include/dt-bindings",
+        "type": "symlink",
+        "target": "../../../../include/dt-bindings",
+        "action": "create"
+      },
+      {
+        "path": "roms/u-boot/arch/sandbox/dts/include/dt-bindings",
+        "type": "symlink",
+        "target": "../../../../include/dt-bindings",
+        "action": "create"
+      },
+      {
+        "path": "roms/u-boot/arch/microblaze/dts/include/dt-bindings",
+        "type": "symlink",
+        "target": "../../../../include/dt-bindings",
+        "action": "create"
+      },
+      {
+        "path": "roms/u-boot/arch/x86/dts/include/dt-bindings",
+        "type": "symlink",
+        "target": "../../../../include/dt-bindings",
+        "action": "create"
+      },
+      {
+        "path": "roms/u-boot/arch/nios2/dts/include/dt-bindings",
+        "type": "symlink",
+        "target": "../../../../include/dt-bindings",
+        "action": "create"
+      },
+      {
+        "path": "roms/u-boot/arch/arm/dts/include/dt-bindings",
+        "type": "symlink",
+        "target": "../../../../include/dt-bindings",
+        "action": "create"
+      },
+      {
+        "path": "roms/u-boot/board/xilinx/zynqmp/zynqmp-mini-emmc1",
+        "type": "symlink",
+        "target": "zynqmp-zcu102-rev1.0",
+        "action": "create"
+      },
+      {
+        "path": "roms/u-boot/board/xilinx/zynqmp/zynqmp-m-a2197-03-revA",
+        "type": "symlink",
+        "target": "zynqmp-a2197-revA",
+        "action": "create"
+      },
+      {
+        "path": "roms/u-boot/board/xilinx/zynqmp/zynqmp-m-a2197-01-revA",
+        "type": "symlink",
+        "target": "zynqmp-a2197-revA",
+        "action": "create"
+      },
+      {
+        "path": "roms/u-boot/board/xilinx/zynqmp/zynqmp-zcu104-revC",
+        "type": "symlink",
+        "target": "zynqmp-zcu104-revA",
+        "action": "create"
+      },
+      {
+        "path": "roms/u-boot/board/xilinx/zynqmp/zynqmp-p-a2197-00-revA",
+        "type": "symlink",
+        "target": "zynqmp-a2197-revA",
+        "action": "create"
+      },
+      {
+        "path": "roms/u-boot/board/xilinx/zynqmp/zynqmp-zcu1275-revA",
+        "type": "symlink",
+        "target": "zynqmp-zc1254-revA",
+        "action": "create"
+      },
+      {
+        "path": "roms/u-boot/board/xilinx/zynqmp/zynqmp-mini-qspi",
+        "type": "symlink",
+        "target": "zynqmp-zcu102-rev1.0",
+        "action": "create"
+      },
+      {
+        "path": "roms/u-boot/board/xilinx/zynqmp/avnet-ultra96-rev1",
+        "type": "symlink",
+        "target": "zynqmp-zcu100-revC",
+        "action": "create"
+      },
+      {
+        "path": "roms/u-boot/board/xilinx/zynqmp/zynqmp-mini",
+        "type": "symlink",
+        "target": "zynqmp-zcu102-rev1.0",
+        "action": "create"
+      },
+      {
+        "path": "roms/u-boot/board/xilinx/zynqmp/zynqmp-mini-emmc0",
+        "type": "symlink",
+        "target": "zynqmp-zcu100-revC",
+        "action": "create"
+      },
+      {
+        "path": "roms/u-boot/board/xilinx/zynqmp/zynqmp-g-a2197-00-revA",
+        "type": "symlink",
+        "target": "zynqmp-a2197-revA",
+        "action": "create"
+      },
+      {
+        "path": "roms/u-boot/board/xilinx/zynqmp/zynqmp-m-a2197-02-revA",
+        "type": "symlink",
+        "target": "zynqmp-a2197-revA",
+        "action": "create"
+      },
+      {
+        "path": "roms/u-boot/board/xilinx/zynq/zynq-cse-nand",
+        "type": "symlink",
+        "target": "zynq-zc770-xm011",
+        "action": "create"
+      },
+      {
+        "path": "roms/u-boot/board/xilinx/zynq/zynq-cse-qspi-single",
+        "type": "symlink",
+        "target": "zynq-zc706",
+        "action": "create"
+      },
+      {
+        "path": "roms/u-boot/board/xilinx/zynq/zynq-cse-nor",
+        "type": "symlink",
+        "target": "zynq-zc770-xm012",
+        "action": "create"
+      },
+      {
+        "path": "roms/skiboot/opal-ci/build-debian-unstable.sh",
+        "type": "symlink",
+        "target": "build-ubuntu-rolling.sh",
+        "action": "create"
+      },
+      {
+        "path": "roms/skiboot/opal-ci/Dockerfile-docs",
+        "type": "symlink",
+        "target": "Dockerfile-fedora40",
+        "action": "create"
+      },
+      {
+        "path": "roms/skiboot/doc/process/CONTRIBUTING.md",
+        "type": "symlink",
+        "target": "../../CONTRIBUTING.md",
+        "action": "create"
+      },
+      {
+        "path": "roms/edk2/EmulatorPkg/Unix/Host/X11IncludeHack",
+        "type": "symlink",
+        "target": "/opt/X11/include",
+        "action": "omit",
+        "reason": "EDK2 XCODE host X11 include bridge; outside the extraction root and not used by the Linux qemu-system-aarch64 build. Never materialize it."
+      },
+      {
+        "path": "tests/lcitool/libvirt-ci/tests/data/install/image/images/in/cache/fedora-rawhide.qcow2.metadata",
+        "type": "symlink",
+        "target": "../fedora-rawhide.metadata",
+        "action": "create"
+      },
+      {
+        "path": "tests/lcitool/libvirt-ci/tests/data/install/image/metadata/out/valid.metadata",
+        "type": "symlink",
+        "target": "../in/valid.metadata",
+        "action": "create"
+      },
+      {
+        "path": "tests/lcitool/libvirt-ci/tests/data/install/image/metadata/in/valid.metadata",
+        "type": "symlink",
+        "target": "../../images/in/debian-12.metadata",
+        "action": "create"
+      },
+      {
+        "path": "tests/lcitool/libvirt-ci/ci/gitlab/all_mappings_prep_env/alpine-322-prep.sh",
+        "type": "symlink",
+        "target": "alpine-prep.sh",
+        "action": "create"
+      },
+      {
+        "path": "tests/lcitool/libvirt-ci/ci/gitlab/all_mappings_prep_env/fedora-43-prep.sh",
+        "type": "symlink",
+        "target": "fedora-prep.sh",
+        "action": "create"
+      },
+      {
+        "path": "tests/lcitool/libvirt-ci/ci/gitlab/all_mappings_prep_env/alpine-edge-prep.sh",
+        "type": "symlink",
+        "target": "alpine-prep.sh",
+        "action": "create"
+      },
+      {
+        "path": "tests/lcitool/libvirt-ci/ci/gitlab/all_mappings_prep_env/fedora-rawhide-prep.sh",
+        "type": "symlink",
+        "target": "fedora-prep.sh",
+        "action": "create"
+      },
+      {
+        "path": "tests/lcitool/libvirt-ci/ci/gitlab/all_mappings_prep_env/fedora-42-prep.sh",
+        "type": "symlink",
+        "target": "fedora-prep.sh",
+        "action": "create"
+      },
+      {
+        "path": "tests/lcitool/libvirt-ci/ci/gitlab/all_mappings_prep_env/ubuntu-2404-prep.sh",
+        "type": "symlink",
+        "target": "apt-prep.sh",
+        "action": "create"
+      },
+      {
+        "path": "tests/lcitool/libvirt-ci/ci/gitlab/all_mappings_prep_env/debian-12-prep.sh",
+        "type": "symlink",
+        "target": "apt-prep.sh",
+        "action": "create"
+      },
+      {
+        "path": "tests/lcitool/libvirt-ci/ci/gitlab/all_mappings_prep_env/opensuse-leap-16-prep.sh",
+        "type": "symlink",
+        "target": "opensuse-prep.sh",
+        "action": "create"
+      },
+      {
+        "path": "tests/lcitool/libvirt-ci/ci/gitlab/all_mappings_prep_env/alpine-323-prep.sh",
+        "type": "symlink",
+        "target": "alpine-prep.sh",
+        "action": "create"
+      },
+      {
+        "path": "tests/lcitool/libvirt-ci/ci/gitlab/all_mappings_prep_env/opensuse-tumbleweed-prep.sh",
+        "type": "symlink",
+        "target": "opensuse-prep.sh",
+        "action": "create"
+      },
+      {
+        "path": "tests/lcitool/libvirt-ci/ci/gitlab/all_mappings_prep_env/debian-11-prep.sh",
+        "type": "symlink",
+        "target": "apt-prep.sh",
+        "action": "create"
+      },
+      {
+        "path": "tests/lcitool/libvirt-ci/ci/gitlab/all_mappings_prep_env/ubuntu-2204-prep.sh",
+        "type": "symlink",
+        "target": "apt-prep.sh",
+        "action": "create"
+      },
+      {
+        "path": "tests/lcitool/libvirt-ci/ci/gitlab/all_mappings_prep_env/debian-sid-prep.sh",
+        "type": "symlink",
+        "target": "apt-prep.sh",
+        "action": "create"
+      },
+      {
+        "path": "rust/hw/char/pl011/build.rs",
+        "type": "symlink",
+        "target": "../../../bindings/build.rs",
+        "action": "create"
+      },
+      {
+        "path": "rust/bindings/util-sys/build.rs",
+        "type": "symlink",
+        "target": "../build.rs",
+        "action": "create"
+      },
+      {
+        "path": "rust/bindings/chardev-sys/build.rs",
+        "type": "symlink",
+        "target": "../build.rs",
+        "action": "create"
+      },
+      {
+        "path": "rust/bindings/hwcore-sys/build.rs",
+        "type": "symlink",
+        "target": "../build.rs",
+        "action": "create"
+      },
+      {
+        "path": "rust/bindings/migration-sys/build.rs",
+        "type": "symlink",
+        "target": "../build.rs",
+        "action": "create"
+      },
+      {
+        "path": "rust/bindings/qom-sys/build.rs",
+        "type": "symlink",
+        "target": "../build.rs",
+        "action": "create"
+      },
+      {
+        "path": "rust/bindings/system-sys/build.rs",
+        "type": "symlink",
+        "target": "../build.rs",
+        "action": "create"
+      },
+      {
+        "path": "subprojects/libvduse/linux-headers/linux",
+        "type": "symlink",
+        "target": "../../../linux-headers/linux/",
+        "action": "create"
+      },
+      {
+        "path": "subprojects/libvduse/standard-headers/linux",
+        "type": "symlink",
+        "target": "../../../include/standard-headers/linux/",
+        "action": "create"
+      },
+      {
+        "path": "subprojects/libvduse/include/atomic.h",
+        "type": "symlink",
+        "target": "../../../include/qemu/atomic.h",
+        "action": "create"
+      },
+      {
+        "path": "subprojects/libvduse/include/compiler.h",
+        "type": "symlink",
+        "target": "../../../include/qemu/compiler.h",
+        "action": "create"
+      },
+      {
+        "path": "subprojects/libvhost-user/standard-headers/linux",
+        "type": "symlink",
+        "target": "../../../include/standard-headers/linux",
+        "action": "create"
+      },
+      {
+        "path": "subprojects/libvhost-user/include/atomic.h",
+        "type": "symlink",
+        "target": "../../../include/qemu/atomic.h",
+        "action": "create"
+      },
+      {
+        "path": "subprojects/libvhost-user/include/compiler.h",
+        "type": "symlink",
+        "target": "../../../include/qemu/compiler.h",
+        "action": "create"
+      }
+    ],
+    "configure_args": [
+      "--target-list=aarch64-softmmu",
+      "--disable-docs",
+      "--disable-werror"
+    ],
+    "ninja_target": "qemu-system-aarch64",
+    "prepared_files": {
+      "hw/arm/Kconfig": "3a97976bb67090d6ed07b55b50378906669129974cbecc673f7d9a7f6abf9ff7",
+      "hw/arm/meson.build": "a79b71ea62b6960c53d3dd28291a696c1f863b8146bede4b964c03d848e119a9",
+      "configs/devices/aarch64-softmmu/default.mak": "1f9f099876a188b3cf9f9418ded5601435fb7b6e1feb44544ea7af64fe1a589f",
+      "hw/pci-host/designware.c": "b6693ace7a504b41065c42587b158ff98eca5c8a65f4655ccd6638c48a79817d",
+      "accel/tcg/tcg-accel-ops.c": "3360bfed2b9a277f719bf7811d7acabb5ad4fd4e9927dd70c432947d311c4635",
+      "hw/arm/nikon-z8-capture-nv16.h": "229bddf853893255a7442d11c875ea3cc27b769a93309e297147695c01c5aee8",
+      "hw/arm/nikon-z8-d980.h": "d80ca2fb3588d6ba3f3db6c4ae765d5b1e53ee25e12816e82c8596f9a9a1adf6",
+      "hw/arm/nikon-z8-jpeg.h": "4607f839fd4e03027a7b154e771c1e6c46822a04e0f635b43830e9920e8716e3",
+      "hw/arm/nikon-z8-lab.c": "e3d440e016511988fd26bf66cf426d660dc20a137d9b2a423992c0c9d9b88e28",
+      "hw/arm/nikon-z8-lossless.h": "6f6ef0da9d01571dcf3470ccf1b160fb1c50c5859b6b70ef78d63b4bc97e9100",
+      "hw/arm/nikon-z8-pcie.h": "39e8b766444f9bd32da732f8b9473aa4c3b9f71315e63af58b1507973b35429d",
+      "hw/arm/nikon-z8-pixels.h": "1464e23e12d8a9b48450e603f0dfc3b8619a336b3845da2424fa29146f8bffca",
+      "hw/arm/nikon-z8-raw-pixels.h": "9929fc857f17a56db0bfe11e8444ba8e340df9b54325a4fb9bd2f7861ebd21e1",
+      "hw/arm/nikon-z8-thumbnail-nv16.h": "62c65f77566fc30fc428431e737f57d3bf1fe62439de5ed22cc22ff6cd1c402b",
+      "system/physmem.c": "2aa52fa78dbf1a86130094cd2cc4fa670f1dcbc0e5a8f117d77da57e3a51deb0",
+      "accel/tcg/cputlb.c": "e003a44d0e6a22d5ad526247c8517090ecb6240c389fbb9c771a160d1c077e10"
+    },
+    "license": "QEMU upstream per-file licensing; retain COPYING and source notices"
+  },
+  "patches": {
+    "overlay": {
+      "file": "model-overlay.patch",
+      "sha256": "e6c9640cdb6cf5d49f3e00431049667bae8c0ec5945891830cd64b96c36c378f",
+      "license": "GPL-2.0-or-later",
+      "files": [
+        {
+          "path": "qemu/nikon-z8-lab.c",
+          "before_sha256": "5885024faf86f55a343d9c1ca7042d40cc81f24b6f66f99e178fecbf77e11653",
+          "after_sha256": "e3d440e016511988fd26bf66cf426d660dc20a137d9b2a423992c0c9d9b88e28"
+        },
+        {
+          "path": "qemu/nikon-z8-d980.h",
+          "before_sha256": "dd88d7d8dd81ebe0982b341897bf2c5bb73523eccc8fb19412fd95e4d2e87b8b",
+          "after_sha256": "d80ca2fb3588d6ba3f3db6c4ae765d5b1e53ee25e12816e82c8596f9a9a1adf6"
+        },
+        {
+          "path": "tools/full_guest.py",
+          "before_sha256": "1380438716cf0876b57cbf0bec9af406301c4a011e7f7dd53037caa39432508f",
+          "after_sha256": "24f3c01555dd624b0d83949f3958cb221f062b03d43bfd73aac741434579d673"
+        }
+      ]
+    },
+    "qemu_core": {
+      "file": "model-qemu-core.patch",
+      "sha256": "18dcc56d65eb2eebe836ab715c4000e22b70c1ae4c205d081d72330dcd2d67cd",
+      "license": "GPL-2.0-or-later",
+      "files": [
+        {
+          "path": "system/physmem.c",
+          "before_sha256": "3210a543353b435a146f7ae4a33608ea849aad038cd9e889ddb3a30c104c063f",
+          "after_sha256": "2aa52fa78dbf1a86130094cd2cc4fa670f1dcbc0e5a8f117d77da57e3a51deb0"
+        },
+        {
+          "path": "accel/tcg/cputlb.c",
+          "before_sha256": "a990689aea048a90e89f617bc72acaabca3a51acf355b56a16956dfdfc530260",
+          "after_sha256": "e003a44d0e6a22d5ad526247c8517090ecb6240c389fbb9c771a160d1c077e10"
+        }
+      ]
+    }
+  },
+  "historical_binary": {
+    "sha256": "e9177cf4dca57872e7d1e4fb27af82a8d1f3ff65be027b22d36075f98af3a618",
+    "bytes": 122381592,
+    "qualification": "Reference identity only; source preparation or a build receipt is not runtime acceptance, and different toolchains may change binary bytes."
+  },
+  "runtime_environment": {
+    "unset": [
+      "Z8_WATCH",
+      "Z8_WATCH_OFF"
+    ],
+    "disabled_machine_options": [
+      "engine151-loose-admission",
+      "engine1543-loose-admission",
+      "unmodeled-tolerant"
+    ],
+    "qualification": "The independent runtime driver must enforce these, authenticate firmware and record the actual built binary."
+  },
+  "source_audit_note": "The earlier 14-file build receipt omitted two modified QEMU-core files. This lock includes them; see MODEL.md."
+}

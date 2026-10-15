@@ -1,0 +1,331 @@
+{
+  "schema": 1,
+  "scope": "Fresh host-only original-container/MAIN/diff checks and complete decoding of four retained NEF files. No firmware or device execution.",
+  "source_receipt_sha256": "e3c103515ed33757c5b395a075f7376b6094c526a5a60b58906b6ed3f7f91422",
+  "private_review_script_sha256": "f81d49579c8652a6d1428b6cc40f9995664d2e9bcdac83a367e325ebd3552e9d",
+  "libraries": {
+    "rawpy": "0.26.1",
+    "libraw": [
+      0,
+      22,
+      0
+    ],
+    "numpy": "2.4.6"
+  },
+  "input_identities": {
+    "original_sha256": "d67413c2ede6b9ce8887175f20700bd9fbad2a973a4820968c45503d15d80d96",
+    "stock_sha256": "2b43a31c9de838f84b12416de4348a7004e65be07f853ec56ec2b10f3a8e3853",
+    "candidate_sha256": "2f8207645aeaf8b704613f71d88abc8b27dc5141130219a0176e3ef2ecb1954e"
+  },
+  "module_redecode": {
+    "decoded_sha256": "7dec1be784812c32ea3b735f18b46e260b15b0a960f5a3dc40c4197d0b07fc0a",
+    "modules": [
+      {
+        "name": "ex2070_030000.bi",
+        "body_offset": 208,
+        "size": 524290,
+        "sha256": "4b7ea2ea40360717ceffd3d8db6fe48f5fae9d5c13b69632dc750bdc41b571c2",
+        "crc16_residue": 0
+      },
+      {
+        "name": "_tpj01_0210.bin",
+        "body_offset": 524498,
+        "size": 57346,
+        "sha256": "689f80feb0d271d73ac719e0c5872cfc0dac643097e528b6a1b156d4c55efe1a",
+        "crc16_residue": 0
+      },
+      {
+        "name": "eg2070_0311b0.bi",
+        "body_offset": 581844,
+        "size": 81807711,
+        "sha256": "f85e0138e2f5e660ece8560de62e0d12cb795e0e14983e50f20b61dce906c46c",
+        "crc16_residue": 0,
+        "route4_stock_exact": true
+      },
+      {
+        "name": "vr2070_010100.bi",
+        "body_offset": 82389555,
+        "size": 838664,
+        "sha256": "30e363077655f9936894fdc00104263eac4a33892e621199f84bf8f4cecea3bb",
+        "crc16_residue": 0
+      },
+      {
+        "name": "li2070_0311b0.bi",
+        "body_offset": 83228219,
+        "size": 15822850,
+        "sha256": "804a55508cd6b323336fbba14034810e4b22fcc5fd1030d3a7dc08d62767cc55",
+        "crc16_residue": 0
+      }
+    ]
+  },
+  "legacy_materials": [
+    {
+      "name": "mod_ex.bin",
+      "sha256": "53bb86588564516831dec18ed7afb9ed77e171ab93ecf671a68489fc058b2535",
+      "bytes": 524290,
+      "starts_32_bytes_early": true,
+      "crc16_residue": "0xf656"
+    },
+    {
+      "name": "mod_tpj.bin",
+      "sha256": "99ea17c5b6a4cfa28740423e0dca92ae68ab34f6a2e068d45b9123f74f254d49",
+      "bytes": 57346,
+      "starts_32_bytes_early": true,
+      "crc16_residue": "0x4603"
+    },
+    {
+      "name": "eg2070_0311b0.bin",
+      "sha256": "1f9d2147c38fba057d6b30fc471218da00b7d76030269d497751a982ca46ef3c",
+      "bytes": 81807711,
+      "starts_32_bytes_early": true,
+      "crc16_residue": "0xf85d"
+    },
+    {
+      "name": "mod_vr.bin",
+      "sha256": "56dceab3d27f5c0d63cbf4db65dc48781a44ef9c1d1b48eba659754c8cce4d8b",
+      "bytes": 838664,
+      "starts_32_bytes_early": true,
+      "crc16_residue": "0x502"
+    },
+    {
+      "name": "li_z8.bin",
+      "sha256": "b1f4ec50dec325cdaf8a18f67e2f2d0250e2eab32ba54050a0d25e7326535e64",
+      "bytes": 15822898,
+      "starts_32_bytes_early": true,
+      "crc16_residue": "0x76f8"
+    }
+  ],
+  "candidate_diff": {
+    "bytes": 21,
+    "instruction_words": 7,
+    "sites": [
+      {
+        "pc": "0x40fd93bc",
+        "branch_target": "0x40fd9420"
+      },
+      {
+        "pc": "0x40fd940c",
+        "branch_target": "0x40fd95c0"
+      },
+      {
+        "pc": "0x40fd94bc"
+      },
+      {
+        "pc": "0x40fd94c0"
+      },
+      {
+        "pc": "0x40fd94c4",
+        "branch_target": "0x40fd9420"
+      },
+      {
+        "pc": "0x40fdc858"
+      },
+      {
+        "pc": "0x40fdf6c0"
+      }
+    ]
+  },
+  "actual_nef_checks": [
+    {
+      "run_id": "route4-stock-full-002",
+      "bytes": 35110512,
+      "sha256": "4790abbb3b9e46ca5a7607e5e1d98140d6bf23c53a869359e7a611d4da96d03f",
+      "linearization_sha256": "097157ad8c916ab3a5b5d00cffc6a0893ccb8d24d02082de92924a8b08ed1372",
+      "decoded": {
+        "shape": [
+          5520,
+          8280
+        ],
+        "samples": 45705600,
+        "bytes": 91411200,
+        "sha256": "e3b0bf6dd2fc4c85f88f0f50e30f690c59202297b4f3a90a02d687b3259b6a3a",
+        "sha512": "4ce242acb9ef962f371fd114de4193b60007691e9e00a24861517a478816b1d969fa629ac3a6e8890ca821e02a07b096559230f511480caef67009b242cd5673",
+        "minimum": 0,
+        "maximum": 16383
+      },
+      "raw_strip": {
+        "bytes": 34338928,
+        "sha256": "f0c96e25d160459bfcb185ad648f904bd62d9028a1a5dd605947733045d22564"
+      },
+      "previews": [
+        {
+          "size": [
+            160,
+            120
+          ],
+          "bytes": 6580,
+          "sha256": "31353d4020118c88d09531c3a7d26bcabb9ab4fbb8c9da53ee248a6769897af2"
+        },
+        {
+          "size": [
+            8256,
+            5504
+          ],
+          "bytes": 434781,
+          "sha256": "9fb5f08383f216ea9f58417dc4f2b950321b4669c8a7e7ee853363d962759ada"
+        },
+        {
+          "size": [
+            1620,
+            1080
+          ],
+          "bytes": 113419,
+          "sha256": "51ce270bfb192f36bad04bc1246874c1695b3a35e1fd3e917bf0a9e03d04f4cc"
+        }
+      ]
+    },
+    {
+      "run_id": "route4-candidate-half-002",
+      "bytes": 35110512,
+      "sha256": "f1991f61a364c573732bc9b164ed49bed232285f881b4bb735a03277953129d8",
+      "linearization_sha256": "097157ad8c916ab3a5b5d00cffc6a0893ccb8d24d02082de92924a8b08ed1372",
+      "decoded": {
+        "shape": [
+          5520,
+          8280
+        ],
+        "samples": 45705600,
+        "bytes": 91411200,
+        "sha256": "e3b0bf6dd2fc4c85f88f0f50e30f690c59202297b4f3a90a02d687b3259b6a3a",
+        "sha512": "4ce242acb9ef962f371fd114de4193b60007691e9e00a24861517a478816b1d969fa629ac3a6e8890ca821e02a07b096559230f511480caef67009b242cd5673",
+        "minimum": 0,
+        "maximum": 16383
+      },
+      "raw_strip": {
+        "bytes": 34338928,
+        "sha256": "f0c96e25d160459bfcb185ad648f904bd62d9028a1a5dd605947733045d22564"
+      },
+      "previews": [
+        {
+          "size": [
+            160,
+            120
+          ],
+          "bytes": 6580,
+          "sha256": "31353d4020118c88d09531c3a7d26bcabb9ab4fbb8c9da53ee248a6769897af2"
+        },
+        {
+          "size": [
+            8256,
+            5504
+          ],
+          "bytes": 434781,
+          "sha256": "9fb5f08383f216ea9f58417dc4f2b950321b4669c8a7e7ee853363d962759ada"
+        },
+        {
+          "size": [
+            1620,
+            1080
+          ],
+          "bytes": 113419,
+          "sha256": "51ce270bfb192f36bad04bc1246874c1695b3a35e1fd3e917bf0a9e03d04f4cc"
+        }
+      ]
+    },
+    {
+      "run_id": "route4-life-stock-full-001",
+      "bytes": 35110512,
+      "sha256": "b978e05996a7e7fdfaab7b8911fba20fe26b5d1318d34ac4299248b3c1ece2e9",
+      "linearization_sha256": "097157ad8c916ab3a5b5d00cffc6a0893ccb8d24d02082de92924a8b08ed1372",
+      "decoded": {
+        "shape": [
+          5520,
+          8280
+        ],
+        "samples": 45705600,
+        "bytes": 91411200,
+        "sha256": "e3b0bf6dd2fc4c85f88f0f50e30f690c59202297b4f3a90a02d687b3259b6a3a",
+        "sha512": "4ce242acb9ef962f371fd114de4193b60007691e9e00a24861517a478816b1d969fa629ac3a6e8890ca821e02a07b096559230f511480caef67009b242cd5673",
+        "minimum": 0,
+        "maximum": 16383
+      },
+      "raw_strip": {
+        "bytes": 34338928,
+        "sha256": "f0c96e25d160459bfcb185ad648f904bd62d9028a1a5dd605947733045d22564"
+      },
+      "previews": [
+        {
+          "size": [
+            160,
+            120
+          ],
+          "bytes": 6580,
+          "sha256": "31353d4020118c88d09531c3a7d26bcabb9ab4fbb8c9da53ee248a6769897af2"
+        },
+        {
+          "size": [
+            8256,
+            5504
+          ],
+          "bytes": 434781,
+          "sha256": "9fb5f08383f216ea9f58417dc4f2b950321b4669c8a7e7ee853363d962759ada"
+        },
+        {
+          "size": [
+            1620,
+            1080
+          ],
+          "bytes": 113419,
+          "sha256": "51ce270bfb192f36bad04bc1246874c1695b3a35e1fd3e917bf0a9e03d04f4cc"
+        }
+      ]
+    },
+    {
+      "run_id": "route4-life-candidate-half-001",
+      "bytes": 35110512,
+      "sha256": "5b092c13b5af81a84dcfc0b5a899714e7b7a06b2f4ccc09ca386845bf2efaba9",
+      "linearization_sha256": "097157ad8c916ab3a5b5d00cffc6a0893ccb8d24d02082de92924a8b08ed1372",
+      "decoded": {
+        "shape": [
+          5520,
+          8280
+        ],
+        "samples": 45705600,
+        "bytes": 91411200,
+        "sha256": "e3b0bf6dd2fc4c85f88f0f50e30f690c59202297b4f3a90a02d687b3259b6a3a",
+        "sha512": "4ce242acb9ef962f371fd114de4193b60007691e9e00a24861517a478816b1d969fa629ac3a6e8890ca821e02a07b096559230f511480caef67009b242cd5673",
+        "minimum": 0,
+        "maximum": 16383
+      },
+      "raw_strip": {
+        "bytes": 34338928,
+        "sha256": "f0c96e25d160459bfcb185ad648f904bd62d9028a1a5dd605947733045d22564"
+      },
+      "previews": [
+        {
+          "size": [
+            160,
+            120
+          ],
+          "bytes": 6580,
+          "sha256": "31353d4020118c88d09531c3a7d26bcabb9ab4fbb8c9da53ee248a6769897af2"
+        },
+        {
+          "size": [
+            8256,
+            5504
+          ],
+          "bytes": 434781,
+          "sha256": "9fb5f08383f216ea9f58417dc4f2b950321b4669c8a7e7ee853363d962759ada"
+        },
+        {
+          "size": [
+            1620,
+            1080
+          ],
+          "bytes": 113419,
+          "sha256": "51ce270bfb192f36bad04bc1246874c1695b3a35e1fd3e917bf0a9e03d04f4cc"
+        }
+      ]
+    }
+  ],
+  "firmware_executed": false,
+  "source_raw_and_same_run_producer_rechecked": false,
+  "second_independent_decoder_implementation": false,
+  "limits": [
+    "No new QEMU or camera run; Windows-only artifact reanalysis.",
+    "Fresh rawpy uses LibRaw again; this is not a second independent decoder implementation.",
+    "Runtime raw result.json, card images, source RAW and same-run producer are in WSL and were not accessed. Historical receipts are not raw logs.",
+    "No universal safety, sustained burst, history buffer, installer or device success is established."
+  ]
+}

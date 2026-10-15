@@ -1,0 +1,746 @@
+{
+  "schema": "route4-fresh-runtime-reproduction-v1",
+  "exported_utc": "2026-10-15T16:08:51.759471+00:00",
+  "scope": "New source build and three first-frame functional-model controls; no physical camera or retained history claim.",
+  "origin": "Explicit selected numerical fields from privately retained complete run receipts and actual files; not raw logs.",
+  "commands": "docs/reproduction.md steps 1-4; actual build used --jobs 6; runtime used defaults --seconds 600 --settle 25.",
+  "suite_exit_code": 0,
+  "runtime_summary_sha256": "39cdc59b71e340a41c3aba8c94dc0c21c45d17331dd39b61260099fc527ec165",
+  "marker_audit_sha256": "735da3b4563dbf2a4d385c6b71fef182a0762f4188dbdc017684d55d10476eb6",
+  "all_runtime_controls_passed": true,
+  "native_nef_content_passed": true,
+  "build": {
+    "qemu_version": "11.1.1",
+    "source_lock_sha256": "7bc39e911119c6491865f3d122e7dead1cb105baf5c3e7de3de46f2778a8823b",
+    "source_preparation_sha256": "dd47519e3ef4be35312c6b0bb7399db18c002bd42df574469fa6435d7ff825fd",
+    "binary_sha256": "b318f19e73c8339fa18ce2fd6da621c7ffb8fde6198a283d1efc25a76871b43a",
+    "binary_bytes": 122413112,
+    "historical_binary_sha256": "e9177cf4dca57872e7d1e4fb27af82a8d1f3ff65be027b22d36075f98af3a618",
+    "binary_matches_historical": false,
+    "configure_args": [
+      "--target-list=aarch64-softmmu",
+      "--disable-docs",
+      "--disable-werror"
+    ],
+    "target": "qemu-system-aarch64",
+    "jobs": 6,
+    "toolchain": {
+      "python": "3.12.3",
+      "compiler": "cc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+      "ninja": "1.11.1",
+      "platform": "Linux-6.18.40.1-microsoft-standard-WSL2-x86_64-with-glibc2.39"
+    },
+    "build_log_sha256": "0cf36cb1f5e7447363f47b36b6bebad7b635513bbb7af9a019049f87d1f39039",
+    "builder_sha256": "da01e1fff98b7e153e22644b500d86bb3ccc203f820a5e215c1ad557d330bde7",
+    "runtime_acceptance_performed": false
+  },
+  "build_receipt_sha256": "d5e2d887c4e6646c5aca67342413d1da6b19a47fbd892f522a239a414c81f0b6",
+  "build_receipt_runtime_flag_meaning": "The builder never runs firmware. Its false flag remains unchanged; the cases below are separate execution evidence.",
+  "inputs": {
+    "stock_MAIN": {
+      "bytes": 81807709,
+      "sha256": "2b43a31c9de838f84b12416de4348a7004e65be07f853ec56ec2b10f3a8e3853"
+    },
+    "candidate_MAIN": {
+      "bytes": 81807709,
+      "sha256": "2f8207645aeaf8b704613f71d88abc8b27dc5141130219a0176e3ef2ecb1954e"
+    },
+    "synthetic_RAW": {
+      "bytes": 90882080,
+      "sha256": "85878e2e56ee0f6bc10cc0d5dd474375e2ee67bc310d24acf955b0fa5efba293"
+    },
+    "original_package": {
+      "bytes": 99051117,
+      "sha256": "d67413c2ede6b9ce8887175f20700bd9fbad2a973a4820968c45503d15d80d96"
+    }
+  },
+  "tools": {
+    "tools/build_candidate.py": "9514d96d1e2696455e2d6015e55a0d814e66285d3a7d512c52ccb15993ad1ad1",
+    "tools/verify_candidate.py": "987074040f1ccec4f256f1d5497bfada9072666c668fa05c4a7cc2dc2ce9c4b5",
+    "tools/extract_main.py": "751c4cbd6f1737bfa07281372e5ec88892fbb4a15f8790a460c971941cce00a7",
+    "tools/generate_raw_fixture.py": "af4df8be8568ab5ecc21a81693d5a6499b00f4f6001be9f92aee33e0f52641da",
+    "tools/audit_nef.py": "62ea17797b1d9d764a9e8cb5d091bce7e401bc4b4d4d4e762a475b164f536b9b",
+    "runtime/run_experiments.py": "e19062fe8b826208e385f40223c4b1498f233eb40e9cc04060e40ea8341c86ab",
+    "runtime/route4_stream.py": "3f5c90a547afe47e0972644fbf344d2abfc65621e62a3b4c6b34b4d0da92d8d3",
+    "runtime/prepare_model.py": "a123230bb3f87c8f14c19d665434941f12b8a235cb0bc253024dec771dddceae",
+    "runtime/build_model.py": "da01e1fff98b7e153e22644b500d86bb3ccc203f820a5e215c1ad557d330bde7"
+  },
+  "cases": [
+    {
+      "case": "stock-full",
+      "child_exit_code": 0,
+      "runtime_passed": true,
+      "runtime_error": null,
+      "owned_qemu_stopped": true,
+      "strict_model_properties_verified": true,
+      "watch_environment_cleared": true,
+      "input_audit": {
+        "gesture_matches": true,
+        "gpio_matches": true,
+        "mcu_metadata_and_full_constraint": true,
+        "initial_released": true,
+        "no_pre_gesture_capture_job": true,
+        "initial_card_empty": true,
+        "initial_busy_masks_zero": true,
+        "actual_mcu_delivery_and_settle": true
+      },
+      "nef_count": 1,
+      "expected_nef_count": 1,
+      "producer_state_and_snapshot_match": true,
+      "unknown_access_lines": 0,
+      "content_audit_status": "PASS_MATCH",
+      "result_sha256": "1830c9cfec96956cc04e77b43d9af49f38cf181af57a403fa96d2930f16fe3c7",
+      "child": {
+        "exit_code": 0,
+        "timed_out": false,
+        "orphan_cleanup_required": false,
+        "owned_process_group_gone": true
+      },
+      "input_delivery": {
+        "frames": [
+          {
+            "rx_index": 43,
+            "half": 0,
+            "full": 0,
+            "complete": true,
+            "accepted_buffer_sha256": "141a53f943e0d8282afdf12ab2ea5bc0596cf04bdef2b4eae1c4f90a6daa1088"
+          },
+          {
+            "rx_index": 44,
+            "half": 1,
+            "full": 0,
+            "complete": true,
+            "accepted_buffer_sha256": "a5efdfe0ac41502204240f7d199f18669108d87e668f6c6d6ab567c9ef236692"
+          },
+          {
+            "rx_index": 45,
+            "half": 1,
+            "full": 1,
+            "complete": true,
+            "accepted_buffer_sha256": "72a66cc2e01b9b2e205728cd13c93bbb668b700fab1f6c00ea63f1cc2a04b903"
+          },
+          {
+            "rx_index": 47,
+            "half": 1,
+            "full": 0,
+            "complete": true,
+            "accepted_buffer_sha256": "a5efdfe0ac41502204240f7d199f18669108d87e668f6c6d6ab567c9ef236692"
+          },
+          {
+            "rx_index": 48,
+            "half": 0,
+            "full": 0,
+            "complete": true,
+            "accepted_buffer_sha256": "141a53f943e0d8282afdf12ab2ea5bc0596cf04bdef2b4eae1c4f90a6daa1088"
+          }
+        ],
+        "last_delivery_observed_virtual_seconds": 50.520530514,
+        "finish_virtual_seconds": 75.705276173,
+        "settle_virtual_seconds_observed": 25.184745659,
+        "passed": true
+      },
+      "initial_busy_masks_zero": true,
+      "before_gesture_producer": {
+        "jobs": 0,
+        "acks": 0,
+        "pending": false,
+        "bytes": 0
+      },
+      "final_producer": {
+        "jobs": 1,
+        "acks": 1,
+        "pending": false,
+        "bytes": 80017920,
+        "target": 37836606976,
+        "source": 37113769984,
+        "frame": 1,
+        "physical_algorithm_verified": false
+      },
+      "strict_properties": {
+        "strict_model_before_boot": {
+          "engine151-loose-admission": {
+            "property": false,
+            "enabled": false,
+            "counters": {
+              "loose_starts": 0
+            }
+          },
+          "engine1543-loose-admission": {
+            "property": false,
+            "enabled": false,
+            "counters": {
+              "loose_writes": 0
+            }
+          },
+          "unmodeled-tolerant": {
+            "property": false,
+            "enabled": false,
+            "counters": {
+              "tolerated": 0
+            }
+          }
+        },
+        "strict_model_after_run": {
+          "engine151-loose-admission": {
+            "property": false,
+            "enabled": false,
+            "counters": {
+              "loose_starts": 0
+            }
+          },
+          "engine1543-loose-admission": {
+            "property": false,
+            "enabled": false,
+            "counters": {
+              "loose_writes": 0
+            }
+          },
+          "unmodeled-tolerant": {
+            "property": false,
+            "enabled": false,
+            "counters": {
+              "tolerated": 0
+            }
+          }
+        }
+      },
+      "logs": {
+        "stderr_sha256": "9284926663dbc9ba13699dc34da2c5f886aff0a3697fe9073ba1c022f882adf8",
+        "stderr_bytes": 8974909,
+        "marker_counts": {
+          "Z8_UNKNOWN": 0,
+          "Z8_TOLERATED": 0,
+          "Z8_ACCESS_CONTEXT": 0,
+          "Z8_1508_GROUP": 6,
+          "all_unmodeled_lines": 6
+        },
+        "group_strobes": {
+          "group=0,bitmap=0": 4,
+          "group=1,bitmap=0": 2
+        },
+        "meaning": "Zero Z8_UNKNOWN means no logged strict rejection here; it does not mean all hardware is modeled. Z8_1508_GROUP is an unmodeled-output diagnostic, not a completion."
+      },
+      "nef": [
+        {
+          "name": "DSC_0001.NEF",
+          "bytes": 35110512,
+          "sha256": "ad0c50b72afd1cb2dc68866c252245b00f6212fe894a665451cc9246ca9743cc"
+        }
+      ],
+      "content": {
+        "report_sha256": "e60cc2a3df15eac5315b16e956dac22129873fc6de9008638fde0a315193a394",
+        "exit_code": 0,
+        "status": "PASS_MATCH",
+        "decoded": {
+          "width": 8280,
+          "height": 5520,
+          "samples": 45705600,
+          "bytes": 91411200,
+          "minimum": 0,
+          "maximum": 16383,
+          "sha256_u16le": "e3b0bf6dd2fc4c85f88f0f50e30f690c59202297b4f3a90a02d687b3259b6a3a",
+          "sha512_u16le": "4ce242acb9ef962f371fd114de4193b60007691e9e00a24861517a478816b1d969fa629ac3a6e8890ca821e02a07b096559230f511480caef67009b242cd5673"
+        },
+        "source": {
+          "bytes": 90882080,
+          "sha256": "85878e2e56ee0f6bc10cc0d5dd474375e2ee67bc310d24acf955b0fa5efba293",
+          "compared": true,
+          "samples_compared": 45705600,
+          "mismatches": 0
+        },
+        "producer": {
+          "bytes": 80017920,
+          "sha256": "2c2c5651e70153855714ef4337cf33a278c92285af40518feefdc0f4f8327960",
+          "compared": true,
+          "samples_compared": 45705600,
+          "mismatches": 0,
+          "same_run_provenance_verified": false
+        },
+        "producer_provenance_meaning": "Standalone content auditor does not infer provenance. Runtime independently binds this actual snapshot to final target/address/size/hash and stopped run.",
+        "structure": {
+          "width": 8280,
+          "height": 5520,
+          "bits": 14,
+          "compression": 34713,
+          "model": "NIKON Z 8",
+          "packed_size_fallback_excluded": true
+        },
+        "raw_strip": {
+          "offset": 771584,
+          "bytes": 34338928,
+          "sha256": "f0c96e25d160459bfcb185ad648f904bd62d9028a1a5dd605947733045d22564"
+        },
+        "previews": [
+          {
+            "offset": 115744,
+            "bytes": 6580,
+            "dimensions": [
+              160,
+              120
+            ],
+            "sha256": "31353d4020118c88d09531c3a7d26bcabb9ab4fbb8c9da53ee248a6769897af2"
+          },
+          {
+            "offset": 336384,
+            "bytes": 434781,
+            "dimensions": [
+              8256,
+              5504
+            ],
+            "sha256": "9fb5f08383f216ea9f58417dc4f2b950321b4669c8a7e7ee853363d962759ada"
+          },
+          {
+            "offset": 222720,
+            "bytes": 113419,
+            "dimensions": [
+              1620,
+              1080
+            ],
+            "sha256": "51ce270bfb192f36bad04bc1246874c1695b3a35e1fd3e917bf0a9e03d04f4cc"
+          }
+        ],
+        "dependencies": {
+          "numpy": "2.4.6",
+          "rawpy": "0.26.1",
+          "libraw": [
+            0,
+            22,
+            0
+          ],
+          "Pillow": "12.3.0"
+        }
+      }
+    },
+    {
+      "case": "stock-half",
+      "child_exit_code": 0,
+      "runtime_passed": true,
+      "runtime_error": null,
+      "owned_qemu_stopped": true,
+      "strict_model_properties_verified": true,
+      "watch_environment_cleared": true,
+      "input_audit": {
+        "gesture_matches": true,
+        "gpio_matches": true,
+        "mcu_metadata_and_full_constraint": true,
+        "initial_released": true,
+        "no_pre_gesture_capture_job": true,
+        "initial_card_empty": true,
+        "initial_busy_masks_zero": true,
+        "actual_mcu_delivery_and_settle": true
+      },
+      "nef_count": 0,
+      "expected_nef_count": 0,
+      "producer_state_and_snapshot_match": true,
+      "unknown_access_lines": 0,
+      "content_audit_status": "not applicable: expected empty card",
+      "result_sha256": "ac223ea04b2c28cdf2b1fc863b45ad610413f7aa5fb8e5742ff655836689b2f7",
+      "child": {
+        "exit_code": 0,
+        "timed_out": false,
+        "orphan_cleanup_required": false,
+        "owned_process_group_gone": true
+      },
+      "input_delivery": {
+        "frames": [
+          {
+            "rx_index": 43,
+            "half": 0,
+            "full": 0,
+            "complete": true,
+            "accepted_buffer_sha256": "141a53f943e0d8282afdf12ab2ea5bc0596cf04bdef2b4eae1c4f90a6daa1088"
+          },
+          {
+            "rx_index": 44,
+            "half": 1,
+            "full": 0,
+            "complete": true,
+            "accepted_buffer_sha256": "a5efdfe0ac41502204240f7d199f18669108d87e668f6c6d6ab567c9ef236692"
+          },
+          {
+            "rx_index": 45,
+            "half": 1,
+            "full": 0,
+            "complete": true,
+            "accepted_buffer_sha256": "a5efdfe0ac41502204240f7d199f18669108d87e668f6c6d6ab567c9ef236692"
+          },
+          {
+            "rx_index": 46,
+            "half": 1,
+            "full": 0,
+            "complete": true,
+            "accepted_buffer_sha256": "a5efdfe0ac41502204240f7d199f18669108d87e668f6c6d6ab567c9ef236692"
+          },
+          {
+            "rx_index": 47,
+            "half": 0,
+            "full": 0,
+            "complete": true,
+            "accepted_buffer_sha256": "141a53f943e0d8282afdf12ab2ea5bc0596cf04bdef2b4eae1c4f90a6daa1088"
+          }
+        ],
+        "last_delivery_observed_virtual_seconds": 50.876467689,
+        "finish_virtual_seconds": 76.153054724,
+        "settle_virtual_seconds_observed": 25.276587035,
+        "passed": true
+      },
+      "initial_busy_masks_zero": true,
+      "before_gesture_producer": {
+        "jobs": 0,
+        "acks": 0,
+        "pending": false,
+        "bytes": 0
+      },
+      "final_producer": {
+        "jobs": 0,
+        "acks": 0,
+        "pending": false,
+        "bytes": 0,
+        "target": 0,
+        "source": 0,
+        "frame": 0,
+        "physical_algorithm_verified": false
+      },
+      "strict_properties": {
+        "strict_model_before_boot": {
+          "engine151-loose-admission": {
+            "property": false,
+            "enabled": false,
+            "counters": {
+              "loose_starts": 0
+            }
+          },
+          "engine1543-loose-admission": {
+            "property": false,
+            "enabled": false,
+            "counters": {
+              "loose_writes": 0
+            }
+          },
+          "unmodeled-tolerant": {
+            "property": false,
+            "enabled": false,
+            "counters": {
+              "tolerated": 0
+            }
+          }
+        },
+        "strict_model_after_run": {
+          "engine151-loose-admission": {
+            "property": false,
+            "enabled": false,
+            "counters": {
+              "loose_starts": 0
+            }
+          },
+          "engine1543-loose-admission": {
+            "property": false,
+            "enabled": false,
+            "counters": {
+              "loose_writes": 0
+            }
+          },
+          "unmodeled-tolerant": {
+            "property": false,
+            "enabled": false,
+            "counters": {
+              "tolerated": 0
+            }
+          }
+        }
+      },
+      "logs": {
+        "stderr_sha256": "36ccbdf83f565a7fdc641f5b25f5d147f158dd85bf7c75fc9fef316e8db5b82c",
+        "stderr_bytes": 8797822,
+        "marker_counts": {
+          "Z8_UNKNOWN": 0,
+          "Z8_TOLERATED": 0,
+          "Z8_ACCESS_CONTEXT": 0,
+          "Z8_1508_GROUP": 1,
+          "all_unmodeled_lines": 1
+        },
+        "group_strobes": {
+          "group=0,bitmap=0": 1
+        },
+        "meaning": "Zero Z8_UNKNOWN means no logged strict rejection here; it does not mean all hardware is modeled. Z8_1508_GROUP is an unmodeled-output diagnostic, not a completion."
+      },
+      "nef": []
+    },
+    {
+      "case": "candidate-half",
+      "child_exit_code": 0,
+      "runtime_passed": true,
+      "runtime_error": null,
+      "owned_qemu_stopped": true,
+      "strict_model_properties_verified": true,
+      "watch_environment_cleared": true,
+      "input_audit": {
+        "gesture_matches": true,
+        "gpio_matches": true,
+        "mcu_metadata_and_full_constraint": true,
+        "initial_released": true,
+        "no_pre_gesture_capture_job": true,
+        "initial_card_empty": true,
+        "initial_busy_masks_zero": true,
+        "actual_mcu_delivery_and_settle": true
+      },
+      "nef_count": 1,
+      "expected_nef_count": 1,
+      "producer_state_and_snapshot_match": true,
+      "unknown_access_lines": 0,
+      "content_audit_status": "PASS_MATCH",
+      "result_sha256": "845ed596ea5afb14a18957cf2f9bd84296680bada54ed9e6babaf10674e91524",
+      "child": {
+        "exit_code": 0,
+        "timed_out": false,
+        "orphan_cleanup_required": false,
+        "owned_process_group_gone": true
+      },
+      "input_delivery": {
+        "frames": [
+          {
+            "rx_index": 43,
+            "half": 0,
+            "full": 0,
+            "complete": true,
+            "accepted_buffer_sha256": "141a53f943e0d8282afdf12ab2ea5bc0596cf04bdef2b4eae1c4f90a6daa1088"
+          },
+          {
+            "rx_index": 44,
+            "half": 1,
+            "full": 0,
+            "complete": true,
+            "accepted_buffer_sha256": "a5efdfe0ac41502204240f7d199f18669108d87e668f6c6d6ab567c9ef236692"
+          },
+          {
+            "rx_index": 46,
+            "half": 1,
+            "full": 0,
+            "complete": true,
+            "accepted_buffer_sha256": "a5efdfe0ac41502204240f7d199f18669108d87e668f6c6d6ab567c9ef236692"
+          },
+          {
+            "rx_index": 47,
+            "half": 1,
+            "full": 0,
+            "complete": true,
+            "accepted_buffer_sha256": "a5efdfe0ac41502204240f7d199f18669108d87e668f6c6d6ab567c9ef236692"
+          },
+          {
+            "rx_index": 48,
+            "half": 0,
+            "full": 0,
+            "complete": true,
+            "accepted_buffer_sha256": "141a53f943e0d8282afdf12ab2ea5bc0596cf04bdef2b4eae1c4f90a6daa1088"
+          }
+        ],
+        "last_delivery_observed_virtual_seconds": 51.020354965,
+        "finish_virtual_seconds": 76.125444944,
+        "settle_virtual_seconds_observed": 25.10508997899999,
+        "passed": true
+      },
+      "initial_busy_masks_zero": true,
+      "before_gesture_producer": {
+        "jobs": 0,
+        "acks": 0,
+        "pending": false,
+        "bytes": 0
+      },
+      "final_producer": {
+        "jobs": 1,
+        "acks": 1,
+        "pending": false,
+        "bytes": 80017920,
+        "target": 37836606976,
+        "source": 37113769984,
+        "frame": 1,
+        "physical_algorithm_verified": false
+      },
+      "strict_properties": {
+        "strict_model_before_boot": {
+          "engine151-loose-admission": {
+            "property": false,
+            "enabled": false,
+            "counters": {
+              "loose_starts": 0
+            }
+          },
+          "engine1543-loose-admission": {
+            "property": false,
+            "enabled": false,
+            "counters": {
+              "loose_writes": 0
+            }
+          },
+          "unmodeled-tolerant": {
+            "property": false,
+            "enabled": false,
+            "counters": {
+              "tolerated": 0
+            }
+          }
+        },
+        "strict_model_after_run": {
+          "engine151-loose-admission": {
+            "property": false,
+            "enabled": false,
+            "counters": {
+              "loose_starts": 0
+            }
+          },
+          "engine1543-loose-admission": {
+            "property": false,
+            "enabled": false,
+            "counters": {
+              "loose_writes": 0
+            }
+          },
+          "unmodeled-tolerant": {
+            "property": false,
+            "enabled": false,
+            "counters": {
+              "tolerated": 0
+            }
+          }
+        }
+      },
+      "logs": {
+        "stderr_sha256": "1786b73c795d5782e258d799acde5701b4d3b76dcd682b23dd0f14bdee837caf",
+        "stderr_bytes": 8947463,
+        "marker_counts": {
+          "Z8_UNKNOWN": 0,
+          "Z8_TOLERATED": 0,
+          "Z8_ACCESS_CONTEXT": 0,
+          "Z8_1508_GROUP": 6,
+          "all_unmodeled_lines": 6
+        },
+        "group_strobes": {
+          "group=0,bitmap=0": 4,
+          "group=1,bitmap=0": 2
+        },
+        "meaning": "Zero Z8_UNKNOWN means no logged strict rejection here; it does not mean all hardware is modeled. Z8_1508_GROUP is an unmodeled-output diagnostic, not a completion."
+      },
+      "nef": [
+        {
+          "name": "DSC_0001.NEF",
+          "bytes": 35110512,
+          "sha256": "840c2ea9e41c17880f9e07a44653e80fb35ff527cce6dbb7526b49e7745544a3"
+        }
+      ],
+      "content": {
+        "report_sha256": "086b2b253901d5dd05f6c65999539ae0054d88d6c50ac5434ebaf64f0ce3ff10",
+        "exit_code": 0,
+        "status": "PASS_MATCH",
+        "decoded": {
+          "width": 8280,
+          "height": 5520,
+          "samples": 45705600,
+          "bytes": 91411200,
+          "minimum": 0,
+          "maximum": 16383,
+          "sha256_u16le": "e3b0bf6dd2fc4c85f88f0f50e30f690c59202297b4f3a90a02d687b3259b6a3a",
+          "sha512_u16le": "4ce242acb9ef962f371fd114de4193b60007691e9e00a24861517a478816b1d969fa629ac3a6e8890ca821e02a07b096559230f511480caef67009b242cd5673"
+        },
+        "source": {
+          "bytes": 90882080,
+          "sha256": "85878e2e56ee0f6bc10cc0d5dd474375e2ee67bc310d24acf955b0fa5efba293",
+          "compared": true,
+          "samples_compared": 45705600,
+          "mismatches": 0
+        },
+        "producer": {
+          "bytes": 80017920,
+          "sha256": "2c2c5651e70153855714ef4337cf33a278c92285af40518feefdc0f4f8327960",
+          "compared": true,
+          "samples_compared": 45705600,
+          "mismatches": 0,
+          "same_run_provenance_verified": false
+        },
+        "producer_provenance_meaning": "Standalone content auditor does not infer provenance. Runtime independently binds this actual snapshot to final target/address/size/hash and stopped run.",
+        "structure": {
+          "width": 8280,
+          "height": 5520,
+          "bits": 14,
+          "compression": 34713,
+          "model": "NIKON Z 8",
+          "packed_size_fallback_excluded": true
+        },
+        "raw_strip": {
+          "offset": 771584,
+          "bytes": 34338928,
+          "sha256": "f0c96e25d160459bfcb185ad648f904bd62d9028a1a5dd605947733045d22564"
+        },
+        "previews": [
+          {
+            "offset": 115744,
+            "bytes": 6580,
+            "dimensions": [
+              160,
+              120
+            ],
+            "sha256": "31353d4020118c88d09531c3a7d26bcabb9ab4fbb8c9da53ee248a6769897af2"
+          },
+          {
+            "offset": 336384,
+            "bytes": 434781,
+            "dimensions": [
+              8256,
+              5504
+            ],
+            "sha256": "9fb5f08383f216ea9f58417dc4f2b950321b4669c8a7e7ee853363d962759ada"
+          },
+          {
+            "offset": 222720,
+            "bytes": 113419,
+            "dimensions": [
+              1620,
+              1080
+            ],
+            "sha256": "51ce270bfb192f36bad04bc1246874c1695b3a35e1fd3e917bf0a9e03d04f4cc"
+          }
+        ],
+        "dependencies": {
+          "numpy": "2.4.6",
+          "rawpy": "0.26.1",
+          "libraw": [
+            0,
+            22,
+            0
+          ],
+          "Pillow": "12.3.0"
+        }
+      }
+    }
+  ],
+  "failed_attempts_and_limits": [
+    {
+      "stage": "initial full source preparation",
+      "outcome": "FAIL",
+      "reason": "Absolute EDK2 XCODE include symlink rejected; earlier partial patch check had not tested whole archive.",
+      "resolution": "Exact 72-link graph policy, one explicitly omitted external bridge; new source directory prepared and built successfully.",
+      "details": "runtime/MODEL.md"
+    },
+    {
+      "stage": "historical second-cycle model runs",
+      "outcome": "NOT CLOSED",
+      "reason": "Both original and candidate reached producer jobs/acks=2 but only one NEF; rejected write at PC 0x40C26848 to 0x15432004=0x103.",
+      "details": "evidence/observations.json"
+    },
+    {
+      "stage": "physical-camera loading, recovery, action and RAW",
+      "outcome": "NOT TESTED"
+    },
+    {
+      "stage": "history-buffer pre-capture and sustained half-press capture",
+      "outcome": "NOT ESTABLISHED"
+    },
+    {
+      "stage": "half-press plus overlapping physical full press",
+      "outcome": "NOT EXECUTED"
+    }
+  ],
+  "independent_second_decoder": false,
+  "physical_camera_verified": false,
+  "pretrigger_history_verified": false,
+  "exporter_sha256": "989a073fece119a0cbe7786984bae8e82520b469f129b42936ec54b22809f05d"
+}
