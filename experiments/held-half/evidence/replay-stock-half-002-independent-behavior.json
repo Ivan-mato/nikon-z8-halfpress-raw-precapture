@@ -1,0 +1,66 @@
+{
+  "publication_note": "Path-redacted derivative of a retained local report; not the original byte stream.",
+  "original_report_sha256": "f86492c272dc4c09c9ab530d52030739adfcd86d6347388bc259c33720165289",
+  "data": [
+    {
+      "run": "<LOCAL_LAB>/codex-raw-validation-20261017-recovered/runs/replay-stock-half-002",
+      "stock": true,
+      "passed": true,
+      "tool_sha256": "91dd9f9542abad76533a210fd4c265ca02353d22ddc59d94bcdcf71148804b1c",
+      "firmware_sha256": "2b43a31c9de838f84b12416de4348a7004e65be07f853ec56ec2b10f3a8e3853",
+      "qemu_sha256": "da5ab3aef80ccba96ad99d288d41b11297ce9d4f53a8d5890aa52078773d706c",
+      "hold_virtual_seconds": 14.240459047999998,
+      "input_receipts": [
+        {
+          "index": 47,
+          "half": 0,
+          "full": 0,
+          "gpio_time": 44.51837814,
+          "mcu_accepted_time": 44.525367253,
+          "accepted_dump_sha256": "141a53f943e0d8282afdf12ab2ea5bc0596cf04bdef2b4eae1c4f90a6daa1088"
+        },
+        {
+          "index": 48,
+          "half": 1,
+          "full": 0,
+          "gpio_time": 46.570994919,
+          "mcu_accepted_time": 46.571063152,
+          "accepted_dump_sha256": "a5efdfe0ac41502204240f7d199f18669108d87e668f6c6d6ab567c9ef236692"
+        },
+        {
+          "index": 49,
+          "half": 0,
+          "full": 0,
+          "gpio_time": 60.811453967,
+          "mcu_accepted_time": 60.814855383,
+          "accepted_dump_sha256": "141a53f943e0d8282afdf12ab2ea5bc0596cf04bdef2b4eae1c4f90a6daa1088"
+        }
+      ],
+      "unknown_lines": 0,
+      "native_error_callbacks": [],
+      "screens_checked": 348,
+      "known_error_screens": [],
+      "before_release": {
+        "time": 60.811453967,
+        "captures": 0,
+        "submits": 0,
+        "encoded": 0
+      },
+      "final_captures": 0,
+      "final_encoded": 0,
+      "held_encoded_count": 0,
+      "max_held_encoding_gap": 14.240459047999998,
+      "first_observed_final_capture_time": null,
+      "capture_finish_delay_after_release": null,
+      "additional_capture_submits_after_release": 0,
+      "last_encoding_time": null,
+      "last_encoding_delay_after_release": null,
+      "observed_quiet_tail_seconds": 4.944584981999995,
+      "total_observation_after_release": 12.056826351999995,
+      "capture_steps": [],
+      "encoding_events": [],
+      "limitation": "Recorded states cannot prove that the post-release submit was already queued in firmware before release; no claim of instantaneous stop.",
+      "runtime_override_claim": []
+    }
+  ]
+}

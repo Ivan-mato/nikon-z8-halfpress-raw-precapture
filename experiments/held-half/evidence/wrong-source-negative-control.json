@@ -1,0 +1,21 @@
+{
+  "publication_note": "Path-redacted derivative of a retained local report; not the original byte stream.",
+  "original_report_sha256": "89010b753e75faaf2bfc5a9afd5642325e40676851c567ebc572ae5cd41aad1a",
+  "data": {
+    "passed": true,
+    "negative_control": "NEF 1 intentionally compared against frame-01 (NEF 2 source)",
+    "rejected": true,
+    "comparison": {
+      "samples": 45705600,
+      "mismatches": 45705600,
+      "minimum": 0,
+      "maximum": 16383,
+      "decoded_sha256": "c7c6619a33c1862172089789ac8615d8077c26c4dc340901b7a00841da0b7d49",
+      "source_sha256": "944f029053665964090a0e12e397eab9f5164cd3f45955a1e0bc9d89e74af420",
+      "source_geometry": [
+        640,
+        480
+      ]
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "publication_note": "Path-redacted derivative of a retained local report; not the original byte stream.",
+  "original_report_sha256": "c7d287cbe0d8be052ac6f4a190dd5e82e57ae470f0e418a0890c280fdde1a1fd",
+  "data": {
+    "passed": true,
+    "run": "<LOCAL_LAB>/codex-raw-validation-20261017-recovered/runs/replay-stock-half-002",
+    "tool_sha256": "c4f0167199779346c133a6adbd7f1eabcab73738f816f2a415f640fe51e2cc95",
+    "helper_sha256": "3f162609b50ebe69c72604b747864d953719531071756f2eab891d3783cda64c",
+    "nef_count": 0,
+    "all_native_card_files": [
+      {
+        "path": "NIKON001.DSC",
+        "bytes": 512,
+        "valid_bytes": 512,
+        "first_cluster": 5,
+        "contiguous": true,
+        "directory": false
+      }
+    ],
+    "files": [],
+    "all_samples_match": true,
+    "total_samples_compared": 0,
+    "decoded_sequence_matches_original_delivery": false,
+    "per_frame_producer_dump_checked": false
+  }
+}

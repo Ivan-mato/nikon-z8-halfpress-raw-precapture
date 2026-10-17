@@ -1,0 +1,202 @@
+{
+  "publication_note": "Path-redacted derivative of a retained local report; not the original byte stream.",
+  "original_report_sha256": "8dbe028d5aa1e9831549eb9981db298d0356bf8d2f2a477ae5dc1ae197942efb",
+  "data": {
+    "passed": true,
+    "command_source_order_verified": true,
+    "frames": [
+      {
+        "index": 0,
+        "sha256": "6ee6fc9d0b4e67115e7aa4d91771fac40d6aedd274f934af716cbddee3bd85b1",
+        "original": "/mnt/d/CodexHome/visualizations/2026/10/15/01a1402b-1886-7d90-b4f6-f52bc1e1750f/z8-burst/compact-fixtures/frame-00.raw",
+        "delivered": "<LOCAL_WORKSPACE>/analysis/raw-continuous-20261017/delivery/fixtures/frame-00.raw"
+      },
+      {
+        "index": 1,
+        "sha256": "944f029053665964090a0e12e397eab9f5164cd3f45955a1e0bc9d89e74af420",
+        "original": "/mnt/d/CodexHome/visualizations/2026/10/15/01a1402b-1886-7d90-b4f6-f52bc1e1750f/z8-burst/compact-fixtures/frame-01.raw",
+        "delivered": "<LOCAL_WORKSPACE>/analysis/raw-continuous-20261017/delivery/fixtures/frame-01.raw"
+      },
+      {
+        "index": 2,
+        "sha256": "f028399b9839a3e22999a81f706d9921c2a72299a2674c20a8b599701a8e07d4",
+        "original": "/mnt/d/CodexHome/visualizations/2026/10/15/01a1402b-1886-7d90-b4f6-f52bc1e1750f/z8-burst/compact-fixtures/frame-02.raw",
+        "delivered": "<LOCAL_WORKSPACE>/analysis/raw-continuous-20261017/delivery/fixtures/frame-02.raw"
+      },
+      {
+        "index": 3,
+        "sha256": "7fd6b145878133c4bc1545c1790e927be8e8f3bb36da732cf421dee60a6aa668",
+        "original": "/mnt/d/CodexHome/visualizations/2026/10/15/01a1402b-1886-7d90-b4f6-f52bc1e1750f/z8-burst/compact-fixtures/frame-03.raw",
+        "delivered": "<LOCAL_WORKSPACE>/analysis/raw-continuous-20261017/delivery/fixtures/frame-03.raw"
+      },
+      {
+        "index": 4,
+        "sha256": "0fc6fa797844d61716c7fda54bbd46e0278ad03e07e26ac10cc196372714235e",
+        "original": "/mnt/d/CodexHome/visualizations/2026/10/15/01a1402b-1886-7d90-b4f6-f52bc1e1750f/z8-burst/compact-fixtures/frame-04.raw",
+        "delivered": "<LOCAL_WORKSPACE>/analysis/raw-continuous-20261017/delivery/fixtures/frame-04.raw"
+      },
+      {
+        "index": 5,
+        "sha256": "0b60d15097f5c5ae249f090777bca43007db78bce115e42bc3272189b5e8d036",
+        "original": "/mnt/d/CodexHome/visualizations/2026/10/15/01a1402b-1886-7d90-b4f6-f52bc1e1750f/z8-burst/compact-fixtures/frame-05.raw",
+        "delivered": "<LOCAL_WORKSPACE>/analysis/raw-continuous-20261017/delivery/fixtures/frame-05.raw"
+      },
+      {
+        "index": 6,
+        "sha256": "25750e96ae07b82bf4f5396b5ed2e99f19bdd5e0ac2420a0e027d95d1a7c6351",
+        "original": "/mnt/d/CodexHome/visualizations/2026/10/15/01a1402b-1886-7d90-b4f6-f52bc1e1750f/z8-burst/compact-fixtures/frame-06.raw",
+        "delivered": "<LOCAL_WORKSPACE>/analysis/raw-continuous-20261017/delivery/fixtures/frame-06.raw"
+      },
+      {
+        "index": 7,
+        "sha256": "174fae9ac5f6b944527e33a13108fdd0e491f0c9c8c04c1b055b5a723ddc9d63",
+        "original": "/mnt/d/CodexHome/visualizations/2026/10/15/01a1402b-1886-7d90-b4f6-f52bc1e1750f/z8-burst/compact-fixtures/frame-07.raw",
+        "delivered": "<LOCAL_WORKSPACE>/analysis/raw-continuous-20261017/delivery/fixtures/frame-07.raw"
+      },
+      {
+        "index": 8,
+        "sha256": "7b5c0909ea2caf4428b93f061ce94f0ca67a541ff61e42f25329f28eea757acc",
+        "original": "/mnt/d/CodexHome/visualizations/2026/10/15/01a1402b-1886-7d90-b4f6-f52bc1e1750f/z8-burst/compact-fixtures/frame-08.raw",
+        "delivered": "<LOCAL_WORKSPACE>/analysis/raw-continuous-20261017/delivery/fixtures/frame-08.raw"
+      },
+      {
+        "index": 9,
+        "sha256": "eee5ea31f90dd94c45bfcfd05f4451e3df00c97200e8b13519ced9b786a3e47b",
+        "original": "/mnt/d/CodexHome/visualizations/2026/10/15/01a1402b-1886-7d90-b4f6-f52bc1e1750f/z8-burst/compact-fixtures/frame-09.raw",
+        "delivered": "<LOCAL_WORKSPACE>/analysis/raw-continuous-20261017/delivery/fixtures/frame-09.raw"
+      },
+      {
+        "index": 10,
+        "sha256": "1e543f58e82990669e87140f5ddffe8df01510372205470dc535652c395fed04",
+        "original": "/mnt/d/CodexHome/visualizations/2026/10/15/01a1402b-1886-7d90-b4f6-f52bc1e1750f/z8-burst/compact-fixtures/frame-10.raw",
+        "delivered": "<LOCAL_WORKSPACE>/analysis/raw-continuous-20261017/delivery/fixtures/frame-10.raw"
+      },
+      {
+        "index": 11,
+        "sha256": "05cb59c836754857fc3704a5843bede72e078643fb3ebda49fd4d57b83bb6ed1",
+        "original": "/mnt/d/CodexHome/visualizations/2026/10/15/01a1402b-1886-7d90-b4f6-f52bc1e1750f/z8-burst/compact-fixtures/frame-11.raw",
+        "delivered": "<LOCAL_WORKSPACE>/analysis/raw-continuous-20261017/delivery/fixtures/frame-11.raw"
+      },
+      {
+        "index": 12,
+        "sha256": "97ef2f21693a516837158574847a247e0d247b89ac75e76e703606d6dd34cdd1",
+        "original": "/mnt/d/CodexHome/visualizations/2026/10/15/01a1402b-1886-7d90-b4f6-f52bc1e1750f/z8-burst/compact-fixtures/frame-12.raw",
+        "delivered": "<LOCAL_WORKSPACE>/analysis/raw-continuous-20261017/delivery/fixtures/frame-12.raw"
+      },
+      {
+        "index": 13,
+        "sha256": "a2791dacffd40ca73fd404e929cb796eccd03588f6d79afd4bbadc9a4d690e47",
+        "original": "/mnt/d/CodexHome/visualizations/2026/10/15/01a1402b-1886-7d90-b4f6-f52bc1e1750f/z8-burst/compact-fixtures/frame-13.raw",
+        "delivered": "<LOCAL_WORKSPACE>/analysis/raw-continuous-20261017/delivery/fixtures/frame-13.raw"
+      },
+      {
+        "index": 14,
+        "sha256": "2a2d1fb5ea8f19784d407c899f906282d8990c0bd40ff7fe1deee53060589a01",
+        "original": "/mnt/d/CodexHome/visualizations/2026/10/15/01a1402b-1886-7d90-b4f6-f52bc1e1750f/z8-burst/compact-fixtures/frame-14.raw",
+        "delivered": "<LOCAL_WORKSPACE>/analysis/raw-continuous-20261017/delivery/fixtures/frame-14.raw"
+      },
+      {
+        "index": 15,
+        "sha256": "1d3ba9a896a4b418619022741ac6aec5df3fdf1b75be8ecca7efc606c53a7b14",
+        "original": "/mnt/d/CodexHome/visualizations/2026/10/15/01a1402b-1886-7d90-b4f6-f52bc1e1750f/z8-burst/compact-fixtures/frame-15.raw",
+        "delivered": "<LOCAL_WORKSPACE>/analysis/raw-continuous-20261017/delivery/fixtures/frame-15.raw"
+      },
+      {
+        "index": 16,
+        "sha256": "58ad49249a071e392834419d2d4c2ce2b6b081d712a79525147c8eba80487dfb",
+        "original": "/mnt/d/CodexHome/visualizations/2026/10/15/01a1402b-1886-7d90-b4f6-f52bc1e1750f/z8-burst/compact-fixtures/frame-16.raw",
+        "delivered": "<LOCAL_WORKSPACE>/analysis/raw-continuous-20261017/delivery/fixtures/frame-16.raw"
+      },
+      {
+        "index": 17,
+        "sha256": "dec8fd7231a68ce47226905d7d590fac1ce49919d2ede7bdf48dbb9828c81d5c",
+        "original": "/mnt/d/CodexHome/visualizations/2026/10/15/01a1402b-1886-7d90-b4f6-f52bc1e1750f/z8-burst/compact-fixtures/frame-17.raw",
+        "delivered": "<LOCAL_WORKSPACE>/analysis/raw-continuous-20261017/delivery/fixtures/frame-17.raw"
+      },
+      {
+        "index": 18,
+        "sha256": "31b446ec9f711f75c5c20a456c0a710312d2d0f2cef39a908ed6b955368bf114",
+        "original": "/mnt/d/CodexHome/visualizations/2026/10/15/01a1402b-1886-7d90-b4f6-f52bc1e1750f/z8-burst/compact-fixtures/frame-18.raw",
+        "delivered": "<LOCAL_WORKSPACE>/analysis/raw-continuous-20261017/delivery/fixtures/frame-18.raw"
+      },
+      {
+        "index": 19,
+        "sha256": "bef1d5bd0cda5b51264d2a58a86ef4e7d51ab6541f2e211f6d84b2f4ea2b4a9e",
+        "original": "/mnt/d/CodexHome/visualizations/2026/10/15/01a1402b-1886-7d90-b4f6-f52bc1e1750f/z8-burst/compact-fixtures/frame-19.raw",
+        "delivered": "<LOCAL_WORKSPACE>/analysis/raw-continuous-20261017/delivery/fixtures/frame-19.raw"
+      },
+      {
+        "index": 20,
+        "sha256": "96967252f9e879a34d1117d955994ce02048fe761b5e2f2f832660c3677728e1",
+        "original": "/mnt/d/CodexHome/visualizations/2026/10/15/01a1402b-1886-7d90-b4f6-f52bc1e1750f/z8-burst/compact-fixtures/frame-20.raw",
+        "delivered": "<LOCAL_WORKSPACE>/analysis/raw-continuous-20261017/delivery/fixtures/frame-20.raw"
+      },
+      {
+        "index": 21,
+        "sha256": "a75cac59815e3cfaa834ebbf3a7541e829b04695729aae0347490326aa008832",
+        "original": "/mnt/d/CodexHome/visualizations/2026/10/15/01a1402b-1886-7d90-b4f6-f52bc1e1750f/z8-burst/compact-fixtures/frame-21.raw",
+        "delivered": "<LOCAL_WORKSPACE>/analysis/raw-continuous-20261017/delivery/fixtures/frame-21.raw"
+      },
+      {
+        "index": 22,
+        "sha256": "b028b28a5e621712b2a07fa017f3dfafec6abdf647708dc3d8f67c85d514a341",
+        "original": "/mnt/d/CodexHome/visualizations/2026/10/15/01a1402b-1886-7d90-b4f6-f52bc1e1750f/z8-burst/compact-fixtures/frame-22.raw",
+        "delivered": "<LOCAL_WORKSPACE>/analysis/raw-continuous-20261017/delivery/fixtures/frame-22.raw"
+      },
+      {
+        "index": 23,
+        "sha256": "5d6c645499212cfe418d41478a9ebe3cf4476aeed2528a8e0fe0a13918d4e99f",
+        "original": "/mnt/d/CodexHome/visualizations/2026/10/15/01a1402b-1886-7d90-b4f6-f52bc1e1750f/z8-burst/compact-fixtures/frame-23.raw",
+        "delivered": "<LOCAL_WORKSPACE>/analysis/raw-continuous-20261017/delivery/fixtures/frame-23.raw"
+      },
+      {
+        "index": 24,
+        "sha256": "112b9b862a4e558f9ef7f66b18ed477edfe6ef3dbef06a3337265e8d1fae90c0",
+        "original": "/mnt/d/CodexHome/visualizations/2026/10/15/01a1402b-1886-7d90-b4f6-f52bc1e1750f/z8-burst/compact-fixtures/frame-24.raw",
+        "delivered": "<LOCAL_WORKSPACE>/analysis/raw-continuous-20261017/delivery/fixtures/frame-24.raw"
+      },
+      {
+        "index": 25,
+        "sha256": "bc064cb1322b1906f2e932066a2471c8ea1c91ac40ae8eb24af7df2974fac96e",
+        "original": "/mnt/d/CodexHome/visualizations/2026/10/15/01a1402b-1886-7d90-b4f6-f52bc1e1750f/z8-burst/compact-fixtures/frame-25.raw",
+        "delivered": "<LOCAL_WORKSPACE>/analysis/raw-continuous-20261017/delivery/fixtures/frame-25.raw"
+      },
+      {
+        "index": 26,
+        "sha256": "30141ee0f0a851350611437889b0b896eff2a33b111030fa11f47705eaf155bf",
+        "original": "/mnt/d/CodexHome/visualizations/2026/10/15/01a1402b-1886-7d90-b4f6-f52bc1e1750f/z8-burst/compact-fixtures/frame-26.raw",
+        "delivered": "<LOCAL_WORKSPACE>/analysis/raw-continuous-20261017/delivery/fixtures/frame-26.raw"
+      },
+      {
+        "index": 27,
+        "sha256": "3122046d1acdbb52db91c28c75de1e6a696277421067b20a3667763359576d8b",
+        "original": "/mnt/d/CodexHome/visualizations/2026/10/15/01a1402b-1886-7d90-b4f6-f52bc1e1750f/z8-burst/compact-fixtures/frame-27.raw",
+        "delivered": "<LOCAL_WORKSPACE>/analysis/raw-continuous-20261017/delivery/fixtures/frame-27.raw"
+      },
+      {
+        "index": 28,
+        "sha256": "59bc2a6aa7b9c7e818fd939233173e285a494fc9769f4aa4c46838f4bbc0ac2b",
+        "original": "/mnt/d/CodexHome/visualizations/2026/10/15/01a1402b-1886-7d90-b4f6-f52bc1e1750f/z8-burst/compact-fixtures/frame-28.raw",
+        "delivered": "<LOCAL_WORKSPACE>/analysis/raw-continuous-20261017/delivery/fixtures/frame-28.raw"
+      },
+      {
+        "index": 29,
+        "sha256": "820bb8e4ca26dd1e37f467829d1731d5917d77d9e290833324ad71b87df94f93",
+        "original": "/mnt/d/CodexHome/visualizations/2026/10/15/01a1402b-1886-7d90-b4f6-f52bc1e1750f/z8-burst/compact-fixtures/frame-29.raw",
+        "delivered": "<LOCAL_WORKSPACE>/analysis/raw-continuous-20261017/delivery/fixtures/frame-29.raw"
+      },
+      {
+        "index": 30,
+        "sha256": "af21036d8af0e1ef3a2ff75bc81112c4a330607c8a3e9c4a8fc33c3580fd1dd9",
+        "original": "/mnt/d/CodexHome/visualizations/2026/10/15/01a1402b-1886-7d90-b4f6-f52bc1e1750f/z8-burst/compact-fixtures/frame-30.raw",
+        "delivered": "<LOCAL_WORKSPACE>/analysis/raw-continuous-20261017/delivery/fixtures/frame-30.raw"
+      },
+      {
+        "index": 31,
+        "sha256": "8a4415f3f942734d9aff229db758cd62e03094897a9f15290e9c1e86079e81ce",
+        "original": "/mnt/d/CodexHome/visualizations/2026/10/15/01a1402b-1886-7d90-b4f6-f52bc1e1750f/z8-burst/compact-fixtures/frame-31.raw",
+        "delivered": "<LOCAL_WORKSPACE>/analysis/raw-continuous-20261017/delivery/fixtures/frame-31.raw"
+      }
+    ]
+  }
+}

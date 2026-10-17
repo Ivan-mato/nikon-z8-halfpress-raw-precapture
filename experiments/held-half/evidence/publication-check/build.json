@@ -1,0 +1,40 @@
+{
+  "publication_note": "Path-redacted derivative of a new public-recipe validation run.",
+  "original_report_sha256": "8ffb1c8c6c25317647df6f98fbc45001c7f7abedb896832b7d1d3b897c17bfef",
+  "data": {
+    "exit_code": 0,
+    "command": [
+      "<PYTHON>",
+      "<WORK>/model/tools/build.py",
+      "--qemu-source",
+      "<WORK>/qemu-source",
+      "--build-dir",
+      "<WORK>/build",
+      "--jobs",
+      "2"
+    ],
+    "elapsed_seconds": 248.63416882799999,
+    "source_lock_sha256": "8bcce5b3a125f79a1644e6ee5ac4145b46577280ea304e25a7ad6b193a18671c",
+    "clean_build": true,
+    "binary_sha256": "1516b2a9cea3db3b5438205945b9f7dc23322c63646010143de44f029fe5c543",
+    "overlay": {
+      "hw/arm/Kconfig": "3a97976bb67090d6ed07b55b50378906669129974cbecc673f7d9a7f6abf9ff7",
+      "hw/arm/meson.build": "a79b71ea62b6960c53d3dd28291a696c1f863b8146bede4b964c03d848e119a9",
+      "configs/devices/aarch64-softmmu/default.mak": "1f9f099876a188b3cf9f9418ded5601435fb7b6e1feb44544ea7af64fe1a589f",
+      "hw/pci-host/designware.c": "b6693ace7a504b41065c42587b158ff98eca5c8a65f4655ccd6638c48a79817d",
+      "accel/tcg/tcg-accel-ops.c": "3360bfed2b9a277f719bf7811d7acabb5ad4fd4e9927dd70c432947d311c4635",
+      "hw/arm/nikon-z8-capture-nv16.h": "48b8c5fa76b8ea97d0f238cd299a100244f7835258ed73557d20177619e68d18",
+      "hw/arm/nikon-z8-completed-hold-contract.h": "46d5ddf9561a7d4ee5784b5b90046d1b13014689074412dbae9e11c20ce43fe9",
+      "hw/arm/nikon-z8-d980.h": "87d629ef404bbaa6797418acbe45a545e4a5ea6445e54af8286422a1ff3dd1cd",
+      "hw/arm/nikon-z8-jpeg.h": "4607f839fd4e03027a7b154e771c1e6c46822a04e0f635b43830e9920e8716e3",
+      "hw/arm/nikon-z8-lab.c": "13d296fafecf08c53d49bc1218c66178d53011a40935c9899f7c7a4d64a3f8e8",
+      "hw/arm/nikon-z8-lossless.h": "6f6ef0da9d01571dcf3470ccf1b160fb1c50c5859b6b70ef78d63b4bc97e9100",
+      "hw/arm/nikon-z8-owned-nv16.h": "cfea2e5ae7fa3d980ad2fcd96568547862dbdf9917146f969c9f46655eded121",
+      "hw/arm/nikon-z8-owned-raw.h": "b2201515fb74ecbdbe86a706c3afa151c35c639eba7f3ecb684c5846b4df5d5d",
+      "hw/arm/nikon-z8-pcie.h": "39e8b766444f9bd32da732f8b9473aa4c3b9f71315e63af58b1507973b35429d",
+      "hw/arm/nikon-z8-pixels.h": "1464e23e12d8a9b48450e603f0dfc3b8619a336b3845da2424fa29146f8bffca",
+      "hw/arm/nikon-z8-raw-pixels.h": "9929fc857f17a56db0bfe11e8444ba8e340df9b54325a4fb9bd2f7861ebd21e1",
+      "hw/arm/nikon-z8-thumbnail-nv16.h": "e09153b554006d49466791ff7fd435dc8cf06585f1205152d01998473e727ce3"
+    }
+  }
+}

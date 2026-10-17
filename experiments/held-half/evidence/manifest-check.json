@@ -1,0 +1,8 @@
+{
+  "publication_note": "Path-redacted derivative of a retained local report; not the original byte stream.",
+  "original_report_sha256": "390f1045b7bf71365ba6fea80c4ffbc4529535309a4b625a345a45fc7ab008c0",
+  "data": {
+    "files_checked": 343,
+    "mismatches": []
+  }
+}

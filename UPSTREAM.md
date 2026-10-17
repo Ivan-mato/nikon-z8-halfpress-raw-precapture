@@ -14,3 +14,9 @@
 本次公开的 `runtime/route4_stream.py` 从 RdWing 控制器派生，保留 `Copyright (C) 2026 RdWing` 和 `GPL-2.0-or-later`；半按映射、前态与交付/等待验收等本地修改另有说明。`tools/generate_raw_fixture.py` 同样保留其 RdWing 生成器的归属。旧生命周期驱动未随本版本分发。完整 QEMU 与依赖不在本仓库捆绑。
 
 以上仓库链接用于来源追溯，不表示其当前分支与实验二进制完全一致。新增模型流程固定 RdWing 提交 `c24e33460ab311b8b120b19ba25f532ccef1b391` 与 QEMU 11.1.1 官方源码包，并公开本地 overlay 及 QEMU 本体差异；见 [runtime/MODEL.md](runtime/MODEL.md)。源码准备、实际编译和运行验收各有独立回执，不以源码哈希代替运行成功。
+
+## 后续持续半按模型实验
+
+新增的 [held-half 实验](experiments/held-half/README.md) 使用单独冻结的 80 文件快照，继承 RdWing / WonderLantern 模型并包含本地多帧与驱动修改。它不使用旧 `runtime/` 的源码锁，不能把两者的验收结果混用。完整哈希和归属见其 [MODEL.md](experiments/held-half/MODEL.md)。
+
+[XinmiaoZhao/NikonFirmwarePatch 的提交 85c75387](https://github.com/XinmiaoZhao/NikonFirmwarePatch/commit/85c75387) 已公开 HE RAW 预拍能力。本仓库不再把“没有公开 RAW 预拍实现”作为前提，也不主张首次；本实验限定为功能模型内半按直接采集/保存无损 NEF，未验证历史帧回溯保存或真机。

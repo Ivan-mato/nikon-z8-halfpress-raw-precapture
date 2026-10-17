@@ -1,0 +1,12 @@
+{
+  "publication_note": "Path-redacted derivative of a retained local report; not the original byte stream.",
+  "original_report_sha256": "91a838f5fd9743a48daf93b95cdaaff6bca9b9809d0de57ce3eb620e08786fec",
+  "data": {
+    "source_entries_supplied": 78751,
+    "source_entries_rebuilt": 78751,
+    "source_differences": [],
+    "meson_option_differences": {},
+    "config_host_h_equal": true,
+    "note": "Binary byte equality is not assumed; distinct absolute build paths are retained."
+  }
+}

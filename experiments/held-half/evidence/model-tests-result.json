@@ -1,0 +1,12 @@
+{
+  "publication_note": "Path-redacted derivative of a retained local report; not the original byte stream.",
+  "original_report_sha256": "b475a1595d8e7bd7ff9448fe18311677b9e3f78da0d6d615ae7f9cb2376e9662",
+  "data": {
+    "exit_code": 1,
+    "command": [
+      "<LOCAL_LAB>/venv/bin/python",
+      "<LOCAL_LAB>/codex-raw-validation-20261017-recovered/frozen-model/tests/run.py"
+    ],
+    "wall_seconds": 4.415663003921509
+  }
+}

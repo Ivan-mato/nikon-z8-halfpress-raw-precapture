@@ -1,0 +1,365 @@
+{
+  "publication_note": "Path-redacted derivative of a retained local report; not the original byte stream.",
+  "original_report_sha256": "6e224a55c470900f0eea9f1efa110c62df8e96430cd5a81adf0e21c83f17422f",
+  "data": [
+    {
+      "run": "<LOCAL_LAB>/raw-continuous-20261017/halfheld-clean-001",
+      "stock": false,
+      "passed": true,
+      "tool_sha256": "91dd9f9542abad76533a210fd4c265ca02353d22ddc59d94bcdcf71148804b1c",
+      "firmware_sha256": "2f8207645aeaf8b704613f71d88abc8b27dc5141130219a0176e3ef2ecb1954e",
+      "qemu_sha256": "77aca272ebcee11a8c7d229893107bc55c2ea09b2b2bc28765a121ce06960cb0",
+      "hold_virtual_seconds": 14.041163562000001,
+      "input_receipts": [
+        {
+          "index": 47,
+          "half": 0,
+          "full": 0,
+          "gpio_time": 43.973297125,
+          "mcu_accepted_time": 43.980391525,
+          "accepted_dump_sha256": "141a53f943e0d8282afdf12ab2ea5bc0596cf04bdef2b4eae1c4f90a6daa1088"
+        },
+        {
+          "index": 48,
+          "half": 1,
+          "full": 0,
+          "gpio_time": 46.163202682,
+          "mcu_accepted_time": 46.163441583,
+          "accepted_dump_sha256": "a5efdfe0ac41502204240f7d199f18669108d87e668f6c6d6ab567c9ef236692"
+        },
+        {
+          "index": 75,
+          "half": 0,
+          "full": 0,
+          "gpio_time": 60.204366244,
+          "mcu_accepted_time": 60.210320408,
+          "accepted_dump_sha256": "141a53f943e0d8282afdf12ab2ea5bc0596cf04bdef2b4eae1c4f90a6daa1088"
+        }
+      ],
+      "unknown_lines": 0,
+      "native_error_callbacks": [],
+      "screens_checked": 886,
+      "known_error_screens": [],
+      "before_release": {
+        "time": 60.204366244,
+        "captures": 26,
+        "submits": 26,
+        "encoded": 5
+      },
+      "final_captures": 27,
+      "final_encoded": 27,
+      "held_encoded_count": 5,
+      "max_held_encoding_gap": 2.952976851999999,
+      "first_observed_final_capture_time": 60.277545697,
+      "capture_finish_delay_after_release": 0.07317945300000162,
+      "additional_capture_submits_after_release": 1,
+      "last_encoding_time": 123.504069864,
+      "last_encoding_delay_after_release": 63.29970362,
+      "observed_quiet_tail_seconds": 4.916069563000008,
+      "total_observation_after_release": 85.14054983700001,
+      "capture_steps": [
+        {
+          "time": 46.239777477,
+          "frames": 1,
+          "submits": 1
+        },
+        {
+          "time": 46.780581541,
+          "frames": 2,
+          "submits": 2
+        },
+        {
+          "time": 47.317972507,
+          "frames": 3,
+          "submits": 3
+        },
+        {
+          "time": 47.862967924,
+          "frames": 4,
+          "submits": 4
+        },
+        {
+          "time": 48.401256184,
+          "frames": 5,
+          "submits": 5
+        },
+        {
+          "time": 48.947634806,
+          "frames": 6,
+          "submits": 6
+        },
+        {
+          "time": 49.485356663,
+          "frames": 7,
+          "submits": 7
+        },
+        {
+          "time": 50.029335674,
+          "frames": 8,
+          "submits": 8
+        },
+        {
+          "time": 50.566519396,
+          "frames": 9,
+          "submits": 9
+        },
+        {
+          "time": 51.10376231,
+          "frames": 10,
+          "submits": 10
+        },
+        {
+          "time": 51.642062643,
+          "frames": 11,
+          "submits": 11
+        },
+        {
+          "time": 52.184128332,
+          "frames": 12,
+          "submits": 12
+        },
+        {
+          "time": 52.721358581,
+          "frames": 13,
+          "submits": 13
+        },
+        {
+          "time": 53.265682396,
+          "frames": 14,
+          "submits": 14
+        },
+        {
+          "time": 53.803684567,
+          "frames": 15,
+          "submits": 15
+        },
+        {
+          "time": 54.343094671,
+          "frames": 16,
+          "submits": 16
+        },
+        {
+          "time": 54.880175606,
+          "frames": 17,
+          "submits": 17
+        },
+        {
+          "time": 55.419788351,
+          "frames": 18,
+          "submits": 18
+        },
+        {
+          "time": 55.956758757,
+          "frames": 19,
+          "submits": 19
+        },
+        {
+          "time": 56.476649424,
+          "frames": 20,
+          "submits": 20
+        },
+        {
+          "time": 57.014552987,
+          "frames": 21,
+          "submits": 21
+        },
+        {
+          "time": 57.561476583,
+          "frames": 22,
+          "submits": 22
+        },
+        {
+          "time": 58.099168794,
+          "frames": 23,
+          "submits": 23
+        },
+        {
+          "time": 58.648827066,
+          "frames": 24,
+          "submits": 24
+        },
+        {
+          "time": 59.187303372,
+          "frames": 25,
+          "submits": 25
+        },
+        {
+          "time": 59.735890768,
+          "frames": 26,
+          "submits": 26
+        },
+        {
+          "time": 60.277545697,
+          "frames": 27,
+          "submits": 27
+        }
+      ],
+      "encoding_events": [
+        {
+          "bytes": 34336513,
+          "generation": 1,
+          "fnv64": "d99430877ede1ce3",
+          "time": 46.707975217
+        },
+        {
+          "bytes": 34335950,
+          "generation": 2,
+          "fnv64": "ebabc8749be7ae55",
+          "time": 49.660868848
+        },
+        {
+          "bytes": 34335605,
+          "generation": 3,
+          "fnv64": "9759f733c3b0fe7",
+          "time": 52.613789505
+        },
+        {
+          "bytes": 34335284,
+          "generation": 4,
+          "fnv64": "df6ee1a38cabde75",
+          "time": 55.566760132
+        },
+        {
+          "bytes": 34335008,
+          "generation": 5,
+          "fnv64": "b209b9172d515682",
+          "time": 58.519736984
+        },
+        {
+          "bytes": 34334728,
+          "generation": 6,
+          "fnv64": "48bc813b28bbe57",
+          "time": 61.472714361
+        },
+        {
+          "bytes": 34334486,
+          "generation": 7,
+          "fnv64": "db917835ba876bed",
+          "time": 64.425720937
+        },
+        {
+          "bytes": 34334280,
+          "generation": 8,
+          "fnv64": "7d179f6e385bee3f",
+          "time": 67.378788195
+        },
+        {
+          "bytes": 34334007,
+          "generation": 9,
+          "fnv64": "444012380f66821",
+          "time": 70.331682748
+        },
+        {
+          "bytes": 34333848,
+          "generation": 10,
+          "fnv64": "19d65e13914cd73a",
+          "time": 73.284656111
+        },
+        {
+          "bytes": 34333662,
+          "generation": 11,
+          "fnv64": "21416b28b8f48a7e",
+          "time": 76.237650254
+        },
+        {
+          "bytes": 34333500,
+          "generation": 12,
+          "fnv64": "bdfe191f52772504",
+          "time": 79.190607761
+        },
+        {
+          "bytes": 34333318,
+          "generation": 13,
+          "fnv64": "eb2769d6ccbb3335",
+          "time": 82.143602388
+        },
+        {
+          "bytes": 34333159,
+          "generation": 14,
+          "fnv64": "7892262004122bc",
+          "time": 85.096600204
+        },
+        {
+          "bytes": 34332973,
+          "generation": 15,
+          "fnv64": "e116c035dd527aa1",
+          "time": 88.049851125
+        },
+        {
+          "bytes": 34332811,
+          "generation": 16,
+          "fnv64": "7ace8834ff875669",
+          "time": 91.014393304
+        },
+        {
+          "bytes": 34332629,
+          "generation": 17,
+          "fnv64": "6b12fe772a815e63",
+          "time": 93.967403564
+        },
+        {
+          "bytes": 34332589,
+          "generation": 18,
+          "fnv64": "7562b3ec63a27191",
+          "time": 96.920396663
+        },
+        {
+          "bytes": 34332543,
+          "generation": 19,
+          "fnv64": "fb8f9f6905e71ca0",
+          "time": 99.873399217
+        },
+        {
+          "bytes": 34332491,
+          "generation": 20,
+          "fnv64": "f046378ce961844d",
+          "time": 102.826318951
+        },
+        {
+          "bytes": 34332451,
+          "generation": 21,
+          "fnv64": "a6194bc5cc5bb4cc",
+          "time": 105.779326452
+        },
+        {
+          "bytes": 34332400,
+          "generation": 22,
+          "fnv64": "47334d7c300756e9",
+          "time": 108.732273665
+        },
+        {
+          "bytes": 34332355,
+          "generation": 23,
+          "fnv64": "981bf6362f2bd857",
+          "time": 111.68537354
+        },
+        {
+          "bytes": 34332303,
+          "generation": 24,
+          "fnv64": "913ab6f0c0c87cdf",
+          "time": 114.638236109
+        },
+        {
+          "bytes": 34332251,
+          "generation": 25,
+          "fnv64": "6ea959021c3e99af",
+          "time": 117.591205912
+        },
+        {
+          "bytes": 34332199,
+          "generation": 26,
+          "fnv64": "5edbf7755bca4ab7",
+          "time": 120.544285711
+        },
+        {
+          "bytes": 34332148,
+          "generation": 27,
+          "fnv64": "9e98370cca023071",
+          "time": 123.504069864
+        }
+      ],
+      "limitation": "Recorded states cannot prove that the post-release submit was already queued in firmware before release; no claim of instantaneous stop.",
+      "runtime_override_claim": []
+    }
+  ]
+}

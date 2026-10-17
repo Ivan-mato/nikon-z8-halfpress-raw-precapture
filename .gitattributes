@@ -1,0 +1,3 @@
+# Preserve the reviewed snapshot and publication receipts byte for byte.
+# Source-lock.json checks file bytes, including line endings, on every platform.
+experiments/held-half/** -text

@@ -1,0 +1,74 @@
+[
+  {
+    "file": "VERDICT.json",
+    "original_sha256": "48239a6602cfc4c9a7b669e4da87d44b12dee56135e63cc3fe4b163559497052"
+  },
+  {
+    "file": "independent-content.json",
+    "original_sha256": "f2cc17406fb959f4e5e1a6da4f4d1921cd6bceadbcc0aba9e0b55c2c9024bc0c"
+  },
+  {
+    "file": "independent-files-only.json",
+    "original_sha256": "cadefdab35d4b5755dac96422408eb3a509b002e41cf2d5fb64a6122fdab1435"
+  },
+  {
+    "file": "replay-halfheld-002-content.json",
+    "original_sha256": "90e40d7d946977d378c3f1727f10c87830a860ceb9d151bde60310eb6cb0902f"
+  },
+  {
+    "file": "replay-stock-half-002-content.json",
+    "original_sha256": "c7d287cbe0d8be052ac6f4a190dd5e82e57ae470f0e418a0890c280fdde1a1fd"
+  },
+  {
+    "file": "halfheld-clean-001-independent-behavior.json",
+    "original_sha256": "6e224a55c470900f0eea9f1efa110c62df8e96430cd5a81adf0e21c83f17422f"
+  },
+  {
+    "file": "stock-half-clean-001-independent-behavior.json",
+    "original_sha256": "8104647e57bc1c1676d1e9af52d7cb8d55a15749cad1db25a8640c144e9f56f9"
+  },
+  {
+    "file": "replay-halfheld-002-independent-behavior.json",
+    "original_sha256": "f293b56465b98384da7cc9e95ce9506a68e20378aef628889a8f964dd6a7dd50"
+  },
+  {
+    "file": "replay-stock-half-002-independent-behavior.json",
+    "original_sha256": "f86492c272dc4c09c9ab530d52030739adfcd86d6347388bc259c33720165289"
+  },
+  {
+    "file": "independent-build.json",
+    "original_sha256": "2ab7c4b2986c6ce2c5191003b48eb94e46600ab2645da57c56583415237ed88e"
+  },
+  {
+    "file": "complete-build-source-comparison.json",
+    "original_sha256": "91a838f5fd9743a48daf93b95cdaaff6bca9b9809d0de57ce3eb620e08786fec"
+  },
+  {
+    "file": "binary-section-comparison.json",
+    "original_sha256": "6ac064ab35744bd1a4ad4a064030334fb1237009f4e4f82969bbdf147ddb1f43"
+  },
+  {
+    "file": "manifest-check.json",
+    "original_sha256": "390f1045b7bf71365ba6fea80c4ffbc4529535309a4b625a345a45fc7ab008c0"
+  },
+  {
+    "file": "original-source-bindings.json",
+    "original_sha256": "8dbe028d5aa1e9831549eb9981db298d0356bf8d2f2a477ae5dc1ae197942efb"
+  },
+  {
+    "file": "independent-transport-summary.json",
+    "original_sha256": "29965d43b9436578aae50dc12766277cb3a892776a2e684345d7f161828e5f78"
+  },
+  {
+    "file": "wrong-source-negative-control.json",
+    "original_sha256": "89010b753e75faaf2bfc5a9afd5642325e40676851c567ebc572ae5cd41aad1a"
+  },
+  {
+    "file": "model-tests-result.json",
+    "original_sha256": "b475a1595d8e7bd7ff9448fe18311677b9e3f78da0d6d615ae7f9cb2376e9662"
+  },
+  {
+    "file": "model-tests-with-harness-fix-result.json",
+    "original_sha256": "3fa207337f6a766a2ebe08d4348b982bffa71ee10ffbb53b4c7cddd7be37a0e9"
+  }
+]

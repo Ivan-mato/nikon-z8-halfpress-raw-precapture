@@ -1,0 +1,21 @@
+{
+  "publication_note": "Path-redacted derivative of a retained local report; not the original byte stream.",
+  "original_report_sha256": "48239a6602cfc4c9a7b669e4da87d44b12dee56135e63cc3fe4b163559497052",
+  "data": {
+    "core_model_claim_verified": true,
+    "independent_replay_verified": true,
+    "original_nefs": 27,
+    "new_nefs": 27,
+    "stock_half_nefs": 0,
+    "original_project_full_acceptance": false,
+    "remaining_gates": [
+      "per-frame producer sample comparison",
+      "original regression3 + sustained3"
+    ],
+    "delivered_test_suite_exit": 1,
+    "isolated_harness_fix_suite_exit": 0,
+    "real_camera_verified": false,
+    "ten_fps_verified": false,
+    "report": "STRICT-REVIEW.md"
+  }
+}

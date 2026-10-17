@@ -1,0 +1,46 @@
+{
+  "passed": true,
+  "scope": "Fresh build and replay through the public reproduction CLI, same local environment",
+  "model_source_unchanged": true,
+  "external_replication": false,
+  "binary_sha256": "1516b2a9cea3db3b5438205945b9f7dc23322c63646010143de44f029fe5c543",
+  "source_lock_sha256": "8bcce5b3a125f79a1644e6ee5ac4145b46577280ea304e25a7ad6b193a18671c",
+  "candidate_nefs": 27,
+  "stock_nefs": 0,
+  "candidate_samples_compared": 1234051200,
+  "candidate_mismatches": 0,
+  "all_decoded_hashes_distinct": true,
+  "decoded_sequence_matches_published_samples": true,
+  "per_frame_producer_checked": false,
+  "driver_exit": {
+    "candidate": 0,
+    "stock": 0
+  },
+  "unknown_access_lines": {
+    "candidate": 0,
+    "stock": 0
+  },
+  "actual_capture_gpio_writes": [
+    "0",
+    "1",
+    "0"
+  ],
+  "candidate_hold_virtual_seconds": 14.055405550000003,
+  "capture_finish_delay_after_release": 0.07587842599999561,
+  "encoding_finish_delay_after_release": 63.25259697199999,
+  "model_tests_exit_with_documented_test_stub": 0,
+  "sample_only_audit_passed": true,
+  "original_reports": {
+    "preparation": "396e3542818595d69a894a3e2e52e9eefe8362b32a07dcaed61b90dd1585146f",
+    "build": "8ffb1c8c6c25317647df6f98fbc45001c7f7abedb896832b7d1d3b897c17bfef",
+    "model-tests": "6d49f0da6011cb148f82f6d79aa8a60ce74c3e60f77f26506787f1da25247a48",
+    "candidate-exit": "88d7c8e621dc19de6335dde0f03cc2479106c92a9cbecf9a79166737d5cffa85",
+    "stock-exit": "3f66c3155219f7e21ad54be0df05fb2ea83ab6f1396825816ecb9d6c1470f04e",
+    "candidate-audit": "90ae592bcbda173566f26c45343aba990124ec06b4a84ece3102ba0312a2743d",
+    "stock-audit": "ba059928e051ffaa37d593d7f5e6ed66d573225245ce2b6f461ce31da78cb137",
+    "sample-audit": "8a00ad1118553ff6c8598a46baa1ef20edd9ff54475b2426c8e61f875ffa5a07"
+  },
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "platform": "Linux-6.18.40.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "compiler": "cc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0"
+}

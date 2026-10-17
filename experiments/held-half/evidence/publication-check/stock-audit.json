@@ -1,0 +1,124 @@
+{
+  "publication_note": "Path-redacted derivative of a new public-recipe validation run.",
+  "original_report_sha256": "ba059928e051ffaa37d593d7f5e6ed66d573225245ce2b6f461ce31da78cb137",
+  "data": {
+    "passed": true,
+    "scope": "Held-HALF model profile; not complete original six-case acceptance",
+    "case": "stock",
+    "behavior": {
+      "run": "<WORK>/run-001/stock",
+      "stock": true,
+      "passed": true,
+      "tool_sha256": "8e19f8b156e78649a65066c4c4634c521f345e471848272b71e66f23fbcf9c6b",
+      "firmware_sha256": "2b43a31c9de838f84b12416de4348a7004e65be07f853ec56ec2b10f3a8e3853",
+      "qemu_sha256": "1516b2a9cea3db3b5438205945b9f7dc23322c63646010143de44f029fe5c543",
+      "hold_virtual_seconds": 14.256957147999998,
+      "input_receipts": [
+        {
+          "index": 47,
+          "half": 0,
+          "full": 0,
+          "gpio_time": 44.508241288,
+          "mcu_accepted_time": 44.514424921,
+          "accepted_dump_sha256": "141a53f943e0d8282afdf12ab2ea5bc0596cf04bdef2b4eae1c4f90a6daa1088"
+        },
+        {
+          "index": 48,
+          "half": 1,
+          "full": 0,
+          "gpio_time": 46.609633764,
+          "mcu_accepted_time": 46.609657512,
+          "accepted_dump_sha256": "a5efdfe0ac41502204240f7d199f18669108d87e668f6c6d6ab567c9ef236692"
+        },
+        {
+          "index": 49,
+          "half": 0,
+          "full": 0,
+          "gpio_time": 60.866590912,
+          "mcu_accepted_time": 60.870176581,
+          "accepted_dump_sha256": "141a53f943e0d8282afdf12ab2ea5bc0596cf04bdef2b4eae1c4f90a6daa1088"
+        }
+      ],
+      "unknown_lines": 0,
+      "native_error_callbacks": [],
+      "screens_checked": 345,
+      "known_error_screens": [],
+      "before_release": {
+        "time": 60.866590912,
+        "captures": 0,
+        "submits": 0,
+        "encoded": 0
+      },
+      "final_captures": 0,
+      "final_encoded": 0,
+      "held_encoded_count": 0,
+      "max_held_encoding_gap": 14.256957147999998,
+      "first_observed_final_capture_time": null,
+      "capture_finish_delay_after_release": null,
+      "additional_capture_submits_after_release": 0,
+      "last_encoding_time": null,
+      "last_encoding_delay_after_release": null,
+      "observed_quiet_tail_seconds": 4.991868328999999,
+      "total_observation_after_release": 12.304927202999998,
+      "capture_steps": [],
+      "encoding_events": [],
+      "limitation": "Recorded states cannot prove that the post-release submit was already queued in firmware before release; no claim of instantaneous stop.",
+      "runtime_override_claim": []
+    },
+    "nef_count": 0,
+    "files": [],
+    "all_native_card_files": [
+      {
+        "path": "NIKON001.DSC",
+        "bytes": 512,
+        "valid_bytes": 512,
+        "first_cluster": 5,
+        "contiguous": true,
+        "directory": false
+      }
+    ],
+    "total_samples_compared": 0,
+    "producer_samples_compared": false,
+    "wrong_source_negative_control": null,
+    "transport": {
+      "blocked": [],
+      "capture_gpio_writes": [
+        "0",
+        "1",
+        "0"
+      ],
+      "memory_addresses": [
+        "0xd15100c",
+        "0xd151010"
+      ],
+      "irq_indexes": [
+        25,
+        26
+      ]
+    },
+    "versions": {
+      "rawpy": "0.27.1",
+      "libraw": [
+        0,
+        22,
+        1
+      ],
+      "numpy": "2.5.4",
+      "pillow": "12.3.0"
+    },
+    "scripts": {
+      "audit_run.py": "492e38eef2c2f819c7d378943d75377a3a6c9eaf2fa92301f1408e606e12fb46",
+      "audit_samples.py": "6398ec691688f0de27ea1f699c6e19c831061f764499bd0754287c2fe79018da",
+      "behavior.py": "8e19f8b156e78649a65066c4c4634c521f345e471848272b71e66f23fbcf9c6b",
+      "content.py": "7488332e24b5a2bc72a56173e015e1f3ec984d7b3e005815461e50e31eb70248",
+      "guarded_capture.py": "9d426d9793d6a78608dae6cb978de9950e932db97424ed761b5debd0b4b8f56a",
+      "reproduce.py": "a3b8b3a3a23529e7a6267544ccca39fdcc03ed083c88630751ebae9b8b902517"
+    },
+    "inputs": {
+      "result_sha256": "96422c48e2142a313d10671049fc3fafa9027718cdf7494785cb6c19c6a92125",
+      "stderr_sha256": "494bb75232f7f94ae9780fd12f99b526e05b958b8fb5fc26caeccded01ab8f25",
+      "exit_receipt_sha256": "3f66c3155219f7e21ad54be0df05fb2ea83ab6f1396825816ecb9d6c1470f04e",
+      "guard_receipt_sha256": "e8dc6528d7b971c5def34ce7e75cb3f531454f2137beec4a4f2874652d1506dd"
+    }
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "publication_note": "Path-redacted derivative of a retained local report; not the original byte stream.",
+  "original_report_sha256": "29965d43b9436578aae50dc12766277cb3a892776a2e684345d7f161828e5f78",
+  "data": [
+    {
+      "run": "replay-stock-half-002",
+      "passed": true,
+      "transport_receipt_sha256": "edf7d41774e7d0642ba9c91410cfa702b19a4682814a95584df5d35d3022a0e5",
+      "guard_sha256": "ef6de7456103a81b94d2c7bba8cdf343eb8f8ee016eb42d4038e442de714e0dc",
+      "driver_exit": 0,
+      "blocked": [],
+      "actual_capture_gpio_writes": [
+        "0",
+        "1",
+        "0"
+      ],
+      "direct_memory_write_addresses": [
+        "0xd15100c",
+        "0xd151010"
+      ],
+      "direct_irq_indexes": [
+        25,
+        26
+      ],
+      "actual_model_input_properties": [
+        "capture-gpio-input",
+        "event1508-global1-input",
+        "serial-clock"
+      ],
+      "cpu_register_writes": 0,
+      "business_ram_writes": 0,
+      "counts": {
+        "qmp:qmp_capabilities": 1,
+        "gdb:Z1": 1560,
+        "gdb:z1": 1560,
+        "qmp:cont": 2521,
+        "qmp:query-status": 20699,
+        "qmp:human-monitor-command": 17880,
+        "qtest:readl": 1043,
+        "qmp:qom-list": 40,
+        "qtest:writel": 919,
+        "qtest:set_irq_in": 946,
+        "qtest:read": 3711,
+        "qmp:qom-get": 65626,
+        "qmp:qom-set": 2760,
+        "qmp:stop": 1049,
+        "qmp:screendump": 389,
+        "qmp:quit": 1
+      }
+    },
+    {
+      "run": "replay-halfheld-002",
+      "passed": true,
+      "transport_receipt_sha256": "054dc65350ee67e3eccd7c18ec97216670ddb7e18fbdee265e8749adf4498a07",
+      "guard_sha256": "ef6de7456103a81b94d2c7bba8cdf343eb8f8ee016eb42d4038e442de714e0dc",
+      "driver_exit": 0,
+      "blocked": [],
+      "actual_capture_gpio_writes": [
+        "0",
+        "1",
+        "0"
+      ],
+      "direct_memory_write_addresses": [
+        "0xd15100c",
+        "0xd151010"
+      ],
+      "direct_irq_indexes": [
+        25,
+        26
+      ],
+      "actual_model_input_properties": [
+        "capture-gpio-input",
+        "event1508-aux0-input",
+        "event1508-global1-input",
+        "serial-clock"
+      ],
+      "cpu_register_writes": 0,
+      "business_ram_writes": 0,
+      "counts": {
+        "qmp:qmp_capabilities": 1,
+        "gdb:Z1": 3858,
+        "gdb:z1": 3858,
+        "qmp:cont": 6415,
+        "qmp:query-status": 40602,
+        "qmp:human-monitor-command": 44928,
+        "qtest:readl": 2505,
+        "qmp:qom-list": 40,
+        "qtest:writel": 2381,
+        "qtest:set_irq_in": 2384,
+        "qtest:read": 8747,
+        "qmp:qom-get": 127996,
+        "qmp:qom-set": 8985,
+        "qmp:stop": 2733,
+        "qmp:screendump": 816,
+        "qmp:quit": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "publication_note": "Path-redacted derivative of a new public-recipe validation run.",
+  "original_report_sha256": "6d49f0da6011cb148f82f6d79aa8a60ce74c3e60f77f26506787f1da25247a48",
+  "data": {
+    "exit_code": 0,
+    "original_suite_requires_clock_stub": true,
+    "changed_file": "tests/test_raw_owners.py",
+    "original_sha256": "f9807c141fd8c018c75acced1d9c3c1bc6811e8362bca710c3726fec075c1794",
+    "repaired_sha256": "e54eb816fa164808e0e5c4cee543193a841f0f3c7dd949d94da6ecad8b1e1ea9",
+    "model_and_capture_driver_unchanged": true,
+    "command": [
+      "<PYTHON>",
+      "<WORK>/test-harness-copy/tests/run.py"
+    ]
+  }
+}

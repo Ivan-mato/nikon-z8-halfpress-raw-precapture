@@ -1,0 +1,1766 @@
+{
+  "publication_note": "Path-redacted derivative of a new public-recipe validation run.",
+  "original_report_sha256": "90ae592bcbda173566f26c45343aba990124ec06b4a84ece3102ba0312a2743d",
+  "data": {
+    "passed": true,
+    "scope": "Held-HALF model profile; not complete original six-case acceptance",
+    "case": "candidate",
+    "behavior": {
+      "run": "<WORK>/run-001/candidate",
+      "stock": false,
+      "passed": true,
+      "tool_sha256": "8e19f8b156e78649a65066c4c4634c521f345e471848272b71e66f23fbcf9c6b",
+      "firmware_sha256": "2f8207645aeaf8b704613f71d88abc8b27dc5141130219a0176e3ef2ecb1954e",
+      "qemu_sha256": "1516b2a9cea3db3b5438205945b9f7dc23322c63646010143de44f029fe5c543",
+      "hold_virtual_seconds": 14.055405550000003,
+      "input_receipts": [
+        {
+          "index": 47,
+          "half": 0,
+          "full": 0,
+          "gpio_time": 44.55379524,
+          "mcu_accepted_time": 44.559704255,
+          "accepted_dump_sha256": "141a53f943e0d8282afdf12ab2ea5bc0596cf04bdef2b4eae1c4f90a6daa1088"
+        },
+        {
+          "index": 48,
+          "half": 1,
+          "full": 0,
+          "gpio_time": 46.585757484,
+          "mcu_accepted_time": 46.585847973,
+          "accepted_dump_sha256": "a5efdfe0ac41502204240f7d199f18669108d87e668f6c6d6ab567c9ef236692"
+        },
+        {
+          "index": 76,
+          "half": 0,
+          "full": 0,
+          "gpio_time": 60.641163034,
+          "mcu_accepted_time": 60.645149868,
+          "accepted_dump_sha256": "141a53f943e0d8282afdf12ab2ea5bc0596cf04bdef2b4eae1c4f90a6daa1088"
+        }
+      ],
+      "unknown_lines": 0,
+      "native_error_callbacks": [],
+      "screens_checked": 765,
+      "known_error_screens": [],
+      "before_release": {
+        "time": 60.641163034,
+        "captures": 26,
+        "submits": 26,
+        "encoded": 5
+      },
+      "final_captures": 27,
+      "final_encoded": 27,
+      "held_encoded_count": 5,
+      "max_held_encoding_gap": 2.953074074,
+      "first_observed_final_capture_time": 60.71704146,
+      "capture_finish_delay_after_release": 0.07587842599999561,
+      "additional_capture_submits_after_release": 1,
+      "last_encoding_time": 123.893760006,
+      "last_encoding_delay_after_release": 63.25259697199999,
+      "observed_quiet_tail_seconds": 4.996759659999981,
+      "total_observation_after_release": 85.23512269499999,
+      "capture_steps": [
+        {
+          "time": 46.665025594,
+          "frames": 1,
+          "submits": 1
+        },
+        {
+          "time": 47.203162055,
+          "frames": 2,
+          "submits": 2
+        },
+        {
+          "time": 47.740275018,
+          "frames": 3,
+          "submits": 3
+        },
+        {
+          "time": 48.279395816,
+          "frames": 4,
+          "submits": 4
+        },
+        {
+          "time": 48.817980172,
+          "frames": 5,
+          "submits": 5
+        },
+        {
+          "time": 49.35509158,
+          "frames": 6,
+          "submits": 6
+        },
+        {
+          "time": 49.900549008,
+          "frames": 7,
+          "submits": 7
+        },
+        {
+          "time": 50.440784458,
+          "frames": 8,
+          "submits": 8
+        },
+        {
+          "time": 50.977950239,
+          "frames": 9,
+          "submits": 9
+        },
+        {
+          "time": 51.524482089,
+          "frames": 10,
+          "submits": 10
+        },
+        {
+          "time": 52.062038585,
+          "frames": 11,
+          "submits": 11
+        },
+        {
+          "time": 52.607534707,
+          "frames": 12,
+          "submits": 12
+        },
+        {
+          "time": 53.144604419,
+          "frames": 13,
+          "submits": 13
+        },
+        {
+          "time": 53.68852853,
+          "frames": 14,
+          "submits": 14
+        },
+        {
+          "time": 54.230902116,
+          "frames": 15,
+          "submits": 15
+        },
+        {
+          "time": 54.77240466,
+          "frames": 16,
+          "submits": 16
+        },
+        {
+          "time": 55.310517813,
+          "frames": 17,
+          "submits": 17
+        },
+        {
+          "time": 55.858261344,
+          "frames": 18,
+          "submits": 18
+        },
+        {
+          "time": 56.395614245,
+          "frames": 19,
+          "submits": 19
+        },
+        {
+          "time": 56.934547467,
+          "frames": 20,
+          "submits": 20
+        },
+        {
+          "time": 57.472976093,
+          "frames": 21,
+          "submits": 21
+        },
+        {
+          "time": 58.009634705,
+          "frames": 22,
+          "submits": 22
+        },
+        {
+          "time": 58.546909707,
+          "frames": 23,
+          "submits": 23
+        },
+        {
+          "time": 59.085077634,
+          "frames": 24,
+          "submits": 24
+        },
+        {
+          "time": 59.631181047,
+          "frames": 25,
+          "submits": 25
+        },
+        {
+          "time": 60.169556984,
+          "frames": 26,
+          "submits": 26
+        },
+        {
+          "time": 60.71704146,
+          "frames": 27,
+          "submits": 27
+        }
+      ],
+      "encoding_events": [
+        {
+          "bytes": 34336513,
+          "generation": 1,
+          "fnv64": "d99430877ede1ce3",
+          "time": 47.115516609
+        },
+        {
+          "bytes": 34335950,
+          "generation": 2,
+          "fnv64": "ebabc8749be7ae55",
+          "time": 50.068169019
+        },
+        {
+          "bytes": 34335605,
+          "generation": 3,
+          "fnv64": "9759f733c3b0fe7",
+          "time": 53.021139382
+        },
+        {
+          "bytes": 34335284,
+          "generation": 4,
+          "fnv64": "df6ee1a38cabde75",
+          "time": 55.974213456
+        },
+        {
+          "bytes": 34335008,
+          "generation": 5,
+          "fnv64": "b209b9172d515682",
+          "time": 58.927173956
+        },
+        {
+          "bytes": 34334728,
+          "generation": 6,
+          "fnv64": "48bc813b28bbe57",
+          "time": 61.88014737
+        },
+        {
+          "bytes": 34334486,
+          "generation": 7,
+          "fnv64": "db917835ba876bed",
+          "time": 64.83306405
+        },
+        {
+          "bytes": 34334280,
+          "generation": 8,
+          "fnv64": "7d179f6e385bee3f",
+          "time": 67.786066251
+        },
+        {
+          "bytes": 34334007,
+          "generation": 9,
+          "fnv64": "444012380f66821",
+          "time": 70.739105511
+        },
+        {
+          "bytes": 34333848,
+          "generation": 10,
+          "fnv64": "19d65e13914cd73a",
+          "time": 73.692058096
+        },
+        {
+          "bytes": 34333662,
+          "generation": 11,
+          "fnv64": "21416b28b8f48a7e",
+          "time": 76.645018495
+        },
+        {
+          "bytes": 34333500,
+          "generation": 12,
+          "fnv64": "bdfe191f52772504",
+          "time": 79.598010333
+        },
+        {
+          "bytes": 34333318,
+          "generation": 13,
+          "fnv64": "eb2769d6ccbb3335",
+          "time": 82.551006545
+        },
+        {
+          "bytes": 34333159,
+          "generation": 14,
+          "fnv64": "7892262004122bc",
+          "time": 85.503987224
+        },
+        {
+          "bytes": 34332973,
+          "generation": 15,
+          "fnv64": "e116c035dd527aa1",
+          "time": 88.456937083
+        },
+        {
+          "bytes": 34332811,
+          "generation": 16,
+          "fnv64": "7ace8834ff875669",
+          "time": 91.409937084
+        },
+        {
+          "bytes": 34332629,
+          "generation": 17,
+          "fnv64": "6b12fe772a815e63",
+          "time": 94.362956321
+        },
+        {
+          "bytes": 34332589,
+          "generation": 18,
+          "fnv64": "7562b3ec63a27191",
+          "time": 97.315895892
+        },
+        {
+          "bytes": 34332543,
+          "generation": 19,
+          "fnv64": "fb8f9f6905e71ca0",
+          "time": 100.268883967
+        },
+        {
+          "bytes": 34332491,
+          "generation": 20,
+          "fnv64": "f046378ce961844d",
+          "time": 103.221970857
+        },
+        {
+          "bytes": 34332451,
+          "generation": 21,
+          "fnv64": "a6194bc5cc5bb4cc",
+          "time": 106.174848218
+        },
+        {
+          "bytes": 34332400,
+          "generation": 22,
+          "fnv64": "47334d7c300756e9",
+          "time": 109.127864789
+        },
+        {
+          "bytes": 34332355,
+          "generation": 23,
+          "fnv64": "981bf6362f2bd857",
+          "time": 112.080826675
+        },
+        {
+          "bytes": 34332303,
+          "generation": 24,
+          "fnv64": "913ab6f0c0c87cdf",
+          "time": 115.034888408
+        },
+        {
+          "bytes": 34332251,
+          "generation": 25,
+          "fnv64": "6ea959021c3e99af",
+          "time": 117.987782103
+        },
+        {
+          "bytes": 34332199,
+          "generation": 26,
+          "fnv64": "5edbf7755bca4ab7",
+          "time": 120.940772555
+        },
+        {
+          "bytes": 34332148,
+          "generation": 27,
+          "fnv64": "9e98370cca023071",
+          "time": 123.893760006
+        }
+      ],
+      "limitation": "Recorded states cannot prove that the post-release submit was already queued in firmware before release; no claim of instantaneous stop.",
+      "runtime_override_claim": []
+    },
+    "nef_count": 27,
+    "files": [
+      {
+        "name": "DSC_0001.NEF",
+        "bytes": 35113217,
+        "sha256": "a5e4cc364484ea2654be2ab3173e935ecf8fef1fab55b5315e0fd312ed77dc87",
+        "source": {
+          "samples": 45705600,
+          "mismatches": 0,
+          "minimum": 0,
+          "maximum": 16383,
+          "decoded_sha256": "c7c6619a33c1862172089789ac8615d8077c26c4dc340901b7a00841da0b7d49",
+          "source_sha256": "6ee6fc9d0b4e67115e7aa4d91771fac40d6aedd274f934af716cbddee3bd85b1",
+          "source_geometry": [
+            640,
+            480
+          ]
+        },
+        "structure": {
+          "width": 8280,
+          "height": 5520,
+          "bits": 14,
+          "compression": 34713,
+          "strip_offset": 776704,
+          "strip_bytes": 34336513,
+          "strip_sha256": "2cd988818f43896f59a28af7deb8179541356ca0eccf18ff8d35402c5c7f8139",
+          "previews": [
+            [
+              160,
+              120
+            ],
+            [
+              8256,
+              5504
+            ],
+            [
+              1620,
+              1080
+            ]
+          ],
+          "packed_fallback_excluded": true
+        }
+      },
+      {
+        "name": "DSC_0002.NEF",
+        "bytes": 35137742,
+        "sha256": "7130d9e8a19a347c1fc95cbb1baca86f4b622899c2d8df6d58f348b52f0f3d41",
+        "source": {
+          "samples": 45705600,
+          "mismatches": 0,
+          "minimum": 24,
+          "maximum": 16350,
+          "decoded_sha256": "3f6d8c82362d85bc6449e0d06f14259a0030042223e5919719e9d747f4c21fe4",
+          "source_sha256": "944f029053665964090a0e12e397eab9f5164cd3f45955a1e0bc9d89e74af420",
+          "source_geometry": [
+            640,
+            480
+          ]
+        },
+        "structure": {
+          "width": 8280,
+          "height": 5520,
+          "bits": 14,
+          "compression": 34713,
+          "strip_offset": 801792,
+          "strip_bytes": 34335950,
+          "strip_sha256": "8baf1c29083061b4424a5c9fdb7cb109c8d987b5bc876e5777a96e3439538c6d",
+          "previews": [
+            [
+              160,
+              120
+            ],
+            [
+              8256,
+              5504
+            ],
+            [
+              1620,
+              1080
+            ]
+          ],
+          "packed_fallback_excluded": true
+        }
+      },
+      {
+        "name": "DSC_0003.NEF",
+        "bytes": 35132789,
+        "sha256": "a02a6da879fd1c4b4dbc71a01930c89e989a3baab4b9d479979d3013c33e7cd3",
+        "source": {
+          "samples": 45705600,
+          "mismatches": 0,
+          "minimum": 50,
+          "maximum": 16377,
+          "decoded_sha256": "5329185b32ed19a143aa5dd7d0c2bd4b1df6624acf259eb1f0b3d18b07464322",
+          "source_sha256": "f028399b9839a3e22999a81f706d9921c2a72299a2674c20a8b599701a8e07d4",
+          "source_geometry": [
+            640,
+            480
+          ]
+        },
+        "structure": {
+          "width": 8280,
+          "height": 5520,
+          "bits": 14,
+          "compression": 34713,
+          "strip_offset": 797184,
+          "strip_bytes": 34335605,
+          "strip_sha256": "64a0ee9f2503dcbace2e6be87c669f462fdd0a74df164bc94ebee742b6af9c31",
+          "previews": [
+            [
+              160,
+              120
+            ],
+            [
+              8256,
+              5504
+            ],
+            [
+              1620,
+              1080
+            ]
+          ],
+          "packed_fallback_excluded": true
+        }
+      },
+      {
+        "name": "DSC_0004.NEF",
+        "bytes": 35118132,
+        "sha256": "62b76ca90e3c6bc532d2f5c95aae8739fbb2dd190b6fbb7f41f7963d626056d5",
+        "source": {
+          "samples": 45705600,
+          "mismatches": 0,
+          "minimum": 22,
+          "maximum": 16349,
+          "decoded_sha256": "7847e78a0158ed343dde98e41e91ed31aecc5dfdfecfed8c0438dcabb4119fbc",
+          "source_sha256": "7fd6b145878133c4bc1545c1790e927be8e8f3bb36da732cf421dee60a6aa668",
+          "source_geometry": [
+            640,
+            480
+          ]
+        },
+        "structure": {
+          "width": 8280,
+          "height": 5520,
+          "bits": 14,
+          "compression": 34713,
+          "strip_offset": 782848,
+          "strip_bytes": 34335284,
+          "strip_sha256": "2b1d306178e8436a011549e70c493dc842699c7ac4ee8419a46fe7cc7bd6b48f",
+          "previews": [
+            [
+              160,
+              120
+            ],
+            [
+              8256,
+              5504
+            ],
+            [
+              1620,
+              1080
+            ]
+          ],
+          "packed_fallback_excluded": true
+        }
+      },
+      {
+        "name": "DSC_0005.NEF",
+        "bytes": 35121952,
+        "sha256": "e8a616381f7f57aa1a57c7c8d4ee41003f11f46967a391d7e7d4e5490d0d7755",
+        "source": {
+          "samples": 45705600,
+          "mismatches": 0,
+          "minimum": 52,
+          "maximum": 16380,
+          "decoded_sha256": "6df6f6ed8e003eeddd1f3f8239fc67c5d72736a880adec081ec352b9f67b75ba",
+          "source_sha256": "0fc6fa797844d61716c7fda54bbd46e0278ad03e07e26ac10cc196372714235e",
+          "source_geometry": [
+            640,
+            480
+          ]
+        },
+        "structure": {
+          "width": 8280,
+          "height": 5520,
+          "bits": 14,
+          "compression": 34713,
+          "strip_offset": 786944,
+          "strip_bytes": 34335008,
+          "strip_sha256": "6bbc6ad9868c6c720dd58905c074c404c0301c76a374adf612ced3b48835f4bd",
+          "previews": [
+            [
+              160,
+              120
+            ],
+            [
+              8256,
+              5504
+            ],
+            [
+              1620,
+              1080
+            ]
+          ],
+          "packed_fallback_excluded": true
+        }
+      },
+      {
+        "name": "DSC_0006.NEF",
+        "bytes": 35125768,
+        "sha256": "e43e9bb5b9c25200ec389648464860f2f6c33e50d26ab6d89a9f58a981c4a7b8",
+        "source": {
+          "samples": 45705600,
+          "mismatches": 0,
+          "minimum": 29,
+          "maximum": 16358,
+          "decoded_sha256": "32d0094ddf9297c45beae339d00100bd22ce64d26a199ac244319b404f9d5842",
+          "source_sha256": "0b60d15097f5c5ae249f090777bca43007db78bce115e42bc3272189b5e8d036",
+          "source_geometry": [
+            640,
+            480
+          ]
+        },
+        "structure": {
+          "width": 8280,
+          "height": 5520,
+          "bits": 14,
+          "compression": 34713,
+          "strip_offset": 791040,
+          "strip_bytes": 34334728,
+          "strip_sha256": "e6d4e450c90add2e0a64169971a2bf859306092717013cbab736defd915688d8",
+          "previews": [
+            [
+              160,
+              120
+            ],
+            [
+              8256,
+              5504
+            ],
+            [
+              1620,
+              1080
+            ]
+          ],
+          "packed_fallback_excluded": true
+        }
+      },
+      {
+        "name": "DSC_0007.NEF",
+        "bytes": 35127574,
+        "sha256": "37f81da97d95991ae75a449a107907a83374f494d1394316437aa915ec87d76f",
+        "source": {
+          "samples": 45705600,
+          "mismatches": 0,
+          "minimum": 9,
+          "maximum": 16338,
+          "decoded_sha256": "7c1dbd688925515f94b83611fc8064ac37c21f58ce57463b1612e01248e5860d",
+          "source_sha256": "25750e96ae07b82bf4f5396b5ed2e99f19bdd5e0ac2420a0e027d95d1a7c6351",
+          "source_geometry": [
+            640,
+            480
+          ]
+        },
+        "structure": {
+          "width": 8280,
+          "height": 5520,
+          "bits": 14,
+          "compression": 34713,
+          "strip_offset": 793088,
+          "strip_bytes": 34334486,
+          "strip_sha256": "86ed0c51c3060b752dbdcac23eb58efa789261c50da191ca4a866cc2161f6e1e",
+          "previews": [
+            [
+              160,
+              120
+            ],
+            [
+              8256,
+              5504
+            ],
+            [
+              1620,
+              1080
+            ]
+          ],
+          "packed_fallback_excluded": true
+        }
+      },
+      {
+        "name": "DSC_0008.NEF",
+        "bytes": 35105864,
+        "sha256": "3c47f8878bb5e8b90c12f32cb446eb405ad9ef3eaa61d03bf4db77e7ce33f07c",
+        "source": {
+          "samples": 45705600,
+          "mismatches": 0,
+          "minimum": 47,
+          "maximum": 16376,
+          "decoded_sha256": "c2ed56ebe70d778895b969fedcf4438630dea8e662a4757bc1e99d27b4980854",
+          "source_sha256": "174fae9ac5f6b944527e33a13108fdd0e491f0c9c8c04c1b055b5a723ddc9d63",
+          "source_geometry": [
+            640,
+            480
+          ]
+        },
+        "structure": {
+          "width": 8280,
+          "height": 5520,
+          "bits": 14,
+          "compression": 34713,
+          "strip_offset": 771584,
+          "strip_bytes": 34334280,
+          "strip_sha256": "9d996e7f16640dcdbc6247f3672a3bbf6cead94926be64ca52ddad8f6289811e",
+          "previews": [
+            [
+              160,
+              120
+            ],
+            [
+              8256,
+              5504
+            ],
+            [
+              1620,
+              1080
+            ]
+          ],
+          "packed_fallback_excluded": true
+        }
+      },
+      {
+        "name": "DSC_0009.NEF",
+        "bytes": 35129143,
+        "sha256": "4a09d5f36cb5cb17619949a08a75a5ca9c0384e410b9bac49a03c71a4e6befb9",
+        "source": {
+          "samples": 45705600,
+          "mismatches": 0,
+          "minimum": 32,
+          "maximum": 16362,
+          "decoded_sha256": "7b6762a8c7fee452ee46f66e49a67f15519e0e5886d46e1c5517ba81e0f40088",
+          "source_sha256": "7b5c0909ea2caf4428b93f061ce94f0ca67a541ff61e42f25329f28eea757acc",
+          "source_geometry": [
+            640,
+            480
+          ]
+        },
+        "structure": {
+          "width": 8280,
+          "height": 5520,
+          "bits": 14,
+          "compression": 34713,
+          "strip_offset": 795136,
+          "strip_bytes": 34334007,
+          "strip_sha256": "b9e3e8474125a434af08ff8741fdf62d6207d03841448f6b49c0d61f12917f6f",
+          "previews": [
+            [
+              160,
+              120
+            ],
+            [
+              8256,
+              5504
+            ],
+            [
+              1620,
+              1080
+            ]
+          ],
+          "packed_fallback_excluded": true
+        }
+      },
+      {
+        "name": "DSC_0010.NEF",
+        "bytes": 35119768,
+        "sha256": "c82354fce4627c017c59853dccadfc7c3d9a11e56793f97fe90f2650b9a8dfa3",
+        "source": {
+          "samples": 45705600,
+          "mismatches": 0,
+          "minimum": 21,
+          "maximum": 16351,
+          "decoded_sha256": "3edecaf447ab2091bf062e2515f865810550cd7a629b19efe170e8e943aa346e",
+          "source_sha256": "eee5ea31f90dd94c45bfcfd05f4451e3df00c97200e8b13519ced9b786a3e47b",
+          "source_geometry": [
+            640,
+            480
+          ]
+        },
+        "structure": {
+          "width": 8280,
+          "height": 5520,
+          "bits": 14,
+          "compression": 34713,
+          "strip_offset": 785920,
+          "strip_bytes": 34333848,
+          "strip_sha256": "8666ebb873998c0acea21b3c2b3a92b131066a783a62065644a79d6960bda79c",
+          "previews": [
+            [
+              160,
+              120
+            ],
+            [
+              8256,
+              5504
+            ],
+            [
+              1620,
+              1080
+            ]
+          ],
+          "packed_fallback_excluded": true
+        }
+      },
+      {
+        "name": "DSC_0011.NEF",
+        "bytes": 35107294,
+        "sha256": "f6593b8a9db0c664a7686996937b8d2c077e18aa3333cb09437e562a39a117bc",
+        "source": {
+          "samples": 45705600,
+          "mismatches": 0,
+          "minimum": 12,
+          "maximum": 16343,
+          "decoded_sha256": "74cdaaff69e0f06dd24479d4adca8ad46a9b5168259c5ffb38a0bbe1f65244ad",
+          "source_sha256": "1e543f58e82990669e87140f5ddffe8df01510372205470dc535652c395fed04",
+          "source_geometry": [
+            640,
+            480
+          ]
+        },
+        "structure": {
+          "width": 8280,
+          "height": 5520,
+          "bits": 14,
+          "compression": 34713,
+          "strip_offset": 773632,
+          "strip_bytes": 34333662,
+          "strip_sha256": "a0e6c0fa95b5b08528c583781c8d1de7e8fa5a04eaf5272287832526d4d43cf5",
+          "previews": [
+            [
+              160,
+              120
+            ],
+            [
+              8256,
+              5504
+            ],
+            [
+              1620,
+              1080
+            ]
+          ],
+          "packed_fallback_excluded": true
+        }
+      },
+      {
+        "name": "DSC_0012.NEF",
+        "bytes": 35120444,
+        "sha256": "3ed1828324fc7b6b70535a202baaf952dcf4e53dbc4019eb12e954dd050dea74",
+        "source": {
+          "samples": 45705600,
+          "mismatches": 0,
+          "minimum": 6,
+          "maximum": 16338,
+          "decoded_sha256": "796812d675b662b807506ce23bcbb05e003c9d469c0f0772cc1b33d9e7617cfb",
+          "source_sha256": "05cb59c836754857fc3704a5843bede72e078643fb3ebda49fd4d57b83bb6ed1",
+          "source_geometry": [
+            640,
+            480
+          ]
+        },
+        "structure": {
+          "width": 8280,
+          "height": 5520,
+          "bits": 14,
+          "compression": 34713,
+          "strip_offset": 786944,
+          "strip_bytes": 34333500,
+          "strip_sha256": "76b03e4c539b636a0a015bb37575a683dcc25e2c16c5aec3f51dab55d6907cc8",
+          "previews": [
+            [
+              160,
+              120
+            ],
+            [
+              8256,
+              5504
+            ],
+            [
+              1620,
+              1080
+            ]
+          ],
+          "packed_fallback_excluded": true
+        }
+      },
+      {
+        "name": "DSC_0013.NEF",
+        "bytes": 35124870,
+        "sha256": "dd0eeba1898005a4108563fa15f709798a3991e5d11244f134b8af635720a699",
+        "source": {
+          "samples": 45705600,
+          "mismatches": 0,
+          "minimum": 3,
+          "maximum": 16335,
+          "decoded_sha256": "0354d6c241da2a8fe2caee9687d2f5f53ba31d65ae97dfe2102ed829c3f6676b",
+          "source_sha256": "97ef2f21693a516837158574847a247e0d247b89ac75e76e703606d6dd34cdd1",
+          "source_geometry": [
+            640,
+            480
+          ]
+        },
+        "structure": {
+          "width": 8280,
+          "height": 5520,
+          "bits": 14,
+          "compression": 34713,
+          "strip_offset": 791552,
+          "strip_bytes": 34333318,
+          "strip_sha256": "93a298279dc23eb0b2d087fb8942757b9a7de842ca8dce439f3ad10045b4adf6",
+          "previews": [
+            [
+              160,
+              120
+            ],
+            [
+              8256,
+              5504
+            ],
+            [
+              1620,
+              1080
+            ]
+          ],
+          "packed_fallback_excluded": true
+        }
+      },
+      {
+        "name": "DSC_0014.NEF",
+        "bytes": 35104231,
+        "sha256": "8ca14705857da394be731996a9285b5d70c4d9ca84605e5900e063c346166697",
+        "source": {
+          "samples": 45705600,
+          "mismatches": 0,
+          "minimum": 3,
+          "maximum": 16336,
+          "decoded_sha256": "02e5c850cb6888d8f41ee6df3e2ebef2747739ed8e45302aea625c74602a1db5",
+          "source_sha256": "a2791dacffd40ca73fd404e929cb796eccd03588f6d79afd4bbadc9a4d690e47",
+          "source_geometry": [
+            640,
+            480
+          ]
+        },
+        "structure": {
+          "width": 8280,
+          "height": 5520,
+          "bits": 14,
+          "compression": 34713,
+          "strip_offset": 771072,
+          "strip_bytes": 34333159,
+          "strip_sha256": "b11502e2d0dd8c84feb04771bd09d818ddc34eebaf7c614c96825b2786a2d98d",
+          "previews": [
+            [
+              160,
+              120
+            ],
+            [
+              8256,
+              5504
+            ],
+            [
+              1620,
+              1080
+            ]
+          ],
+          "packed_fallback_excluded": true
+        }
+      },
+      {
+        "name": "DSC_0015.NEF",
+        "bytes": 35119917,
+        "sha256": "98cbe8259bf23250583a4eca67e3c4ddf841f096af78ffd559b91697ea4332c9",
+        "source": {
+          "samples": 45705600,
+          "mismatches": 0,
+          "minimum": 6,
+          "maximum": 16340,
+          "decoded_sha256": "989c8a9e2e3405d4f5724813d7c63089de99df688035ea38670738c2d2f2f284",
+          "source_sha256": "2a2d1fb5ea8f19784d407c899f906282d8990c0bd40ff7fe1deee53060589a01",
+          "source_geometry": [
+            640,
+            480
+          ]
+        },
+        "structure": {
+          "width": 8280,
+          "height": 5520,
+          "bits": 14,
+          "compression": 34713,
+          "strip_offset": 786944,
+          "strip_bytes": 34332973,
+          "strip_sha256": "2cd00489b499837c160eba67ca60bc9cedfe5c7a2b68e86beedb254c768e1326",
+          "previews": [
+            [
+              160,
+              120
+            ],
+            [
+              8256,
+              5504
+            ],
+            [
+              1620,
+              1080
+            ]
+          ],
+          "packed_fallback_excluded": true
+        }
+      },
+      {
+        "name": "DSC_0016.NEF",
+        "bytes": 35112075,
+        "sha256": "abacae1d2984a0020a26ca883d91431962c592cd9f85be6c5eca910212c15598",
+        "source": {
+          "samples": 45705600,
+          "mismatches": 0,
+          "minimum": 12,
+          "maximum": 16346,
+          "decoded_sha256": "d0ee84b6c05b3755b44eb7fa3289fe0819a2acea3253aa39e29eb7bf7bba4be8",
+          "source_sha256": "1d3ba9a896a4b418619022741ac6aec5df3fdf1b75be8ecca7efc606c53a7b14",
+          "source_geometry": [
+            640,
+            480
+          ]
+        },
+        "structure": {
+          "width": 8280,
+          "height": 5520,
+          "bits": 14,
+          "compression": 34713,
+          "strip_offset": 779264,
+          "strip_bytes": 34332811,
+          "strip_sha256": "92b02c3b1b949d0b985bc421248cbfb406ffa223c388eb219c178077a2b18fc4",
+          "previews": [
+            [
+              160,
+              120
+            ],
+            [
+              8256,
+              5504
+            ],
+            [
+              1620,
+              1080
+            ]
+          ],
+          "packed_fallback_excluded": true
+        }
+      },
+      {
+        "name": "DSC_0017.NEF",
+        "bytes": 35108821,
+        "sha256": "63c0fb42a89b903454b01c0008471a05cefd91da4be51916daf52038bddda5a5",
+        "source": {
+          "samples": 45705600,
+          "mismatches": 0,
+          "minimum": 21,
+          "maximum": 16356,
+          "decoded_sha256": "09165410818283ec196714aced7a1728f6964e39ab9b8e9fad5874bbd0bafe1a",
+          "source_sha256": "58ad49249a071e392834419d2d4c2ce2b6b081d712a79525147c8eba80487dfb",
+          "source_geometry": [
+            640,
+            480
+          ]
+        },
+        "structure": {
+          "width": 8280,
+          "height": 5520,
+          "bits": 14,
+          "compression": 34713,
+          "strip_offset": 776192,
+          "strip_bytes": 34332629,
+          "strip_sha256": "abc8e91555bf6bcd8c04fe68f8a6eff8dbb1a00f7a28b574fb82fb67bde33ebc",
+          "previews": [
+            [
+              160,
+              120
+            ],
+            [
+              8256,
+              5504
+            ],
+            [
+              1620,
+              1080
+            ]
+          ],
+          "packed_fallback_excluded": true
+        }
+      },
+      {
+        "name": "DSC_0018.NEF",
+        "bytes": 35105197,
+        "sha256": "bad92445d6ad1abf31de2a4764919985beedaf7d972648e3061d21786f97e8dd",
+        "source": {
+          "samples": 45705600,
+          "mismatches": 0,
+          "minimum": 33,
+          "maximum": 16368,
+          "decoded_sha256": "3652c98fff63333e606a43b96209ee1f3f68d510dd179242a7479b8f4325e474",
+          "source_sha256": "dec8fd7231a68ce47226905d7d590fac1ce49919d2ede7bdf48dbb9828c81d5c",
+          "source_geometry": [
+            640,
+            480
+          ]
+        },
+        "structure": {
+          "width": 8280,
+          "height": 5520,
+          "bits": 14,
+          "compression": 34713,
+          "strip_offset": 772608,
+          "strip_bytes": 34332589,
+          "strip_sha256": "54ad0c35c51dfb3070f014eaef4d465fd61f1db49addb3260d0b5844ca799b11",
+          "previews": [
+            [
+              160,
+              120
+            ],
+            [
+              8256,
+              5504
+            ],
+            [
+              1620,
+              1080
+            ]
+          ],
+          "packed_fallback_excluded": true
+        }
+      },
+      {
+        "name": "DSC_0019.NEF",
+        "bytes": 35109759,
+        "sha256": "0735c966bc8e11e79ea0e56028737677a99be48f4b20591e0bc0c4e7693ce080",
+        "source": {
+          "samples": 45705600,
+          "mismatches": 0,
+          "minimum": 47,
+          "maximum": 16383,
+          "decoded_sha256": "ef7ebdc4cb6709567617c77c6a7995be02caa175c55ac642ab63428c19fff7d0",
+          "source_sha256": "31b446ec9f711f75c5c20a456c0a710312d2d0f2cef39a908ed6b955368bf114",
+          "source_geometry": [
+            640,
+            480
+          ]
+        },
+        "structure": {
+          "width": 8280,
+          "height": 5520,
+          "bits": 14,
+          "compression": 34713,
+          "strip_offset": 777216,
+          "strip_bytes": 34332543,
+          "strip_sha256": "10fa99eac78264ed841010097378c0ac3c0d972910c36b23cbd2ece9fb8ebb15",
+          "previews": [
+            [
+              160,
+              120
+            ],
+            [
+              8256,
+              5504
+            ],
+            [
+              1620,
+              1080
+            ]
+          ],
+          "packed_fallback_excluded": true
+        }
+      },
+      {
+        "name": "DSC_0020.NEF",
+        "bytes": 35110219,
+        "sha256": "8e194ac2b049af20111f4f040c21981d8655473cb554c1cadc7f1810b16aacd6",
+        "source": {
+          "samples": 45705600,
+          "mismatches": 0,
+          "minimum": 17,
+          "maximum": 16353,
+          "decoded_sha256": "d11064e6f38bd32523d6b21ba7586bc6e426606e72be7b0e28935b87e782040d",
+          "source_sha256": "bef1d5bd0cda5b51264d2a58a86ef4e7d51ab6541f2e211f6d84b2f4ea2b4a9e",
+          "source_geometry": [
+            640,
+            480
+          ]
+        },
+        "structure": {
+          "width": 8280,
+          "height": 5520,
+          "bits": 14,
+          "compression": 34713,
+          "strip_offset": 777728,
+          "strip_bytes": 34332491,
+          "strip_sha256": "2e11f74e56da3597ef0d2bf771fec7065eddfaeddf754174713071e08a580aa7",
+          "previews": [
+            [
+              160,
+              120
+            ],
+            [
+              8256,
+              5504
+            ],
+            [
+              1620,
+              1080
+            ]
+          ],
+          "packed_fallback_excluded": true
+        }
+      },
+      {
+        "name": "DSC_0021.NEF",
+        "bytes": 35105571,
+        "sha256": "ed79c1bd352d4229b494ff2e8a8b32059da4ae9297d7005f28d881efe67a480f",
+        "source": {
+          "samples": 45705600,
+          "mismatches": 0,
+          "minimum": 38,
+          "maximum": 16375,
+          "decoded_sha256": "545b3bbcd4bc768744d12160f164e45afccb688775a1f4b368f14efc4efeb2a7",
+          "source_sha256": "96967252f9e879a34d1117d955994ce02048fe761b5e2f2f832660c3677728e1",
+          "source_geometry": [
+            640,
+            480
+          ]
+        },
+        "structure": {
+          "width": 8280,
+          "height": 5520,
+          "bits": 14,
+          "compression": 34713,
+          "strip_offset": 773120,
+          "strip_bytes": 34332451,
+          "strip_sha256": "95f33381e992bbf1dfff8659efce4f766a23d9010485313ed3e334f2db69292e",
+          "previews": [
+            [
+              160,
+              120
+            ],
+            [
+              8256,
+              5504
+            ],
+            [
+              1620,
+              1080
+            ]
+          ],
+          "packed_fallback_excluded": true
+        }
+      },
+      {
+        "name": "DSC_0022.NEF",
+        "bytes": 35105520,
+        "sha256": "3eee46c7d2743b6cfe3f1510ad7704ee7beade47cb37bf2a450972efd6e9a5c0",
+        "source": {
+          "samples": 45705600,
+          "mismatches": 0,
+          "minimum": 15,
+          "maximum": 16353,
+          "decoded_sha256": "9008b74008fa26ecd135ac52f2853c3d5565f73f50c547d6ba18e4094d3fca6d",
+          "source_sha256": "a75cac59815e3cfaa834ebbf3a7541e829b04695729aae0347490326aa008832",
+          "source_geometry": [
+            640,
+            480
+          ]
+        },
+        "structure": {
+          "width": 8280,
+          "height": 5520,
+          "bits": 14,
+          "compression": 34713,
+          "strip_offset": 773120,
+          "strip_bytes": 34332400,
+          "strip_sha256": "2e2d118d0f4c494aec235f4c1a4bd9ff65dda0a27061d1456e45095cd19ce465",
+          "previews": [
+            [
+              160,
+              120
+            ],
+            [
+              8256,
+              5504
+            ],
+            [
+              1620,
+              1080
+            ]
+          ],
+          "packed_fallback_excluded": true
+        }
+      },
+      {
+        "name": "DSC_0023.NEF",
+        "bytes": 35103939,
+        "sha256": "39ba4518c3da112d3e5174ca2038a2e987e7ee1dcd610c98738b24b8827a70fe",
+        "source": {
+          "samples": 45705600,
+          "mismatches": 0,
+          "minimum": 42,
+          "maximum": 16381,
+          "decoded_sha256": "67316f5ea5a94fca24c7f388c994329364d2824759671f60ca7c6dc58a58eb83",
+          "source_sha256": "b028b28a5e621712b2a07fa017f3dfafec6abdf647708dc3d8f67c85d514a341",
+          "source_geometry": [
+            640,
+            480
+          ]
+        },
+        "structure": {
+          "width": 8280,
+          "height": 5520,
+          "bits": 14,
+          "compression": 34713,
+          "strip_offset": 771584,
+          "strip_bytes": 34332355,
+          "strip_sha256": "81b91267faf3556c15da03ce74f103a6ca3bdd9cc427d165cd2ef66e40469515",
+          "previews": [
+            [
+              160,
+              120
+            ],
+            [
+              8256,
+              5504
+            ],
+            [
+              1620,
+              1080
+            ]
+          ],
+          "packed_fallback_excluded": true
+        }
+      },
+      {
+        "name": "DSC_0024.NEF",
+        "bytes": 35111567,
+        "sha256": "adfafe16e78d19f12e08e30c8e9a4c425d07b3eb5c6856b9bb4f73e088b7005b",
+        "source": {
+          "samples": 45705600,
+          "mismatches": 0,
+          "minimum": 27,
+          "maximum": 16366,
+          "decoded_sha256": "e3dd22bc0bde4f7c500fdd1878c7227e03d286f2867ccfc44295ae62832cf06d",
+          "source_sha256": "5d6c645499212cfe418d41478a9ebe3cf4476aeed2528a8e0fe0a13918d4e99f",
+          "source_geometry": [
+            640,
+            480
+          ]
+        },
+        "structure": {
+          "width": 8280,
+          "height": 5520,
+          "bits": 14,
+          "compression": 34713,
+          "strip_offset": 779264,
+          "strip_bytes": 34332303,
+          "strip_sha256": "48428a72137fdc88bd9ad9796f22bf93b8638c9783f48e43f858cfd1d0a6bb39",
+          "previews": [
+            [
+              160,
+              120
+            ],
+            [
+              8256,
+              5504
+            ],
+            [
+              1620,
+              1080
+            ]
+          ],
+          "packed_fallback_excluded": true
+        }
+      },
+      {
+        "name": "DSC_0025.NEF",
+        "bytes": 35115611,
+        "sha256": "17223d4c8a3a32974a31394205a11213e09d3f7a833221406deb4a43bd5a33a4",
+        "source": {
+          "samples": 45705600,
+          "mismatches": 0,
+          "minimum": 16,
+          "maximum": 16356,
+          "decoded_sha256": "13113025f3843bfd3de5ea1dab5af110377ef71a4f6b4f7d4a18e8eccf167b50",
+          "source_sha256": "112b9b862a4e558f9ef7f66b18ed477edfe6ef3dbef06a3337265e8d1fae90c0",
+          "source_geometry": [
+            640,
+            480
+          ]
+        },
+        "structure": {
+          "width": 8280,
+          "height": 5520,
+          "bits": 14,
+          "compression": 34713,
+          "strip_offset": 783360,
+          "strip_bytes": 34332251,
+          "strip_sha256": "42e8accd8f0d1b2e9d8137adbfa97fc577a1b63ccb9d021dd06d71f8001bea4a",
+          "previews": [
+            [
+              160,
+              120
+            ],
+            [
+              8256,
+              5504
+            ],
+            [
+              1620,
+              1080
+            ]
+          ],
+          "packed_fallback_excluded": true
+        }
+      },
+      {
+        "name": "DSC_0026.NEF",
+        "bytes": 35091495,
+        "sha256": "3bfe16a55fca6211a588daa66c32ad901365c4e4b104e62b15bf3997110fbc3a",
+        "source": {
+          "samples": 45705600,
+          "mismatches": 0,
+          "minimum": 9,
+          "maximum": 16349,
+          "decoded_sha256": "06539b1ec8c69ba751ff6752c50471854eebf6c39329bf3e7d17d43d324cae41",
+          "source_sha256": "bc064cb1322b1906f2e932066a2471c8ea1c91ac40ae8eb24af7df2974fac96e",
+          "source_geometry": [
+            640,
+            480
+          ]
+        },
+        "structure": {
+          "width": 8280,
+          "height": 5520,
+          "bits": 14,
+          "compression": 34713,
+          "strip_offset": 759296,
+          "strip_bytes": 34332199,
+          "strip_sha256": "71cf48583519a0372431b9bc4f3244cf4f2257553b7b6a69887f44d6efc97d3f",
+          "previews": [
+            [
+              160,
+              120
+            ],
+            [
+              8256,
+              5504
+            ],
+            [
+              1620,
+              1080
+            ]
+          ],
+          "packed_fallback_excluded": true
+        }
+      },
+      {
+        "name": "DSC_0027.NEF",
+        "bytes": 35108852,
+        "sha256": "8f6260d9848a26ec09650ad5079f2b56cd9aaf31c5aeecd5525ba45d517b0314",
+        "source": {
+          "samples": 45705600,
+          "mismatches": 0,
+          "minimum": 6,
+          "maximum": 16347,
+          "decoded_sha256": "2850a3adc49e09f6fb4919d2004e8c1ee9925492a28e13361fca35fd69006618",
+          "source_sha256": "30141ee0f0a851350611437889b0b896eff2a33b111030fa11f47705eaf155bf",
+          "source_geometry": [
+            640,
+            480
+          ]
+        },
+        "structure": {
+          "width": 8280,
+          "height": 5520,
+          "bits": 14,
+          "compression": 34713,
+          "strip_offset": 776704,
+          "strip_bytes": 34332148,
+          "strip_sha256": "c7c500a1aacbff292a63ecc73cce35ecba6aef23024178becf349db0a399e27b",
+          "previews": [
+            [
+              160,
+              120
+            ],
+            [
+              8256,
+              5504
+            ],
+            [
+              1620,
+              1080
+            ]
+          ],
+          "packed_fallback_excluded": true
+        }
+      }
+    ],
+    "all_native_card_files": [
+      {
+        "path": "NIKON001.DSC",
+        "bytes": 512,
+        "valid_bytes": 512,
+        "first_cluster": 5,
+        "contiguous": true,
+        "directory": false
+      },
+      {
+        "path": "DCIM/100NCZ_8/DSC_0001.NEF",
+        "bytes": 35113217,
+        "valid_bytes": 35113217,
+        "first_cluster": 10,
+        "contiguous": true,
+        "directory": false
+      },
+      {
+        "path": "DCIM/100NCZ_8/DSC_0002.NEF",
+        "bytes": 35137742,
+        "valid_bytes": 35137742,
+        "first_cluster": 278,
+        "contiguous": true,
+        "directory": false
+      },
+      {
+        "path": "DCIM/100NCZ_8/DSC_0003.NEF",
+        "bytes": 35132789,
+        "valid_bytes": 35132789,
+        "first_cluster": 547,
+        "contiguous": true,
+        "directory": false
+      },
+      {
+        "path": "DCIM/100NCZ_8/DSC_0004.NEF",
+        "bytes": 35118132,
+        "valid_bytes": 35118132,
+        "first_cluster": 816,
+        "contiguous": true,
+        "directory": false
+      },
+      {
+        "path": "DCIM/100NCZ_8/DSC_0005.NEF",
+        "bytes": 35121952,
+        "valid_bytes": 35121952,
+        "first_cluster": 1084,
+        "contiguous": true,
+        "directory": false
+      },
+      {
+        "path": "DCIM/100NCZ_8/DSC_0006.NEF",
+        "bytes": 35125768,
+        "valid_bytes": 35125768,
+        "first_cluster": 1352,
+        "contiguous": true,
+        "directory": false
+      },
+      {
+        "path": "DCIM/100NCZ_8/DSC_0007.NEF",
+        "bytes": 35127574,
+        "valid_bytes": 35127574,
+        "first_cluster": 1620,
+        "contiguous": true,
+        "directory": false
+      },
+      {
+        "path": "DCIM/100NCZ_8/DSC_0008.NEF",
+        "bytes": 35105864,
+        "valid_bytes": 35105864,
+        "first_cluster": 1889,
+        "contiguous": true,
+        "directory": false
+      },
+      {
+        "path": "DCIM/100NCZ_8/DSC_0009.NEF",
+        "bytes": 35129143,
+        "valid_bytes": 35129143,
+        "first_cluster": 2157,
+        "contiguous": true,
+        "directory": false
+      },
+      {
+        "path": "DCIM/100NCZ_8/DSC_0010.NEF",
+        "bytes": 35119768,
+        "valid_bytes": 35119768,
+        "first_cluster": 2426,
+        "contiguous": true,
+        "directory": false
+      },
+      {
+        "path": "DCIM/100NCZ_8/DSC_0011.NEF",
+        "bytes": 35107294,
+        "valid_bytes": 35107294,
+        "first_cluster": 2694,
+        "contiguous": true,
+        "directory": false
+      },
+      {
+        "path": "DCIM/100NCZ_8/DSC_0012.NEF",
+        "bytes": 35120444,
+        "valid_bytes": 35120444,
+        "first_cluster": 2962,
+        "contiguous": true,
+        "directory": false
+      },
+      {
+        "path": "DCIM/100NCZ_8/DSC_0013.NEF",
+        "bytes": 35124870,
+        "valid_bytes": 35124870,
+        "first_cluster": 3230,
+        "contiguous": true,
+        "directory": false
+      },
+      {
+        "path": "DCIM/100NCZ_8/DSC_0014.NEF",
+        "bytes": 35104231,
+        "valid_bytes": 35104231,
+        "first_cluster": 3498,
+        "contiguous": true,
+        "directory": false
+      },
+      {
+        "path": "DCIM/100NCZ_8/DSC_0015.NEF",
+        "bytes": 35119917,
+        "valid_bytes": 35119917,
+        "first_cluster": 3766,
+        "contiguous": true,
+        "directory": false
+      },
+      {
+        "path": "DCIM/100NCZ_8/DSC_0016.NEF",
+        "bytes": 35112075,
+        "valid_bytes": 35112075,
+        "first_cluster": 4034,
+        "contiguous": true,
+        "directory": false
+      },
+      {
+        "path": "DCIM/100NCZ_8/DSC_0017.NEF",
+        "bytes": 35108821,
+        "valid_bytes": 35108821,
+        "first_cluster": 4302,
+        "contiguous": true,
+        "directory": false
+      },
+      {
+        "path": "DCIM/100NCZ_8/DSC_0018.NEF",
+        "bytes": 35105197,
+        "valid_bytes": 35105197,
+        "first_cluster": 4570,
+        "contiguous": true,
+        "directory": false
+      },
+      {
+        "path": "DCIM/100NCZ_8/DSC_0019.NEF",
+        "bytes": 35109759,
+        "valid_bytes": 35109759,
+        "first_cluster": 4838,
+        "contiguous": true,
+        "directory": false
+      },
+      {
+        "path": "DCIM/100NCZ_8/DSC_0020.NEF",
+        "bytes": 35110219,
+        "valid_bytes": 35110219,
+        "first_cluster": 5106,
+        "contiguous": true,
+        "directory": false
+      },
+      {
+        "path": "DCIM/100NCZ_8/DSC_0021.NEF",
+        "bytes": 35105571,
+        "valid_bytes": 35105571,
+        "first_cluster": 5374,
+        "contiguous": true,
+        "directory": false
+      },
+      {
+        "path": "DCIM/100NCZ_8/DSC_0022.NEF",
+        "bytes": 35105520,
+        "valid_bytes": 35105520,
+        "first_cluster": 5642,
+        "contiguous": true,
+        "directory": false
+      },
+      {
+        "path": "DCIM/100NCZ_8/DSC_0023.NEF",
+        "bytes": 35103939,
+        "valid_bytes": 35103939,
+        "first_cluster": 5910,
+        "contiguous": true,
+        "directory": false
+      },
+      {
+        "path": "DCIM/100NCZ_8/DSC_0024.NEF",
+        "bytes": 35111567,
+        "valid_bytes": 35111567,
+        "first_cluster": 6178,
+        "contiguous": true,
+        "directory": false
+      },
+      {
+        "path": "DCIM/100NCZ_8/DSC_0025.NEF",
+        "bytes": 35115611,
+        "valid_bytes": 35115611,
+        "first_cluster": 6446,
+        "contiguous": true,
+        "directory": false
+      },
+      {
+        "path": "DCIM/100NCZ_8/DSC_0026.NEF",
+        "bytes": 35091495,
+        "valid_bytes": 35091495,
+        "first_cluster": 6714,
+        "contiguous": true,
+        "directory": false
+      },
+      {
+        "path": "DCIM/100NCZ_8/DSC_0027.NEF",
+        "bytes": 35108852,
+        "valid_bytes": 35108852,
+        "first_cluster": 6982,
+        "contiguous": true,
+        "directory": false
+      },
+      {
+        "path": "DCIM/100NCZ_8/NC_FLLST.DAT",
+        "bytes": 122880,
+        "valid_bytes": 122880,
+        "first_cluster": 7250,
+        "contiguous": true,
+        "directory": false
+      }
+    ],
+    "total_samples_compared": 1234051200,
+    "producer_samples_compared": false,
+    "wrong_source_negative_control": {
+      "samples": 45705600,
+      "mismatches": 45705600,
+      "minimum": 0,
+      "maximum": 16383,
+      "decoded_sha256": "c7c6619a33c1862172089789ac8615d8077c26c4dc340901b7a00841da0b7d49",
+      "source_sha256": "944f029053665964090a0e12e397eab9f5164cd3f45955a1e0bc9d89e74af420",
+      "source_geometry": [
+        640,
+        480
+      ]
+    },
+    "transport": {
+      "blocked": [],
+      "capture_gpio_writes": [
+        "0",
+        "1",
+        "0"
+      ],
+      "memory_addresses": [
+        "0xd15100c",
+        "0xd151010"
+      ],
+      "irq_indexes": [
+        25,
+        26
+      ]
+    },
+    "versions": {
+      "rawpy": "0.27.1",
+      "libraw": [
+        0,
+        22,
+        1
+      ],
+      "numpy": "2.5.4",
+      "pillow": "12.3.0"
+    },
+    "scripts": {
+      "audit_run.py": "492e38eef2c2f819c7d378943d75377a3a6c9eaf2fa92301f1408e606e12fb46",
+      "audit_samples.py": "6398ec691688f0de27ea1f699c6e19c831061f764499bd0754287c2fe79018da",
+      "behavior.py": "8e19f8b156e78649a65066c4c4634c521f345e471848272b71e66f23fbcf9c6b",
+      "content.py": "7488332e24b5a2bc72a56173e015e1f3ec984d7b3e005815461e50e31eb70248",
+      "guarded_capture.py": "9d426d9793d6a78608dae6cb978de9950e932db97424ed761b5debd0b4b8f56a",
+      "reproduce.py": "a3b8b3a3a23529e7a6267544ccca39fdcc03ed083c88630751ebae9b8b902517"
+    },
+    "inputs": {
+      "result_sha256": "be35f079f0cbe5d0459b477213981fa9afe797837ab822d20448473bb4e7d977",
+      "stderr_sha256": "e415c665e6d28a304205fb333ade75b3db9307afbd60d22b013c2fc29bbe1e74",
+      "exit_receipt_sha256": "88d7c8e621dc19de6335dde0f03cc2479106c92a9cbecf9a79166737d5cffa85",
+      "guard_receipt_sha256": "ad54d53c516179a31372172947c81b1c54c7f32f9a2b33239ee8be813d02ed46"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "publication_note": "Path-redacted derivative of a retained local report; not the original byte stream.",
+  "original_report_sha256": "3fa207337f6a766a2ebe08d4348b982bffa71ee10ffbb53b4c7cddd7be37a0e9",
+  "data": {
+    "exit_code": 0,
+    "source_copy": "<LOCAL_LAB>/codex-raw-validation-20261017-recovered/test-harness-repair",
+    "original_delivery_modified": false,
+    "model_source_modified": false,
+    "changed_files": [
+      "tests/test_raw_owners.py"
+    ],
+    "original_test_sha256": "f9807c141fd8c018c75acced1d9c3c1bc6811e8362bca710c3726fec075c1794",
+    "fixed_test_sha256": "e54eb816fa164808e0e5c4cee543193a841f0f3c7dd949d94da6ecad8b1e1ea9",
+    "patch_sha256": "b95d3da8a62b40abfdc5c234a6d757c6124ac2e3954eec06dae2c162b8898c9d"
+  }
+}

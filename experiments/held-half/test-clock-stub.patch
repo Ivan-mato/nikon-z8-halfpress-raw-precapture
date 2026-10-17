@@ -1,0 +1,12 @@
+--- a/tests/test_raw_owners.py
++++ b/tests/test_raw_owners.py
+@@ -35,6 +35,9 @@
+ #define g_free free
+ #define MEMTXATTRS_UNSPECIFIED 0
+ #define MEMTX_OK 0
++#define QEMU_CLOCK_VIRTUAL 0
++static uint64_t qemu_clock_get_ns(int clock)
++{ (void)clock; return 0; } /* Diagnostic timestamp only. */
+ ''' + declaration('Z8OwnedRaw')+declaration('Ex7RawTransport')+r'''
+ typedef struct {
+ '''+'\n'.join(sorted(fields))+r'''
